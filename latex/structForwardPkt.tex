@@ -1,0 +1,132 @@
+\hypertarget{structForwardPkt}{\section{\-Forward\-Pkt \-Struct \-Reference}
+\label{structForwardPkt}\index{\-Forward\-Pkt@{\-Forward\-Pkt}}
+}
+
+
+{\ttfamily \#include $<$split\-\_\-tcp\-\_\-gateway.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{structForwardPkt_ad8118c5246082b33c4149f401781e5c9}{init\-Pkt} ()
+\item 
+void \hyperlink{structForwardPkt_a1c697108f36471281da14897a4f887b6}{\-Pkt\-Handler} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \hyperlink{structForwardPkt_a2e4d0793dc8830d17f823d5979f3261f}{data}
+\item 
+struct pcap\-\_\-pkthdr \hyperlink{structForwardPkt_a302fdd75ab8fb5a475bc9a0c21db4fb7}{header}
+\item 
+\hyperlink{split__tcp__gateway_8h_ae2b02ed168fc99cff3851603910b1fb6}{u\-\_\-char} \hyperlink{structForwardPkt_a3380962962774ae93f297052fafc7a30}{pkt\-\_\-data} \mbox{[}1515\mbox{]}
+\item 
+struct \hyperlink{structForwardPkt}{\-Forward\-Pkt} $\ast$ \hyperlink{structForwardPkt_a2147e5e35be17cd44b4d0118dbad71a8}{next}
+\item 
+struct \hyperlink{structForwardPkt}{\-Forward\-Pkt} $\ast$ \hyperlink{structForwardPkt_adae10cd3e262e7a0cd274f8879e72180}{prev}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structForwardPkt_a20a35b6a4f29d9f73700ee47c0f64dcc}{seq\-\_\-num}
+\item 
+u\-\_\-short \hyperlink{structForwardPkt_a57122c5602fe8f2707c3720317f3ee80}{data\-\_\-len}
+\item 
+u\-\_\-short \hyperlink{structForwardPkt_a247f9e1e1c5f32d28229ef8ed8d31fc0}{ctr\-\_\-flag}
+\item 
+\hyperlink{split__tcp__gateway_8h_ae16666ecf73bb70201bc64a6ccc329f1}{u\-\_\-long\-\_\-long} \hyperlink{structForwardPkt_a295be2ad5f6a02351220a61f220b595f}{snd\-\_\-time}
+\item 
+\hyperlink{split__tcp__gateway_8h_ae16666ecf73bb70201bc64a6ccc329f1}{u\-\_\-long\-\_\-long} \hyperlink{structForwardPkt_a814c519962506223c23fda2c5c575182}{rtx\-\_\-time}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structForwardPkt_ae0a13cdbb57b256782d476e052a04b13}{num\-\_\-dup}
+\item 
+\hyperlink{split__tcp__gateway_8h_ae16666ecf73bb70201bc64a6ccc329f1}{u\-\_\-long\-\_\-long} \hyperlink{structForwardPkt_aafcfa8214f837f5ed5b2a645dd31e753}{rcv\-\_\-time}
+\item 
+u\-\_\-short \hyperlink{structForwardPkt_a303504046c1d8f05b2a026da7e5a45ec}{s\-Port}
+\item 
+u\-\_\-short \hyperlink{structForwardPkt_a0c0acc33271ed0353b6ed34093240b8c}{d\-Port}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structForwardPkt_a0bb409edcde42a14c214c5b7b721fa47}{index}
+\item 
+bool \hyperlink{structForwardPkt_ae6b9fe215eb8f4553dc674dddb18448b}{occupy}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structForwardPkt_a3aa4c5efb82ffd5fc899806f697a6af7}{tcb}
+\item 
+bool \hyperlink{structForwardPkt_aca9b2ef2ea24cdc53901f38a6636c5aa}{is\-\_\-rtx}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{structForwardPkt_ad8118c5246082b33c4149f401781e5c9}{\index{\-Forward\-Pkt@{\-Forward\-Pkt}!init\-Pkt@{init\-Pkt}}
+\index{init\-Pkt@{init\-Pkt}!ForwardPkt@{\-Forward\-Pkt}}
+\subsubsection[{init\-Pkt}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Forward\-Pkt\-::init\-Pkt} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{structForwardPkt_ad8118c5246082b33c4149f401781e5c9}
+\hypertarget{structForwardPkt_a1c697108f36471281da14897a4f887b6}{\index{\-Forward\-Pkt@{\-Forward\-Pkt}!\-Pkt\-Handler@{\-Pkt\-Handler}}
+\index{\-Pkt\-Handler@{\-Pkt\-Handler}!ForwardPkt@{\-Forward\-Pkt}}
+\subsubsection[{\-Pkt\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Forward\-Pkt\-::\-Pkt\-Handler} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{structForwardPkt_a1c697108f36471281da14897a4f887b6}
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{structForwardPkt_a247f9e1e1c5f32d28229ef8ed8d31fc0}{\index{\-Forward\-Pkt@{\-Forward\-Pkt}!ctr\-\_\-flag@{ctr\-\_\-flag}}
+\index{ctr\-\_\-flag@{ctr\-\_\-flag}!ForwardPkt@{\-Forward\-Pkt}}
+\subsubsection[{ctr\-\_\-flag}]{\setlength{\rightskip}{0pt plus 5cm}u\-\_\-short {\bf \-Forward\-Pkt\-::ctr\-\_\-flag}}}\label{structForwardPkt_a247f9e1e1c5f32d28229ef8ed8d31fc0}
+\hypertarget{structForwardPkt_a2e4d0793dc8830d17f823d5979f3261f}{\index{\-Forward\-Pkt@{\-Forward\-Pkt}!data@{data}}
+\index{data@{data}!ForwardPkt@{\-Forward\-Pkt}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ {\bf \-Forward\-Pkt\-::data}}}\label{structForwardPkt_a2e4d0793dc8830d17f823d5979f3261f}
+\hypertarget{structForwardPkt_a57122c5602fe8f2707c3720317f3ee80}{\index{\-Forward\-Pkt@{\-Forward\-Pkt}!data\-\_\-len@{data\-\_\-len}}
+\index{data\-\_\-len@{data\-\_\-len}!ForwardPkt@{\-Forward\-Pkt}}
+\subsubsection[{data\-\_\-len}]{\setlength{\rightskip}{0pt plus 5cm}u\-\_\-short {\bf \-Forward\-Pkt\-::data\-\_\-len}}}\label{structForwardPkt_a57122c5602fe8f2707c3720317f3ee80}
+\hypertarget{structForwardPkt_a0c0acc33271ed0353b6ed34093240b8c}{\index{\-Forward\-Pkt@{\-Forward\-Pkt}!d\-Port@{d\-Port}}
+\index{d\-Port@{d\-Port}!ForwardPkt@{\-Forward\-Pkt}}
+\subsubsection[{d\-Port}]{\setlength{\rightskip}{0pt plus 5cm}u\-\_\-short {\bf \-Forward\-Pkt\-::d\-Port}}}\label{structForwardPkt_a0c0acc33271ed0353b6ed34093240b8c}
+\hypertarget{structForwardPkt_a302fdd75ab8fb5a475bc9a0c21db4fb7}{\index{\-Forward\-Pkt@{\-Forward\-Pkt}!header@{header}}
+\index{header@{header}!ForwardPkt@{\-Forward\-Pkt}}
+\subsubsection[{header}]{\setlength{\rightskip}{0pt plus 5cm}struct pcap\-\_\-pkthdr {\bf \-Forward\-Pkt\-::header}}}\label{structForwardPkt_a302fdd75ab8fb5a475bc9a0c21db4fb7}
+\hypertarget{structForwardPkt_a0bb409edcde42a14c214c5b7b721fa47}{\index{\-Forward\-Pkt@{\-Forward\-Pkt}!index@{index}}
+\index{index@{index}!ForwardPkt@{\-Forward\-Pkt}}
+\subsubsection[{index}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf \-Forward\-Pkt\-::index}}}\label{structForwardPkt_a0bb409edcde42a14c214c5b7b721fa47}
+\hypertarget{structForwardPkt_aca9b2ef2ea24cdc53901f38a6636c5aa}{\index{\-Forward\-Pkt@{\-Forward\-Pkt}!is\-\_\-rtx@{is\-\_\-rtx}}
+\index{is\-\_\-rtx@{is\-\_\-rtx}!ForwardPkt@{\-Forward\-Pkt}}
+\subsubsection[{is\-\_\-rtx}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Forward\-Pkt\-::is\-\_\-rtx}}}\label{structForwardPkt_aca9b2ef2ea24cdc53901f38a6636c5aa}
+\hypertarget{structForwardPkt_a2147e5e35be17cd44b4d0118dbad71a8}{\index{\-Forward\-Pkt@{\-Forward\-Pkt}!next@{next}}
+\index{next@{next}!ForwardPkt@{\-Forward\-Pkt}}
+\subsubsection[{next}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf \-Forward\-Pkt}$\ast$ {\bf \-Forward\-Pkt\-::next}}}\label{structForwardPkt_a2147e5e35be17cd44b4d0118dbad71a8}
+\hypertarget{structForwardPkt_ae0a13cdbb57b256782d476e052a04b13}{\index{\-Forward\-Pkt@{\-Forward\-Pkt}!num\-\_\-dup@{num\-\_\-dup}}
+\index{num\-\_\-dup@{num\-\_\-dup}!ForwardPkt@{\-Forward\-Pkt}}
+\subsubsection[{num\-\_\-dup}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf \-Forward\-Pkt\-::num\-\_\-dup}}}\label{structForwardPkt_ae0a13cdbb57b256782d476e052a04b13}
+\hypertarget{structForwardPkt_ae6b9fe215eb8f4553dc674dddb18448b}{\index{\-Forward\-Pkt@{\-Forward\-Pkt}!occupy@{occupy}}
+\index{occupy@{occupy}!ForwardPkt@{\-Forward\-Pkt}}
+\subsubsection[{occupy}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Forward\-Pkt\-::occupy}}}\label{structForwardPkt_ae6b9fe215eb8f4553dc674dddb18448b}
+\hypertarget{structForwardPkt_a3380962962774ae93f297052fafc7a30}{\index{\-Forward\-Pkt@{\-Forward\-Pkt}!pkt\-\_\-data@{pkt\-\_\-data}}
+\index{pkt\-\_\-data@{pkt\-\_\-data}!ForwardPkt@{\-Forward\-Pkt}}
+\subsubsection[{pkt\-\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-char} {\bf \-Forward\-Pkt\-::pkt\-\_\-data}\mbox{[}1515\mbox{]}}}\label{structForwardPkt_a3380962962774ae93f297052fafc7a30}
+\hypertarget{structForwardPkt_adae10cd3e262e7a0cd274f8879e72180}{\index{\-Forward\-Pkt@{\-Forward\-Pkt}!prev@{prev}}
+\index{prev@{prev}!ForwardPkt@{\-Forward\-Pkt}}
+\subsubsection[{prev}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf \-Forward\-Pkt}$\ast$ {\bf \-Forward\-Pkt\-::prev}}}\label{structForwardPkt_adae10cd3e262e7a0cd274f8879e72180}
+\hypertarget{structForwardPkt_aafcfa8214f837f5ed5b2a645dd31e753}{\index{\-Forward\-Pkt@{\-Forward\-Pkt}!rcv\-\_\-time@{rcv\-\_\-time}}
+\index{rcv\-\_\-time@{rcv\-\_\-time}!ForwardPkt@{\-Forward\-Pkt}}
+\subsubsection[{rcv\-\_\-time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-long\-\_\-long} {\bf \-Forward\-Pkt\-::rcv\-\_\-time}}}\label{structForwardPkt_aafcfa8214f837f5ed5b2a645dd31e753}
+\hypertarget{structForwardPkt_a814c519962506223c23fda2c5c575182}{\index{\-Forward\-Pkt@{\-Forward\-Pkt}!rtx\-\_\-time@{rtx\-\_\-time}}
+\index{rtx\-\_\-time@{rtx\-\_\-time}!ForwardPkt@{\-Forward\-Pkt}}
+\subsubsection[{rtx\-\_\-time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-long\-\_\-long} {\bf \-Forward\-Pkt\-::rtx\-\_\-time}}}\label{structForwardPkt_a814c519962506223c23fda2c5c575182}
+\hypertarget{structForwardPkt_a20a35b6a4f29d9f73700ee47c0f64dcc}{\index{\-Forward\-Pkt@{\-Forward\-Pkt}!seq\-\_\-num@{seq\-\_\-num}}
+\index{seq\-\_\-num@{seq\-\_\-num}!ForwardPkt@{\-Forward\-Pkt}}
+\subsubsection[{seq\-\_\-num}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf \-Forward\-Pkt\-::seq\-\_\-num}}}\label{structForwardPkt_a20a35b6a4f29d9f73700ee47c0f64dcc}
+\hypertarget{structForwardPkt_a295be2ad5f6a02351220a61f220b595f}{\index{\-Forward\-Pkt@{\-Forward\-Pkt}!snd\-\_\-time@{snd\-\_\-time}}
+\index{snd\-\_\-time@{snd\-\_\-time}!ForwardPkt@{\-Forward\-Pkt}}
+\subsubsection[{snd\-\_\-time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-long\-\_\-long} {\bf \-Forward\-Pkt\-::snd\-\_\-time}}}\label{structForwardPkt_a295be2ad5f6a02351220a61f220b595f}
+\hypertarget{structForwardPkt_a303504046c1d8f05b2a026da7e5a45ec}{\index{\-Forward\-Pkt@{\-Forward\-Pkt}!s\-Port@{s\-Port}}
+\index{s\-Port@{s\-Port}!ForwardPkt@{\-Forward\-Pkt}}
+\subsubsection[{s\-Port}]{\setlength{\rightskip}{0pt plus 5cm}u\-\_\-short {\bf \-Forward\-Pkt\-::s\-Port}}}\label{structForwardPkt_a303504046c1d8f05b2a026da7e5a45ec}
+\hypertarget{structForwardPkt_a3aa4c5efb82ffd5fc899806f697a6af7}{\index{\-Forward\-Pkt@{\-Forward\-Pkt}!tcb@{tcb}}
+\index{tcb@{tcb}!ForwardPkt@{\-Forward\-Pkt}}
+\subsubsection[{tcb}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf \-Forward\-Pkt\-::tcb}}}\label{structForwardPkt_a3aa4c5efb82ffd5fc899806f697a6af7}
+
+
+\-The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{split__tcp__gateway_8h}{split\-\_\-tcp\-\_\-gateway.\-h}\end{DoxyCompactItemize}

@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['name_5fanother',['name_another',['../structDATA.html#a81d07e70e9d1fdabf83cacd194606190',1,'DATA']]],
+  ['name_5fthis',['name_this',['../structDATA.html#af8b5b656a5e237ad7d2f5cdcca9fcce4',1,'DATA']]],
+  ['next',['next',['../structForwardPkt.html#a2147e5e35be17cd44b4d0118dbad71a8',1,'ForwardPkt::next()'],['../structstate__array.html#a606d900f2b6b2c605177e6df2bc8d723',1,'state_array::next()']]],
+  ['nextestmatesampletime',['nextEstmateSampleTime',['../structSlideWindow.html#ad5e297c278c4e9a4eb3b94ed04ef50a8',1,'SlideWindow']]],
+  ['node',['node',['../structnode.html',1,'']]],
+  ['normal',['NORMAL',['../split__tcp__gateway_8cpp.html#ae279bfacbd0dac7aedff2c9121036de9a50d1448013c6f17125caee18aa418af7',1,'split_tcp_gateway.cpp']]],
+  ['normal_5ftimeout',['NORMAL_TIMEOUT',['../split__tcp__gateway_8cpp.html#ae279bfacbd0dac7aedff2c9121036de9aaf5f021f04cc9d8c53826cfc7d5df97f',1,'split_tcp_gateway.cpp']]],
+  ['num',['num',['../structstate__array.html#ae6109c63ad4a783b9139e94fced30e88',1,'state_array::num()'],['../structSendDataPktQueue.html#a8c2f66d0b6a9fc1e0c6f5e915aed4379',1,'SendDataPktQueue::num()']]],
+  ['num_5fdup',['num_dup',['../structForwardPkt.html#ae0a13cdbb57b256782d476e052a04b13',1,'ForwardPkt']]],
+  ['num_5fdup_5fack',['NUM_DUP_ACK',['../split__tcp__gateway_8h.html#a09c42fa58ae18c1ca7f0150a782eb2f8',1,'split_tcp_gateway.h']]],
+  ['num_5fpkt_5fbeyond_5fwin',['NUM_PKT_BEYOND_WIN',['../split__tcp__gateway_8h.html#ab32a70721d748cd552869c1bd141ddb9',1,'split_tcp_gateway.h']]],
+  ['num_5fsack_5fblock',['NUM_SACK_BLOCK',['../split__tcp__gateway_8h.html#ac6738871bcfd2931827f06806b16dafb',1,'split_tcp_gateway.h']]],
+  ['nxt_5fschedule_5fconn',['nxt_schedule_conn',['../split__tcp__gateway_8cpp.html#a605f6ee3b374ea21e62291a94e3fdd45',1,'split_tcp_gateway.cpp']]],
+  ['nxt_5fschedule_5ftcb',['nxt_schedule_tcb',['../split__tcp__gateway_8cpp.html#ac891ff4dfbf61ee22aa43c115f918d28',1,'split_tcp_gateway.cpp']]],
+  ['nxt_5ftimed_5fseqno',['nxt_timed_seqno',['../structconn__state.html#aad047afa990ea8466b6a94bfd3d9c55e',1,'conn_state']]],
+  ['nxt_5ftimed_5fseqno_5fietf',['nxt_timed_seqno_ietf',['../structconn__state.html#a3ee01d0dadc68e848eeb6f5ecf3a8a4a',1,'conn_state']]]
+];

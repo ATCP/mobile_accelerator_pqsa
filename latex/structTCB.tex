@@ -1,0 +1,180 @@
+\hypertarget{structTCB}{\section{\-T\-C\-B \-Struct \-Reference}
+\label{structTCB}\index{\-T\-C\-B@{\-T\-C\-B}}
+}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structTCB_aa619e6a500feb87675186b0f105dd6c7}{\-T\-C\-B} ()
+\item 
+void \hyperlink{structTCB_af9fa7da15c22ab9577330678bec7cebe}{init\-\_\-tcb} (\hyperlink{structip__address}{ip\-\_\-address} client\-\_\-ip, \hyperlink{structip__address}{ip\-\_\-address} server\-\_\-ip)
+\item 
+void \hyperlink{structTCB_a8928fb28abe130ed05d9600f1c3351fd}{flush} ()
+\item 
+void \hyperlink{structTCB_af7d4be8156a7b15e734e7a526160300f}{add\-\_\-conn} (u\-\_\-short sport, \hyperlink{structconn__state}{conn\-\_\-state} $\ast$new\-\_\-conn)
+\item 
+\hyperlink{structTCB_a1035bc2b4149c8b7b35dce89636b70ad}{$\sim$\-T\-C\-B} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structconn__state}{conn\-\_\-state} $\ast$ \hyperlink{structTCB_a1bd7c7b11c941c48cdb79aa785abaa1d}{conn} \mbox{[}65536+1\mbox{]}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structTCB_abbd5613201064f5d9d4d7436e6c19959}{send\-\_\-rate}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structTCB_af8455f4826761c7db060a0ce982474f8}{send\-\_\-rate\-\_\-lower}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structTCB_ab41abe4a6f0dfbd9957eb1b96167b8cc}{send\-\_\-rate\-\_\-upper}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structTCB_ab4f1301b04ebb91f5987fb1b386eef35}{aggre\-\_\-bw\-\_\-estimate}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structTCB_a37f319f72768c2ef35d91ceb1869639c}{send\-\_\-beyong\-\_\-win}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structTCB_abb4a461b247d257260d72cfa4d03b97a}{sample\-\_\-rate}
+\item 
+pthread\-\_\-cond\-\_\-t \hyperlink{structTCB_ab95b1587e780086fb1f930e13c79ced7}{m\-\_\-event\-Conn\-State\-Available}
+\item 
+pthread\-\_\-mutex\-\_\-t \hyperlink{structTCB_a011d3dba417bd02ba236a0955c3ff7d8}{mutex}
+\item 
+\hyperlink{structstate__array}{state\-\_\-array} \hyperlink{structTCB_ad1aaeb7bb5c5b2fa3f25c5f229cc00ba}{states}
+\item 
+\hyperlink{structSlideWindow}{\-Slide\-Window} \hyperlink{structTCB_a4a55a613a40f454b855b26aac840929d}{sliding\-\_\-avg\-\_\-window}
+\item 
+\hyperlink{structSlideWindow}{\-Slide\-Window} \hyperlink{structTCB_a0bf7a4cb540d916181955e0f0b01f800}{sliding\-\_\-snd\-\_\-window}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structTCB_a0be41c7cd6d1d7763d59c8ee34c6d79e}{rcv\-\_\-thrughput}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structTCB_a06fd83f70fd69cff970cb214a32da1b4}{rcv\-\_\-thrughput\-\_\-approx}
+\item 
+\hyperlink{split__tcp__gateway_8h_ae16666ecf73bb70201bc64a6ccc329f1}{u\-\_\-long\-\_\-long} \hyperlink{structTCB_ad28d5d458c5607d82e376a271cccb935}{initial\-\_\-time}
+\item 
+\hyperlink{structip__address}{ip\-\_\-address} \hyperlink{structTCB_abc7140c6cddf3224e9cbe5c1f7b83962}{client\-\_\-ip\-\_\-address}
+\item 
+\hyperlink{structip__address}{ip\-\_\-address} \hyperlink{structTCB_a2b932b445873f8c47eacbbcac07a6d9b}{server\-\_\-ip\-\_\-address}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structTCB_ace3d5821cde5daf93774f0a377d82383}{total\-Byte\-Sent}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structTCB_aeea8e51f9a0ee23de2ea837d08a57cb1}{\-R\-T\-T}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structTCB_abf565a3255866a1e99bc301f1b57106d}{\-R\-T\-T\-\_\-limit}
+\item 
+\hyperlink{split__tcp__gateway_8h_ae16666ecf73bb70201bc64a6ccc329f1}{u\-\_\-long\-\_\-long} \hyperlink{structTCB_aa39dffdadc0637910afc502a628dd6e9}{start\-Time}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structTCB_afae30265121f857786f7ca978d143a28}{pkts\-\_\-transit}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{structTCB_aa619e6a500feb87675186b0f105dd6c7}{\index{\-T\-C\-B@{\-T\-C\-B}!\-T\-C\-B@{\-T\-C\-B}}
+\index{\-T\-C\-B@{\-T\-C\-B}!TCB@{\-T\-C\-B}}
+\subsubsection[{\-T\-C\-B}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-T\-C\-B\-::\-T\-C\-B} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{structTCB_aa619e6a500feb87675186b0f105dd6c7}
+\hypertarget{structTCB_a1035bc2b4149c8b7b35dce89636b70ad}{\index{\-T\-C\-B@{\-T\-C\-B}!$\sim$\-T\-C\-B@{$\sim$\-T\-C\-B}}
+\index{$\sim$\-T\-C\-B@{$\sim$\-T\-C\-B}!TCB@{\-T\-C\-B}}
+\subsubsection[{$\sim$\-T\-C\-B}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-T\-C\-B\-::$\sim$\-T\-C\-B} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{structTCB_a1035bc2b4149c8b7b35dce89636b70ad}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{structTCB_af7d4be8156a7b15e734e7a526160300f}{\index{\-T\-C\-B@{\-T\-C\-B}!add\-\_\-conn@{add\-\_\-conn}}
+\index{add\-\_\-conn@{add\-\_\-conn}!TCB@{\-T\-C\-B}}
+\subsubsection[{add\-\_\-conn}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-T\-C\-B\-::add\-\_\-conn} (
+\begin{DoxyParamCaption}
+\item[{u\-\_\-short}]{sport, }
+\item[{{\bf conn\-\_\-state} $\ast$}]{new\-\_\-conn}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{structTCB_af7d4be8156a7b15e734e7a526160300f}
+\hypertarget{structTCB_a8928fb28abe130ed05d9600f1c3351fd}{\index{\-T\-C\-B@{\-T\-C\-B}!flush@{flush}}
+\index{flush@{flush}!TCB@{\-T\-C\-B}}
+\subsubsection[{flush}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-T\-C\-B\-::flush} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{structTCB_a8928fb28abe130ed05d9600f1c3351fd}
+\hypertarget{structTCB_af9fa7da15c22ab9577330678bec7cebe}{\index{\-T\-C\-B@{\-T\-C\-B}!init\-\_\-tcb@{init\-\_\-tcb}}
+\index{init\-\_\-tcb@{init\-\_\-tcb}!TCB@{\-T\-C\-B}}
+\subsubsection[{init\-\_\-tcb}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-T\-C\-B\-::init\-\_\-tcb} (
+\begin{DoxyParamCaption}
+\item[{{\bf ip\-\_\-address}}]{client\-\_\-ip, }
+\item[{{\bf ip\-\_\-address}}]{server\-\_\-ip}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{structTCB_af9fa7da15c22ab9577330678bec7cebe}
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{structTCB_ab4f1301b04ebb91f5987fb1b386eef35}{\index{\-T\-C\-B@{\-T\-C\-B}!aggre\-\_\-bw\-\_\-estimate@{aggre\-\_\-bw\-\_\-estimate}}
+\index{aggre\-\_\-bw\-\_\-estimate@{aggre\-\_\-bw\-\_\-estimate}!TCB@{\-T\-C\-B}}
+\subsubsection[{aggre\-\_\-bw\-\_\-estimate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf \-T\-C\-B\-::aggre\-\_\-bw\-\_\-estimate}}}\label{structTCB_ab4f1301b04ebb91f5987fb1b386eef35}
+\hypertarget{structTCB_abc7140c6cddf3224e9cbe5c1f7b83962}{\index{\-T\-C\-B@{\-T\-C\-B}!client\-\_\-ip\-\_\-address@{client\-\_\-ip\-\_\-address}}
+\index{client\-\_\-ip\-\_\-address@{client\-\_\-ip\-\_\-address}!TCB@{\-T\-C\-B}}
+\subsubsection[{client\-\_\-ip\-\_\-address}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ip\-\_\-address} {\bf \-T\-C\-B\-::client\-\_\-ip\-\_\-address}}}\label{structTCB_abc7140c6cddf3224e9cbe5c1f7b83962}
+\hypertarget{structTCB_a1bd7c7b11c941c48cdb79aa785abaa1d}{\index{\-T\-C\-B@{\-T\-C\-B}!conn@{conn}}
+\index{conn@{conn}!TCB@{\-T\-C\-B}}
+\subsubsection[{conn}]{\setlength{\rightskip}{0pt plus 5cm}{\bf conn\-\_\-state}$\ast$ {\bf \-T\-C\-B\-::conn}\mbox{[}65536+1\mbox{]}}}\label{structTCB_a1bd7c7b11c941c48cdb79aa785abaa1d}
+\hypertarget{structTCB_ad28d5d458c5607d82e376a271cccb935}{\index{\-T\-C\-B@{\-T\-C\-B}!initial\-\_\-time@{initial\-\_\-time}}
+\index{initial\-\_\-time@{initial\-\_\-time}!TCB@{\-T\-C\-B}}
+\subsubsection[{initial\-\_\-time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-long\-\_\-long} {\bf \-T\-C\-B\-::initial\-\_\-time}}}\label{structTCB_ad28d5d458c5607d82e376a271cccb935}
+\hypertarget{structTCB_ab95b1587e780086fb1f930e13c79ced7}{\index{\-T\-C\-B@{\-T\-C\-B}!m\-\_\-event\-Conn\-State\-Available@{m\-\_\-event\-Conn\-State\-Available}}
+\index{m\-\_\-event\-Conn\-State\-Available@{m\-\_\-event\-Conn\-State\-Available}!TCB@{\-T\-C\-B}}
+\subsubsection[{m\-\_\-event\-Conn\-State\-Available}]{\setlength{\rightskip}{0pt plus 5cm}pthread\-\_\-cond\-\_\-t {\bf \-T\-C\-B\-::m\-\_\-event\-Conn\-State\-Available}}}\label{structTCB_ab95b1587e780086fb1f930e13c79ced7}
+\hypertarget{structTCB_a011d3dba417bd02ba236a0955c3ff7d8}{\index{\-T\-C\-B@{\-T\-C\-B}!mutex@{mutex}}
+\index{mutex@{mutex}!TCB@{\-T\-C\-B}}
+\subsubsection[{mutex}]{\setlength{\rightskip}{0pt plus 5cm}pthread\-\_\-mutex\-\_\-t {\bf \-T\-C\-B\-::mutex}}}\label{structTCB_a011d3dba417bd02ba236a0955c3ff7d8}
+\hypertarget{structTCB_afae30265121f857786f7ca978d143a28}{\index{\-T\-C\-B@{\-T\-C\-B}!pkts\-\_\-transit@{pkts\-\_\-transit}}
+\index{pkts\-\_\-transit@{pkts\-\_\-transit}!TCB@{\-T\-C\-B}}
+\subsubsection[{pkts\-\_\-transit}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf \-T\-C\-B\-::pkts\-\_\-transit}}}\label{structTCB_afae30265121f857786f7ca978d143a28}
+\hypertarget{structTCB_a0be41c7cd6d1d7763d59c8ee34c6d79e}{\index{\-T\-C\-B@{\-T\-C\-B}!rcv\-\_\-thrughput@{rcv\-\_\-thrughput}}
+\index{rcv\-\_\-thrughput@{rcv\-\_\-thrughput}!TCB@{\-T\-C\-B}}
+\subsubsection[{rcv\-\_\-thrughput}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf \-T\-C\-B\-::rcv\-\_\-thrughput}}}\label{structTCB_a0be41c7cd6d1d7763d59c8ee34c6d79e}
+\hypertarget{structTCB_a06fd83f70fd69cff970cb214a32da1b4}{\index{\-T\-C\-B@{\-T\-C\-B}!rcv\-\_\-thrughput\-\_\-approx@{rcv\-\_\-thrughput\-\_\-approx}}
+\index{rcv\-\_\-thrughput\-\_\-approx@{rcv\-\_\-thrughput\-\_\-approx}!TCB@{\-T\-C\-B}}
+\subsubsection[{rcv\-\_\-thrughput\-\_\-approx}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf \-T\-C\-B\-::rcv\-\_\-thrughput\-\_\-approx}}}\label{structTCB_a06fd83f70fd69cff970cb214a32da1b4}
+\hypertarget{structTCB_aeea8e51f9a0ee23de2ea837d08a57cb1}{\index{\-T\-C\-B@{\-T\-C\-B}!\-R\-T\-T@{\-R\-T\-T}}
+\index{\-R\-T\-T@{\-R\-T\-T}!TCB@{\-T\-C\-B}}
+\subsubsection[{\-R\-T\-T}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf \-T\-C\-B\-::\-R\-T\-T}}}\label{structTCB_aeea8e51f9a0ee23de2ea837d08a57cb1}
+\hypertarget{structTCB_abf565a3255866a1e99bc301f1b57106d}{\index{\-T\-C\-B@{\-T\-C\-B}!\-R\-T\-T\-\_\-limit@{\-R\-T\-T\-\_\-limit}}
+\index{\-R\-T\-T\-\_\-limit@{\-R\-T\-T\-\_\-limit}!TCB@{\-T\-C\-B}}
+\subsubsection[{\-R\-T\-T\-\_\-limit}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf \-T\-C\-B\-::\-R\-T\-T\-\_\-limit}}}\label{structTCB_abf565a3255866a1e99bc301f1b57106d}
+\hypertarget{structTCB_abb4a461b247d257260d72cfa4d03b97a}{\index{\-T\-C\-B@{\-T\-C\-B}!sample\-\_\-rate@{sample\-\_\-rate}}
+\index{sample\-\_\-rate@{sample\-\_\-rate}!TCB@{\-T\-C\-B}}
+\subsubsection[{sample\-\_\-rate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf \-T\-C\-B\-::sample\-\_\-rate}}}\label{structTCB_abb4a461b247d257260d72cfa4d03b97a}
+\hypertarget{structTCB_a37f319f72768c2ef35d91ceb1869639c}{\index{\-T\-C\-B@{\-T\-C\-B}!send\-\_\-beyong\-\_\-win@{send\-\_\-beyong\-\_\-win}}
+\index{send\-\_\-beyong\-\_\-win@{send\-\_\-beyong\-\_\-win}!TCB@{\-T\-C\-B}}
+\subsubsection[{send\-\_\-beyong\-\_\-win}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf \-T\-C\-B\-::send\-\_\-beyong\-\_\-win}}}\label{structTCB_a37f319f72768c2ef35d91ceb1869639c}
+\hypertarget{structTCB_abbd5613201064f5d9d4d7436e6c19959}{\index{\-T\-C\-B@{\-T\-C\-B}!send\-\_\-rate@{send\-\_\-rate}}
+\index{send\-\_\-rate@{send\-\_\-rate}!TCB@{\-T\-C\-B}}
+\subsubsection[{send\-\_\-rate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf \-T\-C\-B\-::send\-\_\-rate}}}\label{structTCB_abbd5613201064f5d9d4d7436e6c19959}
+\hypertarget{structTCB_af8455f4826761c7db060a0ce982474f8}{\index{\-T\-C\-B@{\-T\-C\-B}!send\-\_\-rate\-\_\-lower@{send\-\_\-rate\-\_\-lower}}
+\index{send\-\_\-rate\-\_\-lower@{send\-\_\-rate\-\_\-lower}!TCB@{\-T\-C\-B}}
+\subsubsection[{send\-\_\-rate\-\_\-lower}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf \-T\-C\-B\-::send\-\_\-rate\-\_\-lower}}}\label{structTCB_af8455f4826761c7db060a0ce982474f8}
+\hypertarget{structTCB_ab41abe4a6f0dfbd9957eb1b96167b8cc}{\index{\-T\-C\-B@{\-T\-C\-B}!send\-\_\-rate\-\_\-upper@{send\-\_\-rate\-\_\-upper}}
+\index{send\-\_\-rate\-\_\-upper@{send\-\_\-rate\-\_\-upper}!TCB@{\-T\-C\-B}}
+\subsubsection[{send\-\_\-rate\-\_\-upper}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf \-T\-C\-B\-::send\-\_\-rate\-\_\-upper}}}\label{structTCB_ab41abe4a6f0dfbd9957eb1b96167b8cc}
+\hypertarget{structTCB_a2b932b445873f8c47eacbbcac07a6d9b}{\index{\-T\-C\-B@{\-T\-C\-B}!server\-\_\-ip\-\_\-address@{server\-\_\-ip\-\_\-address}}
+\index{server\-\_\-ip\-\_\-address@{server\-\_\-ip\-\_\-address}!TCB@{\-T\-C\-B}}
+\subsubsection[{server\-\_\-ip\-\_\-address}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ip\-\_\-address} {\bf \-T\-C\-B\-::server\-\_\-ip\-\_\-address}}}\label{structTCB_a2b932b445873f8c47eacbbcac07a6d9b}
+\hypertarget{structTCB_a4a55a613a40f454b855b26aac840929d}{\index{\-T\-C\-B@{\-T\-C\-B}!sliding\-\_\-avg\-\_\-window@{sliding\-\_\-avg\-\_\-window}}
+\index{sliding\-\_\-avg\-\_\-window@{sliding\-\_\-avg\-\_\-window}!TCB@{\-T\-C\-B}}
+\subsubsection[{sliding\-\_\-avg\-\_\-window}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Slide\-Window} {\bf \-T\-C\-B\-::sliding\-\_\-avg\-\_\-window}}}\label{structTCB_a4a55a613a40f454b855b26aac840929d}
+\hypertarget{structTCB_a0bf7a4cb540d916181955e0f0b01f800}{\index{\-T\-C\-B@{\-T\-C\-B}!sliding\-\_\-snd\-\_\-window@{sliding\-\_\-snd\-\_\-window}}
+\index{sliding\-\_\-snd\-\_\-window@{sliding\-\_\-snd\-\_\-window}!TCB@{\-T\-C\-B}}
+\subsubsection[{sliding\-\_\-snd\-\_\-window}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Slide\-Window} {\bf \-T\-C\-B\-::sliding\-\_\-snd\-\_\-window}}}\label{structTCB_a0bf7a4cb540d916181955e0f0b01f800}
+\hypertarget{structTCB_aa39dffdadc0637910afc502a628dd6e9}{\index{\-T\-C\-B@{\-T\-C\-B}!start\-Time@{start\-Time}}
+\index{start\-Time@{start\-Time}!TCB@{\-T\-C\-B}}
+\subsubsection[{start\-Time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-long\-\_\-long} {\bf \-T\-C\-B\-::start\-Time}}}\label{structTCB_aa39dffdadc0637910afc502a628dd6e9}
+\hypertarget{structTCB_ad1aaeb7bb5c5b2fa3f25c5f229cc00ba}{\index{\-T\-C\-B@{\-T\-C\-B}!states@{states}}
+\index{states@{states}!TCB@{\-T\-C\-B}}
+\subsubsection[{states}]{\setlength{\rightskip}{0pt plus 5cm}{\bf state\-\_\-array} {\bf \-T\-C\-B\-::states}}}\label{structTCB_ad1aaeb7bb5c5b2fa3f25c5f229cc00ba}
+\hypertarget{structTCB_ace3d5821cde5daf93774f0a377d82383}{\index{\-T\-C\-B@{\-T\-C\-B}!total\-Byte\-Sent@{total\-Byte\-Sent}}
+\index{total\-Byte\-Sent@{total\-Byte\-Sent}!TCB@{\-T\-C\-B}}
+\subsubsection[{total\-Byte\-Sent}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf \-T\-C\-B\-::total\-Byte\-Sent}}}\label{structTCB_ace3d5821cde5daf93774f0a377d82383}
+
+
+\-The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{split__tcp__gateway_8cpp}{split\-\_\-tcp\-\_\-gateway.\-cpp}\end{DoxyCompactItemize}

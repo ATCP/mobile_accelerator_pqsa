@@ -1,0 +1,354 @@
+\hypertarget{structconn__state}{\section{conn\-\_\-state \-Struct \-Reference}
+\label{structconn__state}\index{conn\-\_\-state@{conn\-\_\-state}}
+}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structconn__state_a486fdccdd49599f23b06cc01ca908e51}{conn\-\_\-state} (\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} count)
+\item 
+\hyperlink{structconn__state_a75a622da71a9f0c3f7f7b04d4226dc90}{conn\-\_\-state} (\hyperlink{split__tcp__gateway_8h_ae2b02ed168fc99cff3851603910b1fb6}{u\-\_\-char} client\-\_\-mac\mbox{[}$\,$\mbox{]}, \hyperlink{split__tcp__gateway_8h_ae2b02ed168fc99cff3851603910b1fb6}{u\-\_\-char} server\-\_\-mac\mbox{[}$\,$\mbox{]}, \hyperlink{structip__address}{ip\-\_\-address} client\-\_\-ip, \hyperlink{structip__address}{ip\-\_\-address} server\-\_\-ip, u\-\_\-short client\-\_\-port, u\-\_\-short server\-\_\-port, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} count)
+\item 
+void \hyperlink{structconn__state_a4d0eafa1824b5c9692b32f7935af3965}{init\-\_\-state} ()
+\item 
+void \hyperlink{structconn__state_a359ba7d038cee0577d2df72566a5db78}{init\-\_\-state\-\_\-ex} (\hyperlink{split__tcp__gateway_8h_ae2b02ed168fc99cff3851603910b1fb6}{u\-\_\-char} client\-\_\-mac\mbox{[}$\,$\mbox{]}, \hyperlink{split__tcp__gateway_8h_ae2b02ed168fc99cff3851603910b1fb6}{u\-\_\-char} server\-\_\-mac\mbox{[}$\,$\mbox{]}, \hyperlink{structip__address}{ip\-\_\-address} client\-\_\-ip, \hyperlink{structip__address}{ip\-\_\-address} server\-\_\-ip, u\-\_\-short client\-\_\-port, u\-\_\-short server\-\_\-port, \hyperlink{structTCB}{\-T\-C\-B} $\ast$tcb)
+\item 
+void \hyperlink{structconn__state_a401e6b50d8cf06875fb28023eb943473}{flush} ()
+\item 
+\hyperlink{structconn__state_aad98a251ec293031fb7ad73d5496a4ee}{$\sim$conn\-\_\-state} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{split__tcp__gateway_8h_ae16666ecf73bb70201bc64a6ccc329f1}{u\-\_\-long\-\_\-long} \hyperlink{structconn__state_a09d8624f696a5e87f7c4bd8258cdf650}{initial\-\_\-time}
+\item 
+\hyperlink{split__tcp__gateway_8h_ae2b02ed168fc99cff3851603910b1fb6}{u\-\_\-char} \hyperlink{structconn__state_a0a51afa30b43a49ec6edbe42c53e485b}{client\-\_\-mac\-\_\-address} \mbox{[}6\mbox{]}
+\item 
+\hyperlink{split__tcp__gateway_8h_ae2b02ed168fc99cff3851603910b1fb6}{u\-\_\-char} \hyperlink{structconn__state_a5062441e7d6f98886abb69ae31b4b995}{server\-\_\-mac\-\_\-address} \mbox{[}6\mbox{]}
+\item 
+\hyperlink{structip__address}{ip\-\_\-address} \hyperlink{structconn__state_a09bc5f34de7734aeaf0861201446117f}{client\-\_\-ip\-\_\-address}
+\item 
+\hyperlink{structip__address}{ip\-\_\-address} \hyperlink{structconn__state_a19c352b66ea5d4718375803b8e75f78f}{server\-\_\-ip\-\_\-address}
+\item 
+u\-\_\-short \hyperlink{structconn__state_a84fa2359c885ddd04fde1f9ff159237f}{c\-Port}
+\item 
+u\-\_\-short \hyperlink{structconn__state_ad3301160ee6f1d88ce6bb145c66c0b43}{s\-Port}
+\item 
+\hyperlink{structForwardPktBuffer}{\-Forward\-Pkt\-Buffer} \hyperlink{structconn__state_a23360dc0166aa34aae490ab47ee8ddc5}{data\-Pkt\-Buffer}
+\item 
+pthread\-\_\-mutex\-\_\-t \hyperlink{structconn__state_a66658e34b308e8c7e9197be0471e4046}{mutex}
+\item 
+pthread\-\_\-cond\-\_\-t \hyperlink{structconn__state_a6c1029b6951da7864f0ada1578fca82f}{m\-\_\-event\-Element\-Available}
+\item 
+pthread\-\_\-cond\-\_\-t \hyperlink{structconn__state_aa9f009393861dd5ad935e93de0d74b3e}{m\-\_\-event\-Space\-Available}
+\item 
+\hyperlink{structserverState}{server\-State} \hyperlink{structconn__state_a630485e95406127782b0c2865fef3a4f}{server\-\_\-state}
+\item 
+\hyperlink{structclientState}{client\-State} \hyperlink{structconn__state_af324b8f7643246725ce8e024b0c13eb9}{client\-\_\-state}
+\item 
+\-F\-I\-L\-E $\ast$ \hyperlink{structconn__state_a2963cbaa1df062006c1167104ee5ce32}{rtt\-Fd}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structconn__state_a79b86345dafc4dcc1ef309432a84503b}{send\-\_\-rate}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structconn__state_a013d3c96cbf6ca7c0129c98068173aff}{\-R\-T\-T}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structconn__state_a86f28c00e462b35050cc551df0966084}{\-L\-A\-S\-T\-\_\-\-R\-T\-T}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structconn__state_a100780925c5437cd75743d775d5d9418}{\-R\-T\-T\-\_\-limit}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structconn__state_ac811f4387cce6d0959f6ac07d68d100e}{mdev}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structconn__state_aad047afa990ea8466b6a94bfd3d9c55e}{nxt\-\_\-timed\-\_\-seqno}
+\item 
+\hyperlink{split__tcp__gateway_8h_ae16666ecf73bb70201bc64a6ccc329f1}{u\-\_\-long\-\_\-long} \hyperlink{structconn__state_af19817ecd58cec2e6de22e08b78db31e}{last\-\_\-ack\-\_\-rcv\-\_\-time}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structconn__state_aceb52d7b21e1506e1970df9f5dc392a3}{last\-\_\-ack\-\_\-seqno}
+\item 
+\hyperlink{split__tcp__gateway_8h_ae16666ecf73bb70201bc64a6ccc329f1}{u\-\_\-long\-\_\-long} \hyperlink{structconn__state_a6d5c6f8a2d0c434fd7fc4962638d5457}{cur\-\_\-ack\-\_\-rcv\-\_\-time}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structconn__state_abb8dcd41229eec3d7165f33dcb1eb327}{cur\-\_\-ack\-\_\-seqno}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structconn__state_a74a34536bbacf4549b96fcc7226ade65}{cumul\-\_\-ack}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structconn__state_ac41d2b12dd48d78efa0fec1413469ffe}{accounted\-\_\-for}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structconn__state_abe8298981429756cf62ffd2323597c47}{rcv\-\_\-thrughput\-\_\-approx}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structconn__state_a26d81201c9be4e6398dd6bbb47b15d21}{rcv\-\_\-thrughput}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structconn__state_a8a7df5053cf160bac424370aa1b8e813}{ack\-\_\-interarrival\-\_\-time}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structconn__state_afda35b9a0b1fa4ea49ab09fecf146a59}{dft\-\_\-cumul\-\_\-ack}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structconn__state_a6315f00ab9c0eebb7f39468445aafc11}{rto}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structconn__state_a03f984f64038a3cbbf1e359dabb3ff0f}{rtt\-\_\-std\-\_\-dev}
+\item 
+\hyperlink{structtcp__sack__block}{tcp\-\_\-sack\-\_\-block} \hyperlink{structconn__state_ab8369da2fa790fff0158b3c01babdfc5}{sack\-\_\-block} \mbox{[}1\mbox{]}
+\item 
+u\-\_\-short \hyperlink{structconn__state_ada119155888a816d5d36595479f72fd3}{sack\-\_\-block\-\_\-num}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structconn__state_adb7c6c422bfff65bcd16149ebcda2839}{sack\-\_\-diff}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structconn__state_a37e8fb8d514d1541ba303a055f0fee2e}{undup\-\_\-sack\-\_\-diff}
+\item 
+u\-\_\-short \hyperlink{structconn__state_a489178b37b953e6d328243d21857e36a}{sack\-\_\-target\-\_\-block}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structconn__state_a8eecf6d7c7ea18bcc2dc6193b513bf5b}{max\-\_\-sack\-\_\-edge}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structconn__state_a200b8b3c502733b24b23063a503c1c8b}{rcv\-\_\-max\-\_\-seq\-\_\-edge}
+\item 
+\hyperlink{split__tcp__gateway_8h_ae16666ecf73bb70201bc64a6ccc329f1}{u\-\_\-long\-\_\-long} \hyperlink{structconn__state_ac8510c235c0ee8c78676e30a9ac6d6de}{ref\-\_\-ack\-\_\-time}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structconn__state_a4e97449e3ecca96d05ede0f21d9c0a0f}{ref\-\_\-ack\-\_\-seq\-\_\-no}
+\item 
+u\-\_\-short \hyperlink{structconn__state_a621e57bcec647d53b1fa153992a1a3c6}{\-M\-S\-S}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structconn__state_a677070ed93c317417c5331597a0a962d}{zero\-\_\-window\-\_\-seq\-\_\-no}
+\item 
+\hyperlink{structSlideWindow}{\-Slide\-Window} \hyperlink{structconn__state_a8d3755db1df176609fed254073db8328}{sliding\-\_\-avg\-\_\-win}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structconn__state_abc3f65cd65128cd5823dfccf4e4c5f61}{\-F\-R\-T\-O\-\_\-ack\-\_\-count}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structconn__state_a1ff460efde7459622d5dae8a10188315}{\-F\-R\-T\-O\-\_\-dup\-\_\-ack\-\_\-count}
+\item 
+\hyperlink{split__tcp__gateway_8h_a050c65e107f0c828f856a231f4b4e788}{\-B\-O\-O\-L} \hyperlink{structconn__state_a2f6514f0b4172fbf54748b38cfcface6}{send\-\_\-out\-\_\-awin}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structconn__state_aaa84be09ddb509f69c3917a0f9e7ad68}{max\-\_\-data\-\_\-len}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structconn__state_aeba65c2dd30d76c48d259d85268ad29a}{\-R\-T\-T\-\_\-\-I\-E\-T\-F}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structconn__state_ac4bf2caa0f45d0f85d68030e9f4b49aa}{rtt\-\_\-std\-\_\-dev\-\_\-ietf}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structconn__state_a60e7f051044f3684f9c776a490154cde}{rto\-\_\-ietf}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structconn__state_a3ee01d0dadc68e848eeb6f5ecf3a8a4a}{nxt\-\_\-timed\-\_\-seqno\-\_\-ietf}
+\item 
+\hyperlink{structTCB}{\-T\-C\-B} $\ast$ \hyperlink{structconn__state_a2fed71ae20264b4e209115c69b324f92}{\-\_\-tcb}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{structconn__state_a486fdccdd49599f23b06cc01ca908e51}{\index{conn\-\_\-state@{conn\-\_\-state}!conn\-\_\-state@{conn\-\_\-state}}
+\index{conn\-\_\-state@{conn\-\_\-state}!conn_state@{conn\-\_\-state}}
+\subsubsection[{conn\-\_\-state}]{\setlength{\rightskip}{0pt plus 5cm}{\bf conn\-\_\-state\-::conn\-\_\-state} (
+\begin{DoxyParamCaption}
+\item[{{\bf u\-\_\-int}}]{count}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{structconn__state_a486fdccdd49599f23b06cc01ca908e51}
+\hypertarget{structconn__state_a75a622da71a9f0c3f7f7b04d4226dc90}{\index{conn\-\_\-state@{conn\-\_\-state}!conn\-\_\-state@{conn\-\_\-state}}
+\index{conn\-\_\-state@{conn\-\_\-state}!conn_state@{conn\-\_\-state}}
+\subsubsection[{conn\-\_\-state}]{\setlength{\rightskip}{0pt plus 5cm}{\bf conn\-\_\-state\-::conn\-\_\-state} (
+\begin{DoxyParamCaption}
+\item[{{\bf u\-\_\-char}}]{client\-\_\-mac\mbox{[}$\,$\mbox{]}, }
+\item[{{\bf u\-\_\-char}}]{server\-\_\-mac\mbox{[}$\,$\mbox{]}, }
+\item[{{\bf ip\-\_\-address}}]{client\-\_\-ip, }
+\item[{{\bf ip\-\_\-address}}]{server\-\_\-ip, }
+\item[{u\-\_\-short}]{client\-\_\-port, }
+\item[{u\-\_\-short}]{server\-\_\-port, }
+\item[{{\bf u\-\_\-int}}]{count}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{structconn__state_a75a622da71a9f0c3f7f7b04d4226dc90}
+\hypertarget{structconn__state_aad98a251ec293031fb7ad73d5496a4ee}{\index{conn\-\_\-state@{conn\-\_\-state}!$\sim$conn\-\_\-state@{$\sim$conn\-\_\-state}}
+\index{$\sim$conn\-\_\-state@{$\sim$conn\-\_\-state}!conn_state@{conn\-\_\-state}}
+\subsubsection[{$\sim$conn\-\_\-state}]{\setlength{\rightskip}{0pt plus 5cm}{\bf conn\-\_\-state\-::$\sim$conn\-\_\-state} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{structconn__state_aad98a251ec293031fb7ad73d5496a4ee}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{structconn__state_a401e6b50d8cf06875fb28023eb943473}{\index{conn\-\_\-state@{conn\-\_\-state}!flush@{flush}}
+\index{flush@{flush}!conn_state@{conn\-\_\-state}}
+\subsubsection[{flush}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf conn\-\_\-state\-::flush} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{structconn__state_a401e6b50d8cf06875fb28023eb943473}
+\hypertarget{structconn__state_a4d0eafa1824b5c9692b32f7935af3965}{\index{conn\-\_\-state@{conn\-\_\-state}!init\-\_\-state@{init\-\_\-state}}
+\index{init\-\_\-state@{init\-\_\-state}!conn_state@{conn\-\_\-state}}
+\subsubsection[{init\-\_\-state}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf conn\-\_\-state\-::init\-\_\-state} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{structconn__state_a4d0eafa1824b5c9692b32f7935af3965}
+\hypertarget{structconn__state_a359ba7d038cee0577d2df72566a5db78}{\index{conn\-\_\-state@{conn\-\_\-state}!init\-\_\-state\-\_\-ex@{init\-\_\-state\-\_\-ex}}
+\index{init\-\_\-state\-\_\-ex@{init\-\_\-state\-\_\-ex}!conn_state@{conn\-\_\-state}}
+\subsubsection[{init\-\_\-state\-\_\-ex}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf conn\-\_\-state\-::init\-\_\-state\-\_\-ex} (
+\begin{DoxyParamCaption}
+\item[{{\bf u\-\_\-char}}]{client\-\_\-mac\mbox{[}$\,$\mbox{]}, }
+\item[{{\bf u\-\_\-char}}]{server\-\_\-mac\mbox{[}$\,$\mbox{]}, }
+\item[{{\bf ip\-\_\-address}}]{client\-\_\-ip, }
+\item[{{\bf ip\-\_\-address}}]{server\-\_\-ip, }
+\item[{u\-\_\-short}]{client\-\_\-port, }
+\item[{u\-\_\-short}]{server\-\_\-port, }
+\item[{{\bf \-T\-C\-B} $\ast$}]{tcb}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{structconn__state_a359ba7d038cee0577d2df72566a5db78}
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{structconn__state_a2fed71ae20264b4e209115c69b324f92}{\index{conn\-\_\-state@{conn\-\_\-state}!\-\_\-tcb@{\-\_\-tcb}}
+\index{\-\_\-tcb@{\-\_\-tcb}!conn_state@{conn\-\_\-state}}
+\subsubsection[{\-\_\-tcb}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-T\-C\-B}$\ast$ {\bf conn\-\_\-state\-::\-\_\-tcb}}}\label{structconn__state_a2fed71ae20264b4e209115c69b324f92}
+\hypertarget{structconn__state_ac41d2b12dd48d78efa0fec1413469ffe}{\index{conn\-\_\-state@{conn\-\_\-state}!accounted\-\_\-for@{accounted\-\_\-for}}
+\index{accounted\-\_\-for@{accounted\-\_\-for}!conn_state@{conn\-\_\-state}}
+\subsubsection[{accounted\-\_\-for}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf conn\-\_\-state\-::accounted\-\_\-for}}}\label{structconn__state_ac41d2b12dd48d78efa0fec1413469ffe}
+\hypertarget{structconn__state_a8a7df5053cf160bac424370aa1b8e813}{\index{conn\-\_\-state@{conn\-\_\-state}!ack\-\_\-interarrival\-\_\-time@{ack\-\_\-interarrival\-\_\-time}}
+\index{ack\-\_\-interarrival\-\_\-time@{ack\-\_\-interarrival\-\_\-time}!conn_state@{conn\-\_\-state}}
+\subsubsection[{ack\-\_\-interarrival\-\_\-time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf conn\-\_\-state\-::ack\-\_\-interarrival\-\_\-time}}}\label{structconn__state_a8a7df5053cf160bac424370aa1b8e813}
+\hypertarget{structconn__state_a09bc5f34de7734aeaf0861201446117f}{\index{conn\-\_\-state@{conn\-\_\-state}!client\-\_\-ip\-\_\-address@{client\-\_\-ip\-\_\-address}}
+\index{client\-\_\-ip\-\_\-address@{client\-\_\-ip\-\_\-address}!conn_state@{conn\-\_\-state}}
+\subsubsection[{client\-\_\-ip\-\_\-address}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ip\-\_\-address} {\bf conn\-\_\-state\-::client\-\_\-ip\-\_\-address}}}\label{structconn__state_a09bc5f34de7734aeaf0861201446117f}
+\hypertarget{structconn__state_a0a51afa30b43a49ec6edbe42c53e485b}{\index{conn\-\_\-state@{conn\-\_\-state}!client\-\_\-mac\-\_\-address@{client\-\_\-mac\-\_\-address}}
+\index{client\-\_\-mac\-\_\-address@{client\-\_\-mac\-\_\-address}!conn_state@{conn\-\_\-state}}
+\subsubsection[{client\-\_\-mac\-\_\-address}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-char} {\bf conn\-\_\-state\-::client\-\_\-mac\-\_\-address}\mbox{[}6\mbox{]}}}\label{structconn__state_a0a51afa30b43a49ec6edbe42c53e485b}
+\hypertarget{structconn__state_af324b8f7643246725ce8e024b0c13eb9}{\index{conn\-\_\-state@{conn\-\_\-state}!client\-\_\-state@{client\-\_\-state}}
+\index{client\-\_\-state@{client\-\_\-state}!conn_state@{conn\-\_\-state}}
+\subsubsection[{client\-\_\-state}]{\setlength{\rightskip}{0pt plus 5cm}{\bf client\-State} {\bf conn\-\_\-state\-::client\-\_\-state}}}\label{structconn__state_af324b8f7643246725ce8e024b0c13eb9}
+\hypertarget{structconn__state_a84fa2359c885ddd04fde1f9ff159237f}{\index{conn\-\_\-state@{conn\-\_\-state}!c\-Port@{c\-Port}}
+\index{c\-Port@{c\-Port}!conn_state@{conn\-\_\-state}}
+\subsubsection[{c\-Port}]{\setlength{\rightskip}{0pt plus 5cm}u\-\_\-short {\bf conn\-\_\-state\-::c\-Port}}}\label{structconn__state_a84fa2359c885ddd04fde1f9ff159237f}
+\hypertarget{structconn__state_a74a34536bbacf4549b96fcc7226ade65}{\index{conn\-\_\-state@{conn\-\_\-state}!cumul\-\_\-ack@{cumul\-\_\-ack}}
+\index{cumul\-\_\-ack@{cumul\-\_\-ack}!conn_state@{conn\-\_\-state}}
+\subsubsection[{cumul\-\_\-ack}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf conn\-\_\-state\-::cumul\-\_\-ack}}}\label{structconn__state_a74a34536bbacf4549b96fcc7226ade65}
+\hypertarget{structconn__state_a6d5c6f8a2d0c434fd7fc4962638d5457}{\index{conn\-\_\-state@{conn\-\_\-state}!cur\-\_\-ack\-\_\-rcv\-\_\-time@{cur\-\_\-ack\-\_\-rcv\-\_\-time}}
+\index{cur\-\_\-ack\-\_\-rcv\-\_\-time@{cur\-\_\-ack\-\_\-rcv\-\_\-time}!conn_state@{conn\-\_\-state}}
+\subsubsection[{cur\-\_\-ack\-\_\-rcv\-\_\-time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-long\-\_\-long} {\bf conn\-\_\-state\-::cur\-\_\-ack\-\_\-rcv\-\_\-time}}}\label{structconn__state_a6d5c6f8a2d0c434fd7fc4962638d5457}
+\hypertarget{structconn__state_abb8dcd41229eec3d7165f33dcb1eb327}{\index{conn\-\_\-state@{conn\-\_\-state}!cur\-\_\-ack\-\_\-seqno@{cur\-\_\-ack\-\_\-seqno}}
+\index{cur\-\_\-ack\-\_\-seqno@{cur\-\_\-ack\-\_\-seqno}!conn_state@{conn\-\_\-state}}
+\subsubsection[{cur\-\_\-ack\-\_\-seqno}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf conn\-\_\-state\-::cur\-\_\-ack\-\_\-seqno}}}\label{structconn__state_abb8dcd41229eec3d7165f33dcb1eb327}
+\hypertarget{structconn__state_a23360dc0166aa34aae490ab47ee8ddc5}{\index{conn\-\_\-state@{conn\-\_\-state}!data\-Pkt\-Buffer@{data\-Pkt\-Buffer}}
+\index{data\-Pkt\-Buffer@{data\-Pkt\-Buffer}!conn_state@{conn\-\_\-state}}
+\subsubsection[{data\-Pkt\-Buffer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Forward\-Pkt\-Buffer} {\bf conn\-\_\-state\-::data\-Pkt\-Buffer}}}\label{structconn__state_a23360dc0166aa34aae490ab47ee8ddc5}
+\hypertarget{structconn__state_afda35b9a0b1fa4ea49ab09fecf146a59}{\index{conn\-\_\-state@{conn\-\_\-state}!dft\-\_\-cumul\-\_\-ack@{dft\-\_\-cumul\-\_\-ack}}
+\index{dft\-\_\-cumul\-\_\-ack@{dft\-\_\-cumul\-\_\-ack}!conn_state@{conn\-\_\-state}}
+\subsubsection[{dft\-\_\-cumul\-\_\-ack}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf conn\-\_\-state\-::dft\-\_\-cumul\-\_\-ack}}}\label{structconn__state_afda35b9a0b1fa4ea49ab09fecf146a59}
+\hypertarget{structconn__state_abc3f65cd65128cd5823dfccf4e4c5f61}{\index{conn\-\_\-state@{conn\-\_\-state}!\-F\-R\-T\-O\-\_\-ack\-\_\-count@{\-F\-R\-T\-O\-\_\-ack\-\_\-count}}
+\index{\-F\-R\-T\-O\-\_\-ack\-\_\-count@{\-F\-R\-T\-O\-\_\-ack\-\_\-count}!conn_state@{conn\-\_\-state}}
+\subsubsection[{\-F\-R\-T\-O\-\_\-ack\-\_\-count}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf conn\-\_\-state\-::\-F\-R\-T\-O\-\_\-ack\-\_\-count}}}\label{structconn__state_abc3f65cd65128cd5823dfccf4e4c5f61}
+\hypertarget{structconn__state_a1ff460efde7459622d5dae8a10188315}{\index{conn\-\_\-state@{conn\-\_\-state}!\-F\-R\-T\-O\-\_\-dup\-\_\-ack\-\_\-count@{\-F\-R\-T\-O\-\_\-dup\-\_\-ack\-\_\-count}}
+\index{\-F\-R\-T\-O\-\_\-dup\-\_\-ack\-\_\-count@{\-F\-R\-T\-O\-\_\-dup\-\_\-ack\-\_\-count}!conn_state@{conn\-\_\-state}}
+\subsubsection[{\-F\-R\-T\-O\-\_\-dup\-\_\-ack\-\_\-count}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf conn\-\_\-state\-::\-F\-R\-T\-O\-\_\-dup\-\_\-ack\-\_\-count}}}\label{structconn__state_a1ff460efde7459622d5dae8a10188315}
+\hypertarget{structconn__state_a09d8624f696a5e87f7c4bd8258cdf650}{\index{conn\-\_\-state@{conn\-\_\-state}!initial\-\_\-time@{initial\-\_\-time}}
+\index{initial\-\_\-time@{initial\-\_\-time}!conn_state@{conn\-\_\-state}}
+\subsubsection[{initial\-\_\-time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-long\-\_\-long} {\bf conn\-\_\-state\-::initial\-\_\-time}}}\label{structconn__state_a09d8624f696a5e87f7c4bd8258cdf650}
+\hypertarget{structconn__state_af19817ecd58cec2e6de22e08b78db31e}{\index{conn\-\_\-state@{conn\-\_\-state}!last\-\_\-ack\-\_\-rcv\-\_\-time@{last\-\_\-ack\-\_\-rcv\-\_\-time}}
+\index{last\-\_\-ack\-\_\-rcv\-\_\-time@{last\-\_\-ack\-\_\-rcv\-\_\-time}!conn_state@{conn\-\_\-state}}
+\subsubsection[{last\-\_\-ack\-\_\-rcv\-\_\-time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-long\-\_\-long} {\bf conn\-\_\-state\-::last\-\_\-ack\-\_\-rcv\-\_\-time}}}\label{structconn__state_af19817ecd58cec2e6de22e08b78db31e}
+\hypertarget{structconn__state_aceb52d7b21e1506e1970df9f5dc392a3}{\index{conn\-\_\-state@{conn\-\_\-state}!last\-\_\-ack\-\_\-seqno@{last\-\_\-ack\-\_\-seqno}}
+\index{last\-\_\-ack\-\_\-seqno@{last\-\_\-ack\-\_\-seqno}!conn_state@{conn\-\_\-state}}
+\subsubsection[{last\-\_\-ack\-\_\-seqno}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf conn\-\_\-state\-::last\-\_\-ack\-\_\-seqno}}}\label{structconn__state_aceb52d7b21e1506e1970df9f5dc392a3}
+\hypertarget{structconn__state_a86f28c00e462b35050cc551df0966084}{\index{conn\-\_\-state@{conn\-\_\-state}!\-L\-A\-S\-T\-\_\-\-R\-T\-T@{\-L\-A\-S\-T\-\_\-\-R\-T\-T}}
+\index{\-L\-A\-S\-T\-\_\-\-R\-T\-T@{\-L\-A\-S\-T\-\_\-\-R\-T\-T}!conn_state@{conn\-\_\-state}}
+\subsubsection[{\-L\-A\-S\-T\-\_\-\-R\-T\-T}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf conn\-\_\-state\-::\-L\-A\-S\-T\-\_\-\-R\-T\-T}}}\label{structconn__state_a86f28c00e462b35050cc551df0966084}
+\hypertarget{structconn__state_a6c1029b6951da7864f0ada1578fca82f}{\index{conn\-\_\-state@{conn\-\_\-state}!m\-\_\-event\-Element\-Available@{m\-\_\-event\-Element\-Available}}
+\index{m\-\_\-event\-Element\-Available@{m\-\_\-event\-Element\-Available}!conn_state@{conn\-\_\-state}}
+\subsubsection[{m\-\_\-event\-Element\-Available}]{\setlength{\rightskip}{0pt plus 5cm}pthread\-\_\-cond\-\_\-t {\bf conn\-\_\-state\-::m\-\_\-event\-Element\-Available}}}\label{structconn__state_a6c1029b6951da7864f0ada1578fca82f}
+\hypertarget{structconn__state_aa9f009393861dd5ad935e93de0d74b3e}{\index{conn\-\_\-state@{conn\-\_\-state}!m\-\_\-event\-Space\-Available@{m\-\_\-event\-Space\-Available}}
+\index{m\-\_\-event\-Space\-Available@{m\-\_\-event\-Space\-Available}!conn_state@{conn\-\_\-state}}
+\subsubsection[{m\-\_\-event\-Space\-Available}]{\setlength{\rightskip}{0pt plus 5cm}pthread\-\_\-cond\-\_\-t {\bf conn\-\_\-state\-::m\-\_\-event\-Space\-Available}}}\label{structconn__state_aa9f009393861dd5ad935e93de0d74b3e}
+\hypertarget{structconn__state_aaa84be09ddb509f69c3917a0f9e7ad68}{\index{conn\-\_\-state@{conn\-\_\-state}!max\-\_\-data\-\_\-len@{max\-\_\-data\-\_\-len}}
+\index{max\-\_\-data\-\_\-len@{max\-\_\-data\-\_\-len}!conn_state@{conn\-\_\-state}}
+\subsubsection[{max\-\_\-data\-\_\-len}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf conn\-\_\-state\-::max\-\_\-data\-\_\-len}}}\label{structconn__state_aaa84be09ddb509f69c3917a0f9e7ad68}
+\hypertarget{structconn__state_a8eecf6d7c7ea18bcc2dc6193b513bf5b}{\index{conn\-\_\-state@{conn\-\_\-state}!max\-\_\-sack\-\_\-edge@{max\-\_\-sack\-\_\-edge}}
+\index{max\-\_\-sack\-\_\-edge@{max\-\_\-sack\-\_\-edge}!conn_state@{conn\-\_\-state}}
+\subsubsection[{max\-\_\-sack\-\_\-edge}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf conn\-\_\-state\-::max\-\_\-sack\-\_\-edge}}}\label{structconn__state_a8eecf6d7c7ea18bcc2dc6193b513bf5b}
+\hypertarget{structconn__state_ac811f4387cce6d0959f6ac07d68d100e}{\index{conn\-\_\-state@{conn\-\_\-state}!mdev@{mdev}}
+\index{mdev@{mdev}!conn_state@{conn\-\_\-state}}
+\subsubsection[{mdev}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf conn\-\_\-state\-::mdev}}}\label{structconn__state_ac811f4387cce6d0959f6ac07d68d100e}
+\hypertarget{structconn__state_a621e57bcec647d53b1fa153992a1a3c6}{\index{conn\-\_\-state@{conn\-\_\-state}!\-M\-S\-S@{\-M\-S\-S}}
+\index{\-M\-S\-S@{\-M\-S\-S}!conn_state@{conn\-\_\-state}}
+\subsubsection[{\-M\-S\-S}]{\setlength{\rightskip}{0pt plus 5cm}u\-\_\-short {\bf conn\-\_\-state\-::\-M\-S\-S}}}\label{structconn__state_a621e57bcec647d53b1fa153992a1a3c6}
+\hypertarget{structconn__state_a66658e34b308e8c7e9197be0471e4046}{\index{conn\-\_\-state@{conn\-\_\-state}!mutex@{mutex}}
+\index{mutex@{mutex}!conn_state@{conn\-\_\-state}}
+\subsubsection[{mutex}]{\setlength{\rightskip}{0pt plus 5cm}pthread\-\_\-mutex\-\_\-t {\bf conn\-\_\-state\-::mutex}}}\label{structconn__state_a66658e34b308e8c7e9197be0471e4046}
+\hypertarget{structconn__state_aad047afa990ea8466b6a94bfd3d9c55e}{\index{conn\-\_\-state@{conn\-\_\-state}!nxt\-\_\-timed\-\_\-seqno@{nxt\-\_\-timed\-\_\-seqno}}
+\index{nxt\-\_\-timed\-\_\-seqno@{nxt\-\_\-timed\-\_\-seqno}!conn_state@{conn\-\_\-state}}
+\subsubsection[{nxt\-\_\-timed\-\_\-seqno}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf conn\-\_\-state\-::nxt\-\_\-timed\-\_\-seqno}}}\label{structconn__state_aad047afa990ea8466b6a94bfd3d9c55e}
+\hypertarget{structconn__state_a3ee01d0dadc68e848eeb6f5ecf3a8a4a}{\index{conn\-\_\-state@{conn\-\_\-state}!nxt\-\_\-timed\-\_\-seqno\-\_\-ietf@{nxt\-\_\-timed\-\_\-seqno\-\_\-ietf}}
+\index{nxt\-\_\-timed\-\_\-seqno\-\_\-ietf@{nxt\-\_\-timed\-\_\-seqno\-\_\-ietf}!conn_state@{conn\-\_\-state}}
+\subsubsection[{nxt\-\_\-timed\-\_\-seqno\-\_\-ietf}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf conn\-\_\-state\-::nxt\-\_\-timed\-\_\-seqno\-\_\-ietf}}}\label{structconn__state_a3ee01d0dadc68e848eeb6f5ecf3a8a4a}
+\hypertarget{structconn__state_a200b8b3c502733b24b23063a503c1c8b}{\index{conn\-\_\-state@{conn\-\_\-state}!rcv\-\_\-max\-\_\-seq\-\_\-edge@{rcv\-\_\-max\-\_\-seq\-\_\-edge}}
+\index{rcv\-\_\-max\-\_\-seq\-\_\-edge@{rcv\-\_\-max\-\_\-seq\-\_\-edge}!conn_state@{conn\-\_\-state}}
+\subsubsection[{rcv\-\_\-max\-\_\-seq\-\_\-edge}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf conn\-\_\-state\-::rcv\-\_\-max\-\_\-seq\-\_\-edge}}}\label{structconn__state_a200b8b3c502733b24b23063a503c1c8b}
+\hypertarget{structconn__state_a26d81201c9be4e6398dd6bbb47b15d21}{\index{conn\-\_\-state@{conn\-\_\-state}!rcv\-\_\-thrughput@{rcv\-\_\-thrughput}}
+\index{rcv\-\_\-thrughput@{rcv\-\_\-thrughput}!conn_state@{conn\-\_\-state}}
+\subsubsection[{rcv\-\_\-thrughput}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf conn\-\_\-state\-::rcv\-\_\-thrughput}}}\label{structconn__state_a26d81201c9be4e6398dd6bbb47b15d21}
+\hypertarget{structconn__state_abe8298981429756cf62ffd2323597c47}{\index{conn\-\_\-state@{conn\-\_\-state}!rcv\-\_\-thrughput\-\_\-approx@{rcv\-\_\-thrughput\-\_\-approx}}
+\index{rcv\-\_\-thrughput\-\_\-approx@{rcv\-\_\-thrughput\-\_\-approx}!conn_state@{conn\-\_\-state}}
+\subsubsection[{rcv\-\_\-thrughput\-\_\-approx}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf conn\-\_\-state\-::rcv\-\_\-thrughput\-\_\-approx}}}\label{structconn__state_abe8298981429756cf62ffd2323597c47}
+\hypertarget{structconn__state_a4e97449e3ecca96d05ede0f21d9c0a0f}{\index{conn\-\_\-state@{conn\-\_\-state}!ref\-\_\-ack\-\_\-seq\-\_\-no@{ref\-\_\-ack\-\_\-seq\-\_\-no}}
+\index{ref\-\_\-ack\-\_\-seq\-\_\-no@{ref\-\_\-ack\-\_\-seq\-\_\-no}!conn_state@{conn\-\_\-state}}
+\subsubsection[{ref\-\_\-ack\-\_\-seq\-\_\-no}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf conn\-\_\-state\-::ref\-\_\-ack\-\_\-seq\-\_\-no}}}\label{structconn__state_a4e97449e3ecca96d05ede0f21d9c0a0f}
+\hypertarget{structconn__state_ac8510c235c0ee8c78676e30a9ac6d6de}{\index{conn\-\_\-state@{conn\-\_\-state}!ref\-\_\-ack\-\_\-time@{ref\-\_\-ack\-\_\-time}}
+\index{ref\-\_\-ack\-\_\-time@{ref\-\_\-ack\-\_\-time}!conn_state@{conn\-\_\-state}}
+\subsubsection[{ref\-\_\-ack\-\_\-time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-long\-\_\-long} {\bf conn\-\_\-state\-::ref\-\_\-ack\-\_\-time}}}\label{structconn__state_ac8510c235c0ee8c78676e30a9ac6d6de}
+\hypertarget{structconn__state_a6315f00ab9c0eebb7f39468445aafc11}{\index{conn\-\_\-state@{conn\-\_\-state}!rto@{rto}}
+\index{rto@{rto}!conn_state@{conn\-\_\-state}}
+\subsubsection[{rto}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf conn\-\_\-state\-::rto}}}\label{structconn__state_a6315f00ab9c0eebb7f39468445aafc11}
+\hypertarget{structconn__state_a60e7f051044f3684f9c776a490154cde}{\index{conn\-\_\-state@{conn\-\_\-state}!rto\-\_\-ietf@{rto\-\_\-ietf}}
+\index{rto\-\_\-ietf@{rto\-\_\-ietf}!conn_state@{conn\-\_\-state}}
+\subsubsection[{rto\-\_\-ietf}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf conn\-\_\-state\-::rto\-\_\-ietf}}}\label{structconn__state_a60e7f051044f3684f9c776a490154cde}
+\hypertarget{structconn__state_a013d3c96cbf6ca7c0129c98068173aff}{\index{conn\-\_\-state@{conn\-\_\-state}!\-R\-T\-T@{\-R\-T\-T}}
+\index{\-R\-T\-T@{\-R\-T\-T}!conn_state@{conn\-\_\-state}}
+\subsubsection[{\-R\-T\-T}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf conn\-\_\-state\-::\-R\-T\-T}}}\label{structconn__state_a013d3c96cbf6ca7c0129c98068173aff}
+\hypertarget{structconn__state_aeba65c2dd30d76c48d259d85268ad29a}{\index{conn\-\_\-state@{conn\-\_\-state}!\-R\-T\-T\-\_\-\-I\-E\-T\-F@{\-R\-T\-T\-\_\-\-I\-E\-T\-F}}
+\index{\-R\-T\-T\-\_\-\-I\-E\-T\-F@{\-R\-T\-T\-\_\-\-I\-E\-T\-F}!conn_state@{conn\-\_\-state}}
+\subsubsection[{\-R\-T\-T\-\_\-\-I\-E\-T\-F}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf conn\-\_\-state\-::\-R\-T\-T\-\_\-\-I\-E\-T\-F}}}\label{structconn__state_aeba65c2dd30d76c48d259d85268ad29a}
+\hypertarget{structconn__state_a100780925c5437cd75743d775d5d9418}{\index{conn\-\_\-state@{conn\-\_\-state}!\-R\-T\-T\-\_\-limit@{\-R\-T\-T\-\_\-limit}}
+\index{\-R\-T\-T\-\_\-limit@{\-R\-T\-T\-\_\-limit}!conn_state@{conn\-\_\-state}}
+\subsubsection[{\-R\-T\-T\-\_\-limit}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf conn\-\_\-state\-::\-R\-T\-T\-\_\-limit}}}\label{structconn__state_a100780925c5437cd75743d775d5d9418}
+\hypertarget{structconn__state_a03f984f64038a3cbbf1e359dabb3ff0f}{\index{conn\-\_\-state@{conn\-\_\-state}!rtt\-\_\-std\-\_\-dev@{rtt\-\_\-std\-\_\-dev}}
+\index{rtt\-\_\-std\-\_\-dev@{rtt\-\_\-std\-\_\-dev}!conn_state@{conn\-\_\-state}}
+\subsubsection[{rtt\-\_\-std\-\_\-dev}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf conn\-\_\-state\-::rtt\-\_\-std\-\_\-dev}}}\label{structconn__state_a03f984f64038a3cbbf1e359dabb3ff0f}
+\hypertarget{structconn__state_ac4bf2caa0f45d0f85d68030e9f4b49aa}{\index{conn\-\_\-state@{conn\-\_\-state}!rtt\-\_\-std\-\_\-dev\-\_\-ietf@{rtt\-\_\-std\-\_\-dev\-\_\-ietf}}
+\index{rtt\-\_\-std\-\_\-dev\-\_\-ietf@{rtt\-\_\-std\-\_\-dev\-\_\-ietf}!conn_state@{conn\-\_\-state}}
+\subsubsection[{rtt\-\_\-std\-\_\-dev\-\_\-ietf}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf conn\-\_\-state\-::rtt\-\_\-std\-\_\-dev\-\_\-ietf}}}\label{structconn__state_ac4bf2caa0f45d0f85d68030e9f4b49aa}
+\hypertarget{structconn__state_a2963cbaa1df062006c1167104ee5ce32}{\index{conn\-\_\-state@{conn\-\_\-state}!rtt\-Fd@{rtt\-Fd}}
+\index{rtt\-Fd@{rtt\-Fd}!conn_state@{conn\-\_\-state}}
+\subsubsection[{rtt\-Fd}]{\setlength{\rightskip}{0pt plus 5cm}\-F\-I\-L\-E$\ast$ {\bf conn\-\_\-state\-::rtt\-Fd}}}\label{structconn__state_a2963cbaa1df062006c1167104ee5ce32}
+\hypertarget{structconn__state_ab8369da2fa790fff0158b3c01babdfc5}{\index{conn\-\_\-state@{conn\-\_\-state}!sack\-\_\-block@{sack\-\_\-block}}
+\index{sack\-\_\-block@{sack\-\_\-block}!conn_state@{conn\-\_\-state}}
+\subsubsection[{sack\-\_\-block}]{\setlength{\rightskip}{0pt plus 5cm}{\bf tcp\-\_\-sack\-\_\-block} {\bf conn\-\_\-state\-::sack\-\_\-block}\mbox{[}1\mbox{]}}}\label{structconn__state_ab8369da2fa790fff0158b3c01babdfc5}
+\hypertarget{structconn__state_ada119155888a816d5d36595479f72fd3}{\index{conn\-\_\-state@{conn\-\_\-state}!sack\-\_\-block\-\_\-num@{sack\-\_\-block\-\_\-num}}
+\index{sack\-\_\-block\-\_\-num@{sack\-\_\-block\-\_\-num}!conn_state@{conn\-\_\-state}}
+\subsubsection[{sack\-\_\-block\-\_\-num}]{\setlength{\rightskip}{0pt plus 5cm}u\-\_\-short {\bf conn\-\_\-state\-::sack\-\_\-block\-\_\-num}}}\label{structconn__state_ada119155888a816d5d36595479f72fd3}
+\hypertarget{structconn__state_adb7c6c422bfff65bcd16149ebcda2839}{\index{conn\-\_\-state@{conn\-\_\-state}!sack\-\_\-diff@{sack\-\_\-diff}}
+\index{sack\-\_\-diff@{sack\-\_\-diff}!conn_state@{conn\-\_\-state}}
+\subsubsection[{sack\-\_\-diff}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf conn\-\_\-state\-::sack\-\_\-diff}}}\label{structconn__state_adb7c6c422bfff65bcd16149ebcda2839}
+\hypertarget{structconn__state_a489178b37b953e6d328243d21857e36a}{\index{conn\-\_\-state@{conn\-\_\-state}!sack\-\_\-target\-\_\-block@{sack\-\_\-target\-\_\-block}}
+\index{sack\-\_\-target\-\_\-block@{sack\-\_\-target\-\_\-block}!conn_state@{conn\-\_\-state}}
+\subsubsection[{sack\-\_\-target\-\_\-block}]{\setlength{\rightskip}{0pt plus 5cm}u\-\_\-short {\bf conn\-\_\-state\-::sack\-\_\-target\-\_\-block}}}\label{structconn__state_a489178b37b953e6d328243d21857e36a}
+\hypertarget{structconn__state_a2f6514f0b4172fbf54748b38cfcface6}{\index{conn\-\_\-state@{conn\-\_\-state}!send\-\_\-out\-\_\-awin@{send\-\_\-out\-\_\-awin}}
+\index{send\-\_\-out\-\_\-awin@{send\-\_\-out\-\_\-awin}!conn_state@{conn\-\_\-state}}
+\subsubsection[{send\-\_\-out\-\_\-awin}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf conn\-\_\-state\-::send\-\_\-out\-\_\-awin}}}\label{structconn__state_a2f6514f0b4172fbf54748b38cfcface6}
+\hypertarget{structconn__state_a79b86345dafc4dcc1ef309432a84503b}{\index{conn\-\_\-state@{conn\-\_\-state}!send\-\_\-rate@{send\-\_\-rate}}
+\index{send\-\_\-rate@{send\-\_\-rate}!conn_state@{conn\-\_\-state}}
+\subsubsection[{send\-\_\-rate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf conn\-\_\-state\-::send\-\_\-rate}}}\label{structconn__state_a79b86345dafc4dcc1ef309432a84503b}
+\hypertarget{structconn__state_a19c352b66ea5d4718375803b8e75f78f}{\index{conn\-\_\-state@{conn\-\_\-state}!server\-\_\-ip\-\_\-address@{server\-\_\-ip\-\_\-address}}
+\index{server\-\_\-ip\-\_\-address@{server\-\_\-ip\-\_\-address}!conn_state@{conn\-\_\-state}}
+\subsubsection[{server\-\_\-ip\-\_\-address}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ip\-\_\-address} {\bf conn\-\_\-state\-::server\-\_\-ip\-\_\-address}}}\label{structconn__state_a19c352b66ea5d4718375803b8e75f78f}
+\hypertarget{structconn__state_a5062441e7d6f98886abb69ae31b4b995}{\index{conn\-\_\-state@{conn\-\_\-state}!server\-\_\-mac\-\_\-address@{server\-\_\-mac\-\_\-address}}
+\index{server\-\_\-mac\-\_\-address@{server\-\_\-mac\-\_\-address}!conn_state@{conn\-\_\-state}}
+\subsubsection[{server\-\_\-mac\-\_\-address}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-char} {\bf conn\-\_\-state\-::server\-\_\-mac\-\_\-address}\mbox{[}6\mbox{]}}}\label{structconn__state_a5062441e7d6f98886abb69ae31b4b995}
+\hypertarget{structconn__state_a630485e95406127782b0c2865fef3a4f}{\index{conn\-\_\-state@{conn\-\_\-state}!server\-\_\-state@{server\-\_\-state}}
+\index{server\-\_\-state@{server\-\_\-state}!conn_state@{conn\-\_\-state}}
+\subsubsection[{server\-\_\-state}]{\setlength{\rightskip}{0pt plus 5cm}{\bf server\-State} {\bf conn\-\_\-state\-::server\-\_\-state}}}\label{structconn__state_a630485e95406127782b0c2865fef3a4f}
+\hypertarget{structconn__state_a8d3755db1df176609fed254073db8328}{\index{conn\-\_\-state@{conn\-\_\-state}!sliding\-\_\-avg\-\_\-win@{sliding\-\_\-avg\-\_\-win}}
+\index{sliding\-\_\-avg\-\_\-win@{sliding\-\_\-avg\-\_\-win}!conn_state@{conn\-\_\-state}}
+\subsubsection[{sliding\-\_\-avg\-\_\-win}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Slide\-Window} {\bf conn\-\_\-state\-::sliding\-\_\-avg\-\_\-win}}}\label{structconn__state_a8d3755db1df176609fed254073db8328}
+\hypertarget{structconn__state_ad3301160ee6f1d88ce6bb145c66c0b43}{\index{conn\-\_\-state@{conn\-\_\-state}!s\-Port@{s\-Port}}
+\index{s\-Port@{s\-Port}!conn_state@{conn\-\_\-state}}
+\subsubsection[{s\-Port}]{\setlength{\rightskip}{0pt plus 5cm}u\-\_\-short {\bf conn\-\_\-state\-::s\-Port}}}\label{structconn__state_ad3301160ee6f1d88ce6bb145c66c0b43}
+\hypertarget{structconn__state_a37e8fb8d514d1541ba303a055f0fee2e}{\index{conn\-\_\-state@{conn\-\_\-state}!undup\-\_\-sack\-\_\-diff@{undup\-\_\-sack\-\_\-diff}}
+\index{undup\-\_\-sack\-\_\-diff@{undup\-\_\-sack\-\_\-diff}!conn_state@{conn\-\_\-state}}
+\subsubsection[{undup\-\_\-sack\-\_\-diff}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf conn\-\_\-state\-::undup\-\_\-sack\-\_\-diff}}}\label{structconn__state_a37e8fb8d514d1541ba303a055f0fee2e}
+\hypertarget{structconn__state_a677070ed93c317417c5331597a0a962d}{\index{conn\-\_\-state@{conn\-\_\-state}!zero\-\_\-window\-\_\-seq\-\_\-no@{zero\-\_\-window\-\_\-seq\-\_\-no}}
+\index{zero\-\_\-window\-\_\-seq\-\_\-no@{zero\-\_\-window\-\_\-seq\-\_\-no}!conn_state@{conn\-\_\-state}}
+\subsubsection[{zero\-\_\-window\-\_\-seq\-\_\-no}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf conn\-\_\-state\-::zero\-\_\-window\-\_\-seq\-\_\-no}}}\label{structconn__state_a677070ed93c317417c5331597a0a962d}
+
+
+\-The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{split__tcp__gateway_8cpp}{split\-\_\-tcp\-\_\-gateway.\-cpp}\end{DoxyCompactItemize}

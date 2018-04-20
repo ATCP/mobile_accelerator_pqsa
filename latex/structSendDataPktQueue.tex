@@ -1,0 +1,114 @@
+\hypertarget{structSendDataPktQueue}{\section{\-Send\-Data\-Pkt\-Queue \-Struct \-Reference}
+\label{structSendDataPktQueue}\index{\-Send\-Data\-Pkt\-Queue@{\-Send\-Data\-Pkt\-Queue}}
+}
+
+
+obsolete class.  
+
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structSendDataPktQueue_a4808fd86d996d456ca1a217dcb81e32f}{\-Send\-Data\-Pkt\-Queue} ()
+\item 
+\hyperlink{structSendDataPktQueue_a36bf54b5797a930a95d78b46121f02ae}{$\sim$\-Send\-Data\-Pkt\-Queue} ()
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structSendDataPktQueue_a8c2f66d0b6a9fc1e0c6f5e915aed4379}{num} ()
+\item 
+bool \hyperlink{structSendDataPktQueue_a056b059590a77ab32a5c7a90693c9021}{\-Is\-Empty} ()
+\item 
+\hyperlink{structForwardPkt}{\-Forward\-Pkt} $\ast$ \hyperlink{structSendDataPktQueue_acba0111fe87e80f0f6742adbe5bcf804}{\-Fetch\-Pkt} (\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} seq\-\_\-want)
+\item 
+bool \hyperlink{structSendDataPktQueue_a1898832da23110391da825aabe136d35}{\-Dequeue} (\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} ack\-\_\-up)
+\item 
+void \hyperlink{structSendDataPktQueue_a623a20c1be65b612e958d5d1512c3528}{\-Enqueue\-And\-Sort} (\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} seq\-\_\-num, u\-\_\-short data\-\_\-len, u\-\_\-short flag, \hyperlink{structDATA}{\-D\-A\-T\-A} $\ast$data, struct pcap\-\_\-pkthdr $\ast$header, const \hyperlink{split__tcp__gateway_8h_ae2b02ed168fc99cff3851603910b1fb6}{u\-\_\-char} $\ast$pkt\-\_\-data)
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structForwardPkt}{\-Forward\-Pkt} $\ast$ \hyperlink{structSendDataPktQueue_a746bc373bcb50b940dc9b4a7008734f7}{head}
+\item 
+\hyperlink{structForwardPkt}{\-Forward\-Pkt} $\ast$ \hyperlink{structSendDataPktQueue_add57d3f96d46372714ede0f7f61e9a4f}{tail}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structSendDataPktQueue_a38d4786f413d2c08b00db9de7fa6841f}{size}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+obsolete class. 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{structSendDataPktQueue_a4808fd86d996d456ca1a217dcb81e32f}{\index{\-Send\-Data\-Pkt\-Queue@{\-Send\-Data\-Pkt\-Queue}!\-Send\-Data\-Pkt\-Queue@{\-Send\-Data\-Pkt\-Queue}}
+\index{\-Send\-Data\-Pkt\-Queue@{\-Send\-Data\-Pkt\-Queue}!SendDataPktQueue@{\-Send\-Data\-Pkt\-Queue}}
+\subsubsection[{\-Send\-Data\-Pkt\-Queue}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Send\-Data\-Pkt\-Queue\-::\-Send\-Data\-Pkt\-Queue} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{structSendDataPktQueue_a4808fd86d996d456ca1a217dcb81e32f}
+\hypertarget{structSendDataPktQueue_a36bf54b5797a930a95d78b46121f02ae}{\index{\-Send\-Data\-Pkt\-Queue@{\-Send\-Data\-Pkt\-Queue}!$\sim$\-Send\-Data\-Pkt\-Queue@{$\sim$\-Send\-Data\-Pkt\-Queue}}
+\index{$\sim$\-Send\-Data\-Pkt\-Queue@{$\sim$\-Send\-Data\-Pkt\-Queue}!SendDataPktQueue@{\-Send\-Data\-Pkt\-Queue}}
+\subsubsection[{$\sim$\-Send\-Data\-Pkt\-Queue}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Send\-Data\-Pkt\-Queue\-::$\sim$\-Send\-Data\-Pkt\-Queue} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{structSendDataPktQueue_a36bf54b5797a930a95d78b46121f02ae}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{structSendDataPktQueue_a1898832da23110391da825aabe136d35}{\index{\-Send\-Data\-Pkt\-Queue@{\-Send\-Data\-Pkt\-Queue}!\-Dequeue@{\-Dequeue}}
+\index{\-Dequeue@{\-Dequeue}!SendDataPktQueue@{\-Send\-Data\-Pkt\-Queue}}
+\subsubsection[{\-Dequeue}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Send\-Data\-Pkt\-Queue\-::\-Dequeue} (
+\begin{DoxyParamCaption}
+\item[{{\bf u\-\_\-int}}]{ack\-\_\-up}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{structSendDataPktQueue_a1898832da23110391da825aabe136d35}
+\hypertarget{structSendDataPktQueue_a623a20c1be65b612e958d5d1512c3528}{\index{\-Send\-Data\-Pkt\-Queue@{\-Send\-Data\-Pkt\-Queue}!\-Enqueue\-And\-Sort@{\-Enqueue\-And\-Sort}}
+\index{\-Enqueue\-And\-Sort@{\-Enqueue\-And\-Sort}!SendDataPktQueue@{\-Send\-Data\-Pkt\-Queue}}
+\subsubsection[{\-Enqueue\-And\-Sort}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Send\-Data\-Pkt\-Queue\-::\-Enqueue\-And\-Sort} (
+\begin{DoxyParamCaption}
+\item[{{\bf u\-\_\-int}}]{seq\-\_\-num, }
+\item[{u\-\_\-short}]{data\-\_\-len, }
+\item[{u\-\_\-short}]{flag, }
+\item[{{\bf \-D\-A\-T\-A} $\ast$}]{data, }
+\item[{struct pcap\-\_\-pkthdr $\ast$}]{header, }
+\item[{const {\bf u\-\_\-char} $\ast$}]{pkt\-\_\-data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{structSendDataPktQueue_a623a20c1be65b612e958d5d1512c3528}
+\hypertarget{structSendDataPktQueue_acba0111fe87e80f0f6742adbe5bcf804}{\index{\-Send\-Data\-Pkt\-Queue@{\-Send\-Data\-Pkt\-Queue}!\-Fetch\-Pkt@{\-Fetch\-Pkt}}
+\index{\-Fetch\-Pkt@{\-Fetch\-Pkt}!SendDataPktQueue@{\-Send\-Data\-Pkt\-Queue}}
+\subsubsection[{\-Fetch\-Pkt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Forward\-Pkt}$\ast$ {\bf \-Send\-Data\-Pkt\-Queue\-::\-Fetch\-Pkt} (
+\begin{DoxyParamCaption}
+\item[{{\bf u\-\_\-int}}]{seq\-\_\-want}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{structSendDataPktQueue_acba0111fe87e80f0f6742adbe5bcf804}
+\hypertarget{structSendDataPktQueue_a056b059590a77ab32a5c7a90693c9021}{\index{\-Send\-Data\-Pkt\-Queue@{\-Send\-Data\-Pkt\-Queue}!\-Is\-Empty@{\-Is\-Empty}}
+\index{\-Is\-Empty@{\-Is\-Empty}!SendDataPktQueue@{\-Send\-Data\-Pkt\-Queue}}
+\subsubsection[{\-Is\-Empty}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Send\-Data\-Pkt\-Queue\-::\-Is\-Empty} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{structSendDataPktQueue_a056b059590a77ab32a5c7a90693c9021}
+\hypertarget{structSendDataPktQueue_a8c2f66d0b6a9fc1e0c6f5e915aed4379}{\index{\-Send\-Data\-Pkt\-Queue@{\-Send\-Data\-Pkt\-Queue}!num@{num}}
+\index{num@{num}!SendDataPktQueue@{\-Send\-Data\-Pkt\-Queue}}
+\subsubsection[{num}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf \-Send\-Data\-Pkt\-Queue\-::num} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{structSendDataPktQueue_a8c2f66d0b6a9fc1e0c6f5e915aed4379}
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{structSendDataPktQueue_a746bc373bcb50b940dc9b4a7008734f7}{\index{\-Send\-Data\-Pkt\-Queue@{\-Send\-Data\-Pkt\-Queue}!head@{head}}
+\index{head@{head}!SendDataPktQueue@{\-Send\-Data\-Pkt\-Queue}}
+\subsubsection[{head}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Forward\-Pkt}$\ast$ {\bf \-Send\-Data\-Pkt\-Queue\-::head}}}\label{structSendDataPktQueue_a746bc373bcb50b940dc9b4a7008734f7}
+\hypertarget{structSendDataPktQueue_a38d4786f413d2c08b00db9de7fa6841f}{\index{\-Send\-Data\-Pkt\-Queue@{\-Send\-Data\-Pkt\-Queue}!size@{size}}
+\index{size@{size}!SendDataPktQueue@{\-Send\-Data\-Pkt\-Queue}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf \-Send\-Data\-Pkt\-Queue\-::size}}}\label{structSendDataPktQueue_a38d4786f413d2c08b00db9de7fa6841f}
+\hypertarget{structSendDataPktQueue_add57d3f96d46372714ede0f7f61e9a4f}{\index{\-Send\-Data\-Pkt\-Queue@{\-Send\-Data\-Pkt\-Queue}!tail@{tail}}
+\index{tail@{tail}!SendDataPktQueue@{\-Send\-Data\-Pkt\-Queue}}
+\subsubsection[{tail}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Forward\-Pkt}$\ast$ {\bf \-Send\-Data\-Pkt\-Queue\-::tail}}}\label{structSendDataPktQueue_add57d3f96d46372714ede0f7f61e9a4f}
+
+
+\-The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{split__tcp__gateway_8cpp}{split\-\_\-tcp\-\_\-gateway.\-cpp}\end{DoxyCompactItemize}

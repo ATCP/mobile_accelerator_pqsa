@@ -1,0 +1,714 @@
+\hypertarget{split__tcp__gateway_8cpp}{\section{split\-\_\-tcp\-\_\-gateway.\-cpp \-File \-Reference}
+\label{split__tcp__gateway_8cpp}\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+}
+{\ttfamily \#include \char`\"{}split\-\_\-tcp\-\_\-gateway.\-h\char`\"{}}\*
+\subsection*{\-Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSendDataPktQueue}{\-Send\-Data\-Pkt\-Queue}
+\begin{DoxyCompactList}\small\item\em obsolete class. \end{DoxyCompactList}\item 
+struct \hyperlink{structserverState}{server\-State}
+\begin{DoxyCompactList}\small\item\em \-Mobile accelerator sender class. \end{DoxyCompactList}\item 
+struct \hyperlink{structclientState}{client\-State}
+\item 
+struct \hyperlink{structconn__state}{conn\-\_\-state}
+\item 
+struct \hyperlink{structTCB}{\-T\-C\-B}
+\item 
+struct \hyperlink{structmem__pool}{mem\-\_\-pool}
+\item 
+struct \hyperlink{structRateCtrlParam}{\-Rate\-Ctrl\-Param}
+\item 
+struct \hyperlink{structconn__Htable}{conn\-\_\-\-Htable}
+\item 
+struct \hyperlink{structtcb__Htable}{tcb\-\_\-\-Htable}
+\end{DoxyCompactItemize}
+\subsection*{\-Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{split__tcp__gateway_8cpp_a275a67132f10277ada3a0ee3d616b647}{\-S\-T\-A\-T\-E} \{ \*
+\hyperlink{split__tcp__gateway_8cpp_a275a67132f10277ada3a0ee3d616b647a929f0327e17604ce9713b2a6117bd603}{\-C\-L\-O\-S\-E\-D}, 
+\hyperlink{split__tcp__gateway_8cpp_a275a67132f10277ada3a0ee3d616b647a331ec9878c0ed22e62de969d4b96b5bb}{\-L\-I\-S\-T\-E\-N}, 
+\hyperlink{split__tcp__gateway_8cpp_a275a67132f10277ada3a0ee3d616b647a3884e45cc6d937b234e2a8c2c933d7e5}{\-S\-Y\-N\-\_\-\-S\-E\-N\-T}, 
+\hyperlink{split__tcp__gateway_8cpp_a275a67132f10277ada3a0ee3d616b647a091f8509756396eb6afeb98b30cbdb78}{\-S\-Y\-N\-\_\-\-R\-E\-V\-D}, 
+\*
+\hyperlink{split__tcp__gateway_8cpp_a275a67132f10277ada3a0ee3d616b647a81d0d81381abb711562b19a00a4cb9af}{\-E\-S\-T\-A\-B\-L\-I\-S\-H\-E\-D}, 
+\hyperlink{split__tcp__gateway_8cpp_a275a67132f10277ada3a0ee3d616b647a2ca754767c3666fc17fe7f5bf49e7518}{\-F\-I\-N\-\_\-\-W\-A\-I\-T\-\_\-1}, 
+\hyperlink{split__tcp__gateway_8cpp_a275a67132f10277ada3a0ee3d616b647a1ff416801732ff573184491c86ee7032}{\-F\-I\-N\-\_\-\-W\-A\-I\-T\-\_\-2}, 
+\hyperlink{split__tcp__gateway_8cpp_a275a67132f10277ada3a0ee3d616b647a8ab2cae69d2b33297ab24a5818213f18}{\-C\-L\-O\-S\-I\-N\-G}, 
+\*
+\hyperlink{split__tcp__gateway_8cpp_a275a67132f10277ada3a0ee3d616b647a799374a9f3fbdfc7f7e92c0f9c5627f7}{\-T\-I\-M\-E\-\_\-\-W\-A\-I\-T}, 
+\hyperlink{split__tcp__gateway_8cpp_a275a67132f10277ada3a0ee3d616b647adbf32c37bc28f37e44d0fe611d341178}{\-C\-L\-O\-S\-E\-\_\-\-W\-A\-I\-T}, 
+\hyperlink{split__tcp__gateway_8cpp_a275a67132f10277ada3a0ee3d616b647a1b588a108a727c1de55f818cb9ff57eb}{\-L\-A\-S\-T\-\_\-\-A\-C\-K}
+ \}
+\begin{DoxyCompactList}\small\item\em \-Mobile \-Accelerator source fule, all the featured algorithms are implemented here. \end{DoxyCompactList}\item 
+enum \hyperlink{split__tcp__gateway_8cpp_ae279bfacbd0dac7aedff2c9121036de9}{\-P\-H\-A\-S\-E} \{ \hyperlink{split__tcp__gateway_8cpp_ae279bfacbd0dac7aedff2c9121036de9a50d1448013c6f17125caee18aa418af7}{\-N\-O\-R\-M\-A\-L}, 
+\hyperlink{split__tcp__gateway_8cpp_ae279bfacbd0dac7aedff2c9121036de9a9a08996a21bbc161e80535f6126100b0}{\-F\-A\-S\-T\-\_\-\-R\-T\-X}, 
+\hyperlink{split__tcp__gateway_8cpp_ae279bfacbd0dac7aedff2c9121036de9a56b36d0d0bb01b339cf1041adc08e262}{\-P\-A\-U\-S\-E}, 
+\hyperlink{split__tcp__gateway_8cpp_ae279bfacbd0dac7aedff2c9121036de9aaf5f021f04cc9d8c53826cfc7d5df97f}{\-N\-O\-R\-M\-A\-L\-\_\-\-T\-I\-M\-E\-O\-U\-T}
+ \}
+\begin{DoxyCompactList}\small\item\em phases the mobile accelerator sender can be in. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{split__tcp__gateway_8cpp_af7ed71633144993653c996ae4826825c}{\-Hash\-Bernstein} (const char $\ast$key, size\-\_\-t len)
+\item 
+char $\ast$ \hyperlink{split__tcp__gateway_8cpp_a326afb727d9bb131e7c74687895fb3f0}{iptos} (\hyperlink{split__tcp__gateway_8h_ae16666ecf73bb70201bc64a6ccc329f1}{u\-\_\-long\-\_\-long} in)
+\item 
+void \hyperlink{split__tcp__gateway_8cpp_a8fcc7074975db7b7d6194afd620b3b7e}{ifprint} (pcap\-\_\-if\-\_\-t $\ast$d)
+\item 
+void \hyperlink{split__tcp__gateway_8cpp_a09084cd6e176de6e5c1ad2b18942422e}{print\-\_\-bw\-\_\-info} (u\-\_\-short sport, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} tcb\-\_\-index)
+\item 
+u\-\_\-short \hyperlink{split__tcp__gateway_8cpp_a1977c402209946c69cdc8df24a85a9ed}{\-Check\-Sum} (u\-\_\-short $\ast$buffer, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} size)
+\item 
+void \hyperlink{split__tcp__gateway_8cpp_ab812fad2627fbc9f3a9f8808e59c290c}{init\-\_\-retx\-\_\-data\-\_\-pkt} (\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} tcb\-\_\-index, u\-\_\-short sport, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} num\-\_\-init)
+\item 
+void \hyperlink{split__tcp__gateway_8cpp_ad1b716c6aeb467b424824a6cf330ae9a}{send\-\_\-forward} (\hyperlink{structDATA}{\-D\-A\-T\-A} $\ast$data, struct pcap\-\_\-pkthdr $\ast$header, const \hyperlink{split__tcp__gateway_8h_ae2b02ed168fc99cff3851603910b1fb6}{u\-\_\-char} $\ast$pkt\-\_\-data)
+\item 
+void \hyperlink{split__tcp__gateway_8cpp_a0ebac84bfbbe5dc332bd087fdd2399be}{send\-\_\-wait\-\_\-forward} (\hyperlink{structDATA}{\-D\-A\-T\-A} $\ast$data, struct pcap\-\_\-pkthdr $\ast$header, const \hyperlink{split__tcp__gateway_8h_ae2b02ed168fc99cff3851603910b1fb6}{u\-\_\-char} $\ast$pkt\-\_\-data)
+\item 
+void \hyperlink{split__tcp__gateway_8cpp_ae23b45f0f02317d506ad028d498ac87b}{send\-\_\-backward} (\hyperlink{structDATA}{\-D\-A\-T\-A} $\ast$data, struct pcap\-\_\-pkthdr $\ast$header, const \hyperlink{split__tcp__gateway_8h_ae2b02ed168fc99cff3851603910b1fb6}{u\-\_\-char} $\ast$pkt\-\_\-data)
+\item 
+void \hyperlink{split__tcp__gateway_8cpp_aac768bffd0aab8f26f053f877eead41e}{send\-\_\-data\-\_\-pkt} (\hyperlink{structForward}{\-Forward} $\ast$forward, \hyperlink{structForwardPkt}{\-Forward\-Pkt} $\ast$tmp\-Pkt)
+\item 
+void \hyperlink{split__tcp__gateway_8cpp_a21e6d1f6e692e82b900e2e1c2a99c11f}{send\-\_\-ack\-\_\-back} (u\-\_\-short dport, \hyperlink{structDATA}{\-D\-A\-T\-A} $\ast$data, \hyperlink{structip__address}{ip\-\_\-address} src\-\_\-address, \hyperlink{structip__address}{ip\-\_\-address} dst\-\_\-address, \hyperlink{split__tcp__gateway_8h_ae2b02ed168fc99cff3851603910b1fb6}{u\-\_\-char} src\-\_\-mac\mbox{[}$\,$\mbox{]}, \hyperlink{split__tcp__gateway_8h_ae2b02ed168fc99cff3851603910b1fb6}{u\-\_\-char} dst\-\_\-mac\mbox{[}$\,$\mbox{]}, u\-\_\-short src\-\_\-port, u\-\_\-short dst\-\_\-port, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} seq, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} ack, u\-\_\-short ctr\-\_\-bits, u\-\_\-short awin, u\-\_\-short data\-\_\-id, \hyperlink{structsack__header}{sack\-\_\-header} $\ast$sack)
+\item 
+void \hyperlink{split__tcp__gateway_8cpp_a53cc2651c1c5347d9dd39290dc54d140}{send\-\_\-syn\-\_\-ack\-\_\-back} (u\-\_\-short dport, \hyperlink{structDATA}{\-D\-A\-T\-A} $\ast$data, \hyperlink{structip__address}{ip\-\_\-address} src\-\_\-address, \hyperlink{structip__address}{ip\-\_\-address} dst\-\_\-address, \hyperlink{split__tcp__gateway_8h_ae2b02ed168fc99cff3851603910b1fb6}{u\-\_\-char} src\-\_\-mac\mbox{[}$\,$\mbox{]}, \hyperlink{split__tcp__gateway_8h_ae2b02ed168fc99cff3851603910b1fb6}{u\-\_\-char} dst\-\_\-mac\mbox{[}$\,$\mbox{]}, u\-\_\-short src\-\_\-port, u\-\_\-short dst\-\_\-port, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} seq, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} ack, u\-\_\-short ctr\-\_\-bits, u\-\_\-short awin, u\-\_\-short data\-\_\-id, \hyperlink{split__tcp__gateway_8h_ae2b02ed168fc99cff3851603910b1fb6}{u\-\_\-char} $\ast$tcp\-\_\-opt, u\-\_\-short tcp\-\_\-opt\-\_\-len, \hyperlink{split__tcp__gateway_8h_ae2b02ed168fc99cff3851603910b1fb6}{u\-\_\-char} \-Buffer\mbox{[}$\,$\mbox{]})
+\item 
+void \hyperlink{split__tcp__gateway_8cpp_ae845f14a375808d6a7f99f5db3c2d9eb}{send\-\_\-win\-\_\-update\-\_\-forward} (u\-\_\-short dport, \hyperlink{structDATA}{\-D\-A\-T\-A} $\ast$data, \hyperlink{structip__address}{ip\-\_\-address} src\-\_\-address, \hyperlink{structip__address}{ip\-\_\-address} dst\-\_\-address, \hyperlink{split__tcp__gateway_8h_ae2b02ed168fc99cff3851603910b1fb6}{u\-\_\-char} src\-\_\-mac\mbox{[}$\,$\mbox{]}, \hyperlink{split__tcp__gateway_8h_ae2b02ed168fc99cff3851603910b1fb6}{u\-\_\-char} dst\-\_\-mac\mbox{[}$\,$\mbox{]}, u\-\_\-short src\-\_\-port, u\-\_\-short dst\-\_\-port, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} seq, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} ack, u\-\_\-short ctr\-\_\-bits, u\-\_\-short awin, u\-\_\-short data\-\_\-id, \hyperlink{structsack__header}{sack\-\_\-header} $\ast$sack)
+\item 
+void \hyperlink{split__tcp__gateway_8cpp_a461a1829eb28033c6ba0512588af8d1d}{frag\-\_\-data\-\_\-pkt} (\hyperlink{structForwardPkt}{\-Forward\-Pkt} $\ast$frag\-\_\-pkt, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} ack\-\_\-num)
+\item 
+void \hyperlink{split__tcp__gateway_8cpp_a3671064b86d28e3440b6f67f8095c408}{\-R\-T\-T\-\_\-estimator} (\hyperlink{structForwardPkt}{\-Forward\-Pkt} $\ast$un\-Ack\-Pkt, \hyperlink{split__tcp__gateway_8h_ae16666ecf73bb70201bc64a6ccc329f1}{u\-\_\-long\-\_\-long} snd\-\_\-time, \hyperlink{split__tcp__gateway_8h_ae16666ecf73bb70201bc64a6ccc329f1}{u\-\_\-long\-\_\-long} rcv\-\_\-time, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} ack\-\_\-num, u\-\_\-short sport, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} tcb\-\_\-index)
+\item 
+void \hyperlink{split__tcp__gateway_8cpp_a997a40cab3dbb4393aaac156717d1785}{\-B\-W\-\_\-adaptation} (u\-\_\-short sport, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} tcb\-\_\-index)
+\item 
+void \hyperlink{split__tcp__gateway_8cpp_a08009ec0f8b5006e3ff0324d3bda4e6d}{\-Bandwidth\-Adaptation} (\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} tcb\-\_\-index)
+\item 
+void \hyperlink{split__tcp__gateway_8cpp_a269b4fc095ed098041aef6891e47b888}{tcb\-\_\-bw\-\_\-burst\-\_\-ctrl} (\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} tcb\-\_\-index, \hyperlink{split__tcp__gateway_8h_ae16666ecf73bb70201bc64a6ccc329f1}{u\-\_\-long\-\_\-long} current\-\_\-time, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} sport)
+\item 
+void \hyperlink{split__tcp__gateway_8cpp_a9746d03a4fc5f90c424e4512dfd2565d}{log\-\_\-data} (u\-\_\-short sport, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} tcb\-\_\-index)
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{split__tcp__gateway_8cpp_a33b149e74f5907846a32235263215d11}{aggre\-\_\-bw\-\_\-estimate\-\_\-approx} (u\-\_\-short this\-\_\-port, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} tcb\-\_\-index)
+\item 
+void \hyperlink{split__tcp__gateway_8cpp_ae131a8c97db5a2bcf9c88421756b60a0}{ack\-\_\-sack\-\_\-option} (\hyperlink{split__tcp__gateway_8h_ae2b02ed168fc99cff3851603910b1fb6}{u\-\_\-char} $\ast$tcp\-\_\-opt, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} tcp\-\_\-opt\-\_\-len, u\-\_\-short sport, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} ack\-\_\-num, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} tcb\-\_\-index)
+\item 
+void \hyperlink{split__tcp__gateway_8cpp_abd47ef25f6d1149e3175ee35ee6beb28}{rcv\-\_\-ack\-\_\-bw\-\_\-estimate} (\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} ack\-\_\-num, u\-\_\-short window, u\-\_\-short sport, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} tcb\-\_\-index)
+\item 
+void \hyperlink{split__tcp__gateway_8cpp_afa9bb44a0618702e7a0a5df6d18b07d3}{rcv\-\_\-dup\-\_\-ack\-\_\-bw\-\_\-estimate} (\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} ack\-\_\-num, u\-\_\-short window, u\-\_\-short sport, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} tcb\-\_\-index)
+\item 
+void \hyperlink{split__tcp__gateway_8cpp_aa17e0888872c0894bb8786c93d73c8ce}{rcv\-\_\-ack\-\_\-stat\-\_\-count} (\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} ack\-\_\-num, u\-\_\-short window, u\-\_\-short sport, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} tcb\-\_\-index)
+\item 
+void \hyperlink{split__tcp__gateway_8cpp_aff9e8ceeb21fd2a2a40b9ac803d36b08}{rcv\-\_\-dup\-\_\-ack\-\_\-stat\-\_\-count} (\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} ack\-\_\-num, u\-\_\-short window, u\-\_\-short sport, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} tcb\-\_\-index)
+\item 
+void \hyperlink{split__tcp__gateway_8cpp_ade00e9bc2cc17dc2ac6f0d63e153d0d5}{rcv\-\_\-ack\-\_\-dft\-\_\-bw} (\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} ack\-\_\-num, u\-\_\-short window, u\-\_\-short sport, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} tcb\-\_\-index)
+\item 
+void \hyperlink{split__tcp__gateway_8cpp_a4fe7ba7e981259c7e7b1da5b2b05a6bb}{rcv\-\_\-dup\-\_\-ack\-\_\-dft\-\_\-bw} (\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} ack\-\_\-num, u\-\_\-short window, u\-\_\-short sport, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} tcb\-\_\-index)
+\item 
+void \hyperlink{split__tcp__gateway_8cpp_a46354de3c698e9919ee3db56cf6a29dd}{rcv\-\_\-ack\-\_\-slide\-\_\-win\-\_\-avg\-\_\-bw} (\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} ack\-\_\-num, u\-\_\-short window, u\-\_\-short sport, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} tcb\-\_\-index, \hyperlink{split__tcp__gateway_8h_ae16666ecf73bb70201bc64a6ccc329f1}{u\-\_\-long\-\_\-long} current\-\_\-time)
+\item 
+void \hyperlink{split__tcp__gateway_8cpp_afc12ef79a410cacd762a048273946d48}{rcv\-\_\-dup\-\_\-ack\-\_\-slide\-\_\-win\-\_\-avg\-\_\-bw} (\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} ack\-\_\-num, u\-\_\-short window, u\-\_\-short sport, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} tcb\-\_\-index, \hyperlink{split__tcp__gateway_8h_ae16666ecf73bb70201bc64a6ccc329f1}{u\-\_\-long\-\_\-long} current\-\_\-time)
+\item 
+void \hyperlink{split__tcp__gateway_8cpp_a725e2c178f6e5803015a7b7f25294e45}{rcv\-\_\-ack\-\_\-handler} (\hyperlink{split__tcp__gateway_8h_ae2b02ed168fc99cff3851603910b1fb6}{u\-\_\-char} $\ast$th, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} tcp\-\_\-len, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} ack\-\_\-num, u\-\_\-short window, u\-\_\-short sport, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} tcb\-\_\-index, \hyperlink{split__tcp__gateway_8h_ae16666ecf73bb70201bc64a6ccc329f1}{u\-\_\-long\-\_\-long} current\-\_\-time)
+\item 
+void \hyperlink{split__tcp__gateway_8cpp_a7c9e5b674fb4e7705d76017636f47312}{rcv\-\_\-dup\-\_\-ack\-\_\-handler} (\hyperlink{split__tcp__gateway_8h_ae2b02ed168fc99cff3851603910b1fb6}{u\-\_\-char} $\ast$th, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} tcp\-\_\-len, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} ack\-\_\-num, u\-\_\-short window, u\-\_\-short sport, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} tcb\-\_\-index, \hyperlink{split__tcp__gateway_8h_ae16666ecf73bb70201bc64a6ccc329f1}{u\-\_\-long\-\_\-long} current\-\_\-time)
+\item 
+void \hyperlink{split__tcp__gateway_8cpp_a6272d282d1d0c9978f3b6e848c91d4b0}{rcv\-\_\-data\-\_\-pkt} (\hyperlink{structDATA}{\-D\-A\-T\-A} $\ast$data, struct pcap\-\_\-pkthdr $\ast$header, const \hyperlink{split__tcp__gateway_8h_ae2b02ed168fc99cff3851603910b1fb6}{u\-\_\-char} $\ast$pkt\-\_\-data, u\-\_\-short sport, u\-\_\-short dport, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} seq\-\_\-num, u\-\_\-short data\-\_\-len, u\-\_\-short ctr\-\_\-flag, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} tcb\-\_\-index)
+\item 
+void \hyperlink{split__tcp__gateway_8cpp_a4766fa5ed14e6e25a7b79fde7bc98ecb}{clean\-\_\-sack} (u\-\_\-short sport, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} ack\-\_\-num, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} tcb\-\_\-index)
+\item 
+void \hyperlink{split__tcp__gateway_8cpp_adc8860309959c3aea77f079d5d2f6d8f}{create\-\_\-sack\-\_\-list} (\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} tcb\-\_\-index, u\-\_\-short dport, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} seq\-\_\-num, u\-\_\-short data\-\_\-len)
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{split__tcp__gateway_8cpp_aeeee4945ac559b6b4eb916b2d74837fe}{check\-\_\-sack\-\_\-list} (\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} tcb\-\_\-index, u\-\_\-short dport, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} seq\-\_\-num, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} data\-\_\-len)
+\item 
+void \hyperlink{split__tcp__gateway_8cpp_aba97653cc996a6c9a5fa576b28915aee}{syn\-\_\-sack\-\_\-option} (\hyperlink{split__tcp__gateway_8h_ae2b02ed168fc99cff3851603910b1fb6}{u\-\_\-char} $\ast$tcp\-\_\-opt, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} tcp\-\_\-opt\-\_\-len, u\-\_\-short dport, \hyperlink{split__tcp__gateway_8h_a050c65e107f0c828f856a231f4b4e788}{\-B\-O\-O\-L} host, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} tcb\-\_\-index)
+\item 
+void \hyperlink{split__tcp__gateway_8cpp_aef4f841404b2dc82b2203de12900bdad}{rcv\-\_\-header\-\_\-update} (\hyperlink{structip__header}{ip\-\_\-header} $\ast$ih, \hyperlink{structtcp__header}{tcp\-\_\-header} $\ast$th, u\-\_\-short tcp\-\_\-len, u\-\_\-short data\-\_\-len)
+\item 
+int \hyperlink{split__tcp__gateway_8cpp_ac891ff4dfbf61ee22aa43c115f918d28}{nxt\-\_\-schedule\-\_\-tcb} ()
+\item 
+int \hyperlink{split__tcp__gateway_8cpp_a605f6ee3b374ea21e62291a94e3fdd45}{nxt\-\_\-schedule\-\_\-conn} (\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} tcb\-\_\-index)
+\item 
+void \hyperlink{split__tcp__gateway_8cpp_ae182c64403413fca9140dc970f15cd6e}{rm\-\_\-tcb\-\_\-conn} (\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} tcb\-\_\-index, u\-\_\-short sport, int tcb\-\_\-it, int conn\-\_\-it)
+\item 
+void $\ast$ \hyperlink{split__tcp__gateway_8cpp_a6998b2f6279134f918723d047c471ae8}{scheduler} (void $\ast$\-\_\-arg)
+\item 
+void $\ast$ \hyperlink{split__tcp__gateway_8cpp_a0bfe331cc6bb0dbb69bb14dbb665c04c}{forwarder} (void $\ast$arg)
+\item 
+void $\ast$ \hyperlink{split__tcp__gateway_8cpp_abb6b4c1ea2a3e1a1170bc4f4789b4e26}{capturer} (void $\ast$\-\_\-data)
+\item 
+void $\ast$ \hyperlink{split__tcp__gateway_8cpp_a4e8fb2405c880af664c175792fe9f891}{monitor} (void $\ast$dummy)
+\item 
+void \hyperlink{split__tcp__gateway_8cpp_a3a1f7197500b42c5025850fd11a0dae4}{list\-\_\-dev} ()
+\item 
+void \hyperlink{split__tcp__gateway_8cpp_a1334502a24632af71fde8dd0eb268939}{init\-\_\-dev} ()
+\item 
+int \hyperlink{split__tcp__gateway_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structconn__state}{conn\-\_\-state} $\ast$ \hyperlink{split__tcp__gateway_8cpp_a6cde4dadc668becbfa07baed0d4aa2bb}{conn\-\_\-table} \mbox{[}550\mbox{]}
+\item 
+\hyperlink{structTCB}{\-T\-C\-B} $\ast$ \hyperlink{split__tcp__gateway_8cpp_a2d6d5369de4be1db6dab37bff1207a90}{tcb\-\_\-table} \mbox{[}550\mbox{]}
+\item 
+struct \hyperlink{structmem__pool}{mem\-\_\-pool} \hyperlink{split__tcp__gateway_8cpp_a53b7fddcc17a2503d2d1dc23b67db6a3}{pool}
+\item 
+\hyperlink{structconn__Htable}{conn\-\_\-\-Htable} \hyperlink{split__tcp__gateway_8cpp_a74012205826231943311cfab80b54f19}{conn\-\_\-hash}
+\item 
+\hyperlink{structtcb__Htable}{tcb\-\_\-\-Htable} \hyperlink{split__tcp__gateway_8cpp_a2523b09291f445820848e5d61a0b34ff}{tcb\-\_\-hash}
+\item 
+pcap\-\_\-t $\ast$ \hyperlink{split__tcp__gateway_8cpp_a6037a6ef1929e15bd01b42cc6267472e}{in\-Ad\-Handle}
+\item 
+pcap\-\_\-t $\ast$ \hyperlink{split__tcp__gateway_8cpp_af1b7aad7261cdc2616f715017d4045e3}{out\-Ad\-Handle}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Enumeration \-Type \-Documentation}
+\hypertarget{split__tcp__gateway_8cpp_ae279bfacbd0dac7aedff2c9121036de9}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!\-P\-H\-A\-S\-E@{\-P\-H\-A\-S\-E}}
+\index{\-P\-H\-A\-S\-E@{\-P\-H\-A\-S\-E}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{\-P\-H\-A\-S\-E}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \-P\-H\-A\-S\-E}}}\label{split__tcp__gateway_8cpp_ae279bfacbd0dac7aedff2c9121036de9}
+
+
+phases the mobile accelerator sender can be in. 
+
+similar to \-T\-C\-P sending phase, such as slow start, loss recovery, etc  similar to \-T\-C\-P congestion avoidance phase but the sending rate is adjusted by the bandwidth estimation and adaptation  transmitting the missing packet  obsolete parameter  enter this phase when timeout and use \-F-\/\-R\-T\-O to detect unnecessary timeout and retransmit \begin{Desc}
+\item[\-Enumerator\-: ]\par
+\begin{description}
+\index{\-N\-O\-R\-M\-A\-L@{\-N\-O\-R\-M\-A\-L}!split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!\-N\-O\-R\-M\-A\-L@{\-N\-O\-R\-M\-A\-L}}\item[{\em 
+\hypertarget{split__tcp__gateway_8cpp_ae279bfacbd0dac7aedff2c9121036de9a50d1448013c6f17125caee18aa418af7}{\-N\-O\-R\-M\-A\-L}\label{split__tcp__gateway_8cpp_ae279bfacbd0dac7aedff2c9121036de9a50d1448013c6f17125caee18aa418af7}
+}]\index{\-F\-A\-S\-T\-\_\-\-R\-T\-X@{\-F\-A\-S\-T\-\_\-\-R\-T\-X}!split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!\-F\-A\-S\-T\-\_\-\-R\-T\-X@{\-F\-A\-S\-T\-\_\-\-R\-T\-X}}\item[{\em 
+\hypertarget{split__tcp__gateway_8cpp_ae279bfacbd0dac7aedff2c9121036de9a9a08996a21bbc161e80535f6126100b0}{\-F\-A\-S\-T\-\_\-\-R\-T\-X}\label{split__tcp__gateway_8cpp_ae279bfacbd0dac7aedff2c9121036de9a9a08996a21bbc161e80535f6126100b0}
+}]\index{\-P\-A\-U\-S\-E@{\-P\-A\-U\-S\-E}!split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!\-P\-A\-U\-S\-E@{\-P\-A\-U\-S\-E}}\item[{\em 
+\hypertarget{split__tcp__gateway_8cpp_ae279bfacbd0dac7aedff2c9121036de9a56b36d0d0bb01b339cf1041adc08e262}{\-P\-A\-U\-S\-E}\label{split__tcp__gateway_8cpp_ae279bfacbd0dac7aedff2c9121036de9a56b36d0d0bb01b339cf1041adc08e262}
+}]\index{\-N\-O\-R\-M\-A\-L\-\_\-\-T\-I\-M\-E\-O\-U\-T@{\-N\-O\-R\-M\-A\-L\-\_\-\-T\-I\-M\-E\-O\-U\-T}!split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!\-N\-O\-R\-M\-A\-L\-\_\-\-T\-I\-M\-E\-O\-U\-T@{\-N\-O\-R\-M\-A\-L\-\_\-\-T\-I\-M\-E\-O\-U\-T}}\item[{\em 
+\hypertarget{split__tcp__gateway_8cpp_ae279bfacbd0dac7aedff2c9121036de9aaf5f021f04cc9d8c53826cfc7d5df97f}{\-N\-O\-R\-M\-A\-L\-\_\-\-T\-I\-M\-E\-O\-U\-T}\label{split__tcp__gateway_8cpp_ae279bfacbd0dac7aedff2c9121036de9aaf5f021f04cc9d8c53826cfc7d5df97f}
+}]\end{description}
+\end{Desc}
+
+\hypertarget{split__tcp__gateway_8cpp_a275a67132f10277ada3a0ee3d616b647}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!\-S\-T\-A\-T\-E@{\-S\-T\-A\-T\-E}}
+\index{\-S\-T\-A\-T\-E@{\-S\-T\-A\-T\-E}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{\-S\-T\-A\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \-S\-T\-A\-T\-E}}}\label{split__tcp__gateway_8cpp_a275a67132f10277ada3a0ee3d616b647}
+
+
+\-Mobile \-Accelerator source fule, all the featured algorithms are implemented here. 
+
+header file. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{split__tcp__gateway_8h}{split\-\_\-tcp\-\_\-gateway.\-h} \-States the mobile accelerator sender and receiver can be in. \-Sender faces to the mobile receiver \-Receiver faces to the wired sender \-The states implemented is similar to \-T\-C\-P states 
+\end{DoxySeeAlso}
+\begin{Desc}
+\item[\-Enumerator\-: ]\par
+\begin{description}
+\index{\-C\-L\-O\-S\-E\-D@{\-C\-L\-O\-S\-E\-D}!split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!\-C\-L\-O\-S\-E\-D@{\-C\-L\-O\-S\-E\-D}}\item[{\em 
+\hypertarget{split__tcp__gateway_8cpp_a275a67132f10277ada3a0ee3d616b647a929f0327e17604ce9713b2a6117bd603}{\-C\-L\-O\-S\-E\-D}\label{split__tcp__gateway_8cpp_a275a67132f10277ada3a0ee3d616b647a929f0327e17604ce9713b2a6117bd603}
+}]\index{\-L\-I\-S\-T\-E\-N@{\-L\-I\-S\-T\-E\-N}!split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!\-L\-I\-S\-T\-E\-N@{\-L\-I\-S\-T\-E\-N}}\item[{\em 
+\hypertarget{split__tcp__gateway_8cpp_a275a67132f10277ada3a0ee3d616b647a331ec9878c0ed22e62de969d4b96b5bb}{\-L\-I\-S\-T\-E\-N}\label{split__tcp__gateway_8cpp_a275a67132f10277ada3a0ee3d616b647a331ec9878c0ed22e62de969d4b96b5bb}
+}]\index{\-S\-Y\-N\-\_\-\-S\-E\-N\-T@{\-S\-Y\-N\-\_\-\-S\-E\-N\-T}!split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!\-S\-Y\-N\-\_\-\-S\-E\-N\-T@{\-S\-Y\-N\-\_\-\-S\-E\-N\-T}}\item[{\em 
+\hypertarget{split__tcp__gateway_8cpp_a275a67132f10277ada3a0ee3d616b647a3884e45cc6d937b234e2a8c2c933d7e5}{\-S\-Y\-N\-\_\-\-S\-E\-N\-T}\label{split__tcp__gateway_8cpp_a275a67132f10277ada3a0ee3d616b647a3884e45cc6d937b234e2a8c2c933d7e5}
+}]\index{\-S\-Y\-N\-\_\-\-R\-E\-V\-D@{\-S\-Y\-N\-\_\-\-R\-E\-V\-D}!split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!\-S\-Y\-N\-\_\-\-R\-E\-V\-D@{\-S\-Y\-N\-\_\-\-R\-E\-V\-D}}\item[{\em 
+\hypertarget{split__tcp__gateway_8cpp_a275a67132f10277ada3a0ee3d616b647a091f8509756396eb6afeb98b30cbdb78}{\-S\-Y\-N\-\_\-\-R\-E\-V\-D}\label{split__tcp__gateway_8cpp_a275a67132f10277ada3a0ee3d616b647a091f8509756396eb6afeb98b30cbdb78}
+}]\index{\-E\-S\-T\-A\-B\-L\-I\-S\-H\-E\-D@{\-E\-S\-T\-A\-B\-L\-I\-S\-H\-E\-D}!split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!\-E\-S\-T\-A\-B\-L\-I\-S\-H\-E\-D@{\-E\-S\-T\-A\-B\-L\-I\-S\-H\-E\-D}}\item[{\em 
+\hypertarget{split__tcp__gateway_8cpp_a275a67132f10277ada3a0ee3d616b647a81d0d81381abb711562b19a00a4cb9af}{\-E\-S\-T\-A\-B\-L\-I\-S\-H\-E\-D}\label{split__tcp__gateway_8cpp_a275a67132f10277ada3a0ee3d616b647a81d0d81381abb711562b19a00a4cb9af}
+}]\index{\-F\-I\-N\-\_\-\-W\-A\-I\-T\-\_\-1@{\-F\-I\-N\-\_\-\-W\-A\-I\-T\-\_\-1}!split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!\-F\-I\-N\-\_\-\-W\-A\-I\-T\-\_\-1@{\-F\-I\-N\-\_\-\-W\-A\-I\-T\-\_\-1}}\item[{\em 
+\hypertarget{split__tcp__gateway_8cpp_a275a67132f10277ada3a0ee3d616b647a2ca754767c3666fc17fe7f5bf49e7518}{\-F\-I\-N\-\_\-\-W\-A\-I\-T\-\_\-1}\label{split__tcp__gateway_8cpp_a275a67132f10277ada3a0ee3d616b647a2ca754767c3666fc17fe7f5bf49e7518}
+}]\index{\-F\-I\-N\-\_\-\-W\-A\-I\-T\-\_\-2@{\-F\-I\-N\-\_\-\-W\-A\-I\-T\-\_\-2}!split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!\-F\-I\-N\-\_\-\-W\-A\-I\-T\-\_\-2@{\-F\-I\-N\-\_\-\-W\-A\-I\-T\-\_\-2}}\item[{\em 
+\hypertarget{split__tcp__gateway_8cpp_a275a67132f10277ada3a0ee3d616b647a1ff416801732ff573184491c86ee7032}{\-F\-I\-N\-\_\-\-W\-A\-I\-T\-\_\-2}\label{split__tcp__gateway_8cpp_a275a67132f10277ada3a0ee3d616b647a1ff416801732ff573184491c86ee7032}
+}]\index{\-C\-L\-O\-S\-I\-N\-G@{\-C\-L\-O\-S\-I\-N\-G}!split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!\-C\-L\-O\-S\-I\-N\-G@{\-C\-L\-O\-S\-I\-N\-G}}\item[{\em 
+\hypertarget{split__tcp__gateway_8cpp_a275a67132f10277ada3a0ee3d616b647a8ab2cae69d2b33297ab24a5818213f18}{\-C\-L\-O\-S\-I\-N\-G}\label{split__tcp__gateway_8cpp_a275a67132f10277ada3a0ee3d616b647a8ab2cae69d2b33297ab24a5818213f18}
+}]\index{\-T\-I\-M\-E\-\_\-\-W\-A\-I\-T@{\-T\-I\-M\-E\-\_\-\-W\-A\-I\-T}!split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!\-T\-I\-M\-E\-\_\-\-W\-A\-I\-T@{\-T\-I\-M\-E\-\_\-\-W\-A\-I\-T}}\item[{\em 
+\hypertarget{split__tcp__gateway_8cpp_a275a67132f10277ada3a0ee3d616b647a799374a9f3fbdfc7f7e92c0f9c5627f7}{\-T\-I\-M\-E\-\_\-\-W\-A\-I\-T}\label{split__tcp__gateway_8cpp_a275a67132f10277ada3a0ee3d616b647a799374a9f3fbdfc7f7e92c0f9c5627f7}
+}]\index{\-C\-L\-O\-S\-E\-\_\-\-W\-A\-I\-T@{\-C\-L\-O\-S\-E\-\_\-\-W\-A\-I\-T}!split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!\-C\-L\-O\-S\-E\-\_\-\-W\-A\-I\-T@{\-C\-L\-O\-S\-E\-\_\-\-W\-A\-I\-T}}\item[{\em 
+\hypertarget{split__tcp__gateway_8cpp_a275a67132f10277ada3a0ee3d616b647adbf32c37bc28f37e44d0fe611d341178}{\-C\-L\-O\-S\-E\-\_\-\-W\-A\-I\-T}\label{split__tcp__gateway_8cpp_a275a67132f10277ada3a0ee3d616b647adbf32c37bc28f37e44d0fe611d341178}
+}]\index{\-L\-A\-S\-T\-\_\-\-A\-C\-K@{\-L\-A\-S\-T\-\_\-\-A\-C\-K}!split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!\-L\-A\-S\-T\-\_\-\-A\-C\-K@{\-L\-A\-S\-T\-\_\-\-A\-C\-K}}\item[{\em 
+\hypertarget{split__tcp__gateway_8cpp_a275a67132f10277ada3a0ee3d616b647a1b588a108a727c1de55f818cb9ff57eb}{\-L\-A\-S\-T\-\_\-\-A\-C\-K}\label{split__tcp__gateway_8cpp_a275a67132f10277ada3a0ee3d616b647a1b588a108a727c1de55f818cb9ff57eb}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{split__tcp__gateway_8cpp_ae131a8c97db5a2bcf9c88421756b60a0}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!ack\-\_\-sack\-\_\-option@{ack\-\_\-sack\-\_\-option}}
+\index{ack\-\_\-sack\-\_\-option@{ack\-\_\-sack\-\_\-option}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{ack\-\_\-sack\-\_\-option}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf ack\-\_\-sack\-\_\-option} (
+\begin{DoxyParamCaption}
+\item[{{\bf u\-\_\-char} $\ast$}]{tcp\-\_\-opt, }
+\item[{{\bf u\-\_\-int}}]{tcp\-\_\-opt\-\_\-len, }
+\item[{u\-\_\-short}]{sport, }
+\item[{{\bf u\-\_\-int}}]{ack\-\_\-num, }
+\item[{{\bf u\-\_\-int}}]{tcb\-\_\-index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{split__tcp__gateway_8cpp_ae131a8c97db5a2bcf9c88421756b60a0}
+\hypertarget{split__tcp__gateway_8cpp_a33b149e74f5907846a32235263215d11}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!aggre\-\_\-bw\-\_\-estimate\-\_\-approx@{aggre\-\_\-bw\-\_\-estimate\-\_\-approx}}
+\index{aggre\-\_\-bw\-\_\-estimate\-\_\-approx@{aggre\-\_\-bw\-\_\-estimate\-\_\-approx}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{aggre\-\_\-bw\-\_\-estimate\-\_\-approx}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf aggre\-\_\-bw\-\_\-estimate\-\_\-approx} (
+\begin{DoxyParamCaption}
+\item[{u\-\_\-short}]{this\-\_\-port, }
+\item[{{\bf u\-\_\-int}}]{tcb\-\_\-index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{split__tcp__gateway_8cpp_a33b149e74f5907846a32235263215d11}
+\hypertarget{split__tcp__gateway_8cpp_a08009ec0f8b5006e3ff0324d3bda4e6d}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!\-Bandwidth\-Adaptation@{\-Bandwidth\-Adaptation}}
+\index{\-Bandwidth\-Adaptation@{\-Bandwidth\-Adaptation}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{\-Bandwidth\-Adaptation}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Bandwidth\-Adaptation} (
+\begin{DoxyParamCaption}
+\item[{{\bf u\-\_\-int}}]{tcb\-\_\-index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{split__tcp__gateway_8cpp_a08009ec0f8b5006e3ff0324d3bda4e6d}
+\hypertarget{split__tcp__gateway_8cpp_a997a40cab3dbb4393aaac156717d1785}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!\-B\-W\-\_\-adaptation@{\-B\-W\-\_\-adaptation}}
+\index{\-B\-W\-\_\-adaptation@{\-B\-W\-\_\-adaptation}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{\-B\-W\-\_\-adaptation}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-B\-W\-\_\-adaptation} (
+\begin{DoxyParamCaption}
+\item[{u\-\_\-short}]{sport, }
+\item[{{\bf u\-\_\-int}}]{tcb\-\_\-index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{split__tcp__gateway_8cpp_a997a40cab3dbb4393aaac156717d1785}
+\hypertarget{split__tcp__gateway_8cpp_abb6b4c1ea2a3e1a1170bc4f4789b4e26}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!capturer@{capturer}}
+\index{capturer@{capturer}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{capturer}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ {\bf capturer} (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{\-\_\-data}
+\end{DoxyParamCaption}
+)}}\label{split__tcp__gateway_8cpp_abb6b4c1ea2a3e1a1170bc4f4789b4e26}
+\hypertarget{split__tcp__gateway_8cpp_aeeee4945ac559b6b4eb916b2d74837fe}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!check\-\_\-sack\-\_\-list@{check\-\_\-sack\-\_\-list}}
+\index{check\-\_\-sack\-\_\-list@{check\-\_\-sack\-\_\-list}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{check\-\_\-sack\-\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf check\-\_\-sack\-\_\-list} (
+\begin{DoxyParamCaption}
+\item[{{\bf u\-\_\-int}}]{tcb\-\_\-index, }
+\item[{u\-\_\-short}]{dport, }
+\item[{{\bf u\-\_\-int}}]{seq\-\_\-num, }
+\item[{{\bf u\-\_\-int}}]{data\-\_\-len}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{split__tcp__gateway_8cpp_aeeee4945ac559b6b4eb916b2d74837fe}
+\hypertarget{split__tcp__gateway_8cpp_a1977c402209946c69cdc8df24a85a9ed}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!\-Check\-Sum@{\-Check\-Sum}}
+\index{\-Check\-Sum@{\-Check\-Sum}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{\-Check\-Sum}]{\setlength{\rightskip}{0pt plus 5cm}u\-\_\-short {\bf \-Check\-Sum} (
+\begin{DoxyParamCaption}
+\item[{u\-\_\-short $\ast$}]{buffer, }
+\item[{{\bf u\-\_\-int}}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{split__tcp__gateway_8cpp_a1977c402209946c69cdc8df24a85a9ed}
+\hypertarget{split__tcp__gateway_8cpp_a4766fa5ed14e6e25a7b79fde7bc98ecb}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!clean\-\_\-sack@{clean\-\_\-sack}}
+\index{clean\-\_\-sack@{clean\-\_\-sack}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{clean\-\_\-sack}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf clean\-\_\-sack} (
+\begin{DoxyParamCaption}
+\item[{u\-\_\-short}]{sport, }
+\item[{{\bf u\-\_\-int}}]{ack\-\_\-num, }
+\item[{{\bf u\-\_\-int}}]{tcb\-\_\-index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{split__tcp__gateway_8cpp_a4766fa5ed14e6e25a7b79fde7bc98ecb}
+\hypertarget{split__tcp__gateway_8cpp_adc8860309959c3aea77f079d5d2f6d8f}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!create\-\_\-sack\-\_\-list@{create\-\_\-sack\-\_\-list}}
+\index{create\-\_\-sack\-\_\-list@{create\-\_\-sack\-\_\-list}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{create\-\_\-sack\-\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf create\-\_\-sack\-\_\-list} (
+\begin{DoxyParamCaption}
+\item[{{\bf u\-\_\-int}}]{tcb\-\_\-index, }
+\item[{u\-\_\-short}]{dport, }
+\item[{{\bf u\-\_\-int}}]{seq\-\_\-num, }
+\item[{u\-\_\-short}]{data\-\_\-len}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{split__tcp__gateway_8cpp_adc8860309959c3aea77f079d5d2f6d8f}
+\hypertarget{split__tcp__gateway_8cpp_a0bfe331cc6bb0dbb69bb14dbb665c04c}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!forwarder@{forwarder}}
+\index{forwarder@{forwarder}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{forwarder}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ {\bf forwarder} (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{arg}
+\end{DoxyParamCaption}
+)}}\label{split__tcp__gateway_8cpp_a0bfe331cc6bb0dbb69bb14dbb665c04c}
+\hypertarget{split__tcp__gateway_8cpp_a461a1829eb28033c6ba0512588af8d1d}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!frag\-\_\-data\-\_\-pkt@{frag\-\_\-data\-\_\-pkt}}
+\index{frag\-\_\-data\-\_\-pkt@{frag\-\_\-data\-\_\-pkt}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{frag\-\_\-data\-\_\-pkt}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf frag\-\_\-data\-\_\-pkt} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Forward\-Pkt} $\ast$}]{frag\-\_\-pkt, }
+\item[{{\bf u\-\_\-int}}]{ack\-\_\-num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{split__tcp__gateway_8cpp_a461a1829eb28033c6ba0512588af8d1d}
+\hypertarget{split__tcp__gateway_8cpp_af7ed71633144993653c996ae4826825c}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!\-Hash\-Bernstein@{\-Hash\-Bernstein}}
+\index{\-Hash\-Bernstein@{\-Hash\-Bernstein}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{\-Hash\-Bernstein}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf \-Hash\-Bernstein} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{key, }
+\item[{size\-\_\-t}]{len}
+\end{DoxyParamCaption}
+)}}\label{split__tcp__gateway_8cpp_af7ed71633144993653c996ae4826825c}
+\hypertarget{split__tcp__gateway_8cpp_a8fcc7074975db7b7d6194afd620b3b7e}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!ifprint@{ifprint}}
+\index{ifprint@{ifprint}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{ifprint}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf ifprint} (
+\begin{DoxyParamCaption}
+\item[{pcap\-\_\-if\-\_\-t $\ast$}]{d}
+\end{DoxyParamCaption}
+)}}\label{split__tcp__gateway_8cpp_a8fcc7074975db7b7d6194afd620b3b7e}
+\hypertarget{split__tcp__gateway_8cpp_a1334502a24632af71fde8dd0eb268939}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!init\-\_\-dev@{init\-\_\-dev}}
+\index{init\-\_\-dev@{init\-\_\-dev}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{init\-\_\-dev}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf init\-\_\-dev} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{split__tcp__gateway_8cpp_a1334502a24632af71fde8dd0eb268939}
+\hypertarget{split__tcp__gateway_8cpp_ab812fad2627fbc9f3a9f8808e59c290c}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!init\-\_\-retx\-\_\-data\-\_\-pkt@{init\-\_\-retx\-\_\-data\-\_\-pkt}}
+\index{init\-\_\-retx\-\_\-data\-\_\-pkt@{init\-\_\-retx\-\_\-data\-\_\-pkt}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{init\-\_\-retx\-\_\-data\-\_\-pkt}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf init\-\_\-retx\-\_\-data\-\_\-pkt} (
+\begin{DoxyParamCaption}
+\item[{{\bf u\-\_\-int}}]{tcb\-\_\-index, }
+\item[{u\-\_\-short}]{sport, }
+\item[{{\bf u\-\_\-int}}]{num\-\_\-init}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{split__tcp__gateway_8cpp_ab812fad2627fbc9f3a9f8808e59c290c}
+\hypertarget{split__tcp__gateway_8cpp_a326afb727d9bb131e7c74687895fb3f0}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!iptos@{iptos}}
+\index{iptos@{iptos}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{iptos}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ {\bf iptos} (
+\begin{DoxyParamCaption}
+\item[{{\bf u\-\_\-long\-\_\-long}}]{in}
+\end{DoxyParamCaption}
+)}}\label{split__tcp__gateway_8cpp_a326afb727d9bb131e7c74687895fb3f0}
+\hypertarget{split__tcp__gateway_8cpp_a3a1f7197500b42c5025850fd11a0dae4}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!list\-\_\-dev@{list\-\_\-dev}}
+\index{list\-\_\-dev@{list\-\_\-dev}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{list\-\_\-dev}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf list\-\_\-dev} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{split__tcp__gateway_8cpp_a3a1f7197500b42c5025850fd11a0dae4}
+\hypertarget{split__tcp__gateway_8cpp_a9746d03a4fc5f90c424e4512dfd2565d}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!log\-\_\-data@{log\-\_\-data}}
+\index{log\-\_\-data@{log\-\_\-data}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{log\-\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf log\-\_\-data} (
+\begin{DoxyParamCaption}
+\item[{u\-\_\-short}]{sport, }
+\item[{{\bf u\-\_\-int}}]{tcb\-\_\-index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{split__tcp__gateway_8cpp_a9746d03a4fc5f90c424e4512dfd2565d}
+\hypertarget{split__tcp__gateway_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!main@{main}}
+\index{main@{main}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf main} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{split__tcp__gateway_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}
+\hypertarget{split__tcp__gateway_8cpp_a4e8fb2405c880af664c175792fe9f891}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!monitor@{monitor}}
+\index{monitor@{monitor}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{monitor}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ {\bf monitor} (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{dummy}
+\end{DoxyParamCaption}
+)}}\label{split__tcp__gateway_8cpp_a4e8fb2405c880af664c175792fe9f891}
+\hypertarget{split__tcp__gateway_8cpp_a605f6ee3b374ea21e62291a94e3fdd45}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!nxt\-\_\-schedule\-\_\-conn@{nxt\-\_\-schedule\-\_\-conn}}
+\index{nxt\-\_\-schedule\-\_\-conn@{nxt\-\_\-schedule\-\_\-conn}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{nxt\-\_\-schedule\-\_\-conn}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf nxt\-\_\-schedule\-\_\-conn} (
+\begin{DoxyParamCaption}
+\item[{{\bf u\-\_\-int}}]{tcb\-\_\-index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{split__tcp__gateway_8cpp_a605f6ee3b374ea21e62291a94e3fdd45}
+\hypertarget{split__tcp__gateway_8cpp_ac891ff4dfbf61ee22aa43c115f918d28}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!nxt\-\_\-schedule\-\_\-tcb@{nxt\-\_\-schedule\-\_\-tcb}}
+\index{nxt\-\_\-schedule\-\_\-tcb@{nxt\-\_\-schedule\-\_\-tcb}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{nxt\-\_\-schedule\-\_\-tcb}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf nxt\-\_\-schedule\-\_\-tcb} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{split__tcp__gateway_8cpp_ac891ff4dfbf61ee22aa43c115f918d28}
+\hypertarget{split__tcp__gateway_8cpp_a09084cd6e176de6e5c1ad2b18942422e}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!print\-\_\-bw\-\_\-info@{print\-\_\-bw\-\_\-info}}
+\index{print\-\_\-bw\-\_\-info@{print\-\_\-bw\-\_\-info}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{print\-\_\-bw\-\_\-info}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf print\-\_\-bw\-\_\-info} (
+\begin{DoxyParamCaption}
+\item[{u\-\_\-short}]{sport, }
+\item[{{\bf u\-\_\-int}}]{tcb\-\_\-index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{split__tcp__gateway_8cpp_a09084cd6e176de6e5c1ad2b18942422e}
+\hypertarget{split__tcp__gateway_8cpp_abd47ef25f6d1149e3175ee35ee6beb28}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!rcv\-\_\-ack\-\_\-bw\-\_\-estimate@{rcv\-\_\-ack\-\_\-bw\-\_\-estimate}}
+\index{rcv\-\_\-ack\-\_\-bw\-\_\-estimate@{rcv\-\_\-ack\-\_\-bw\-\_\-estimate}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{rcv\-\_\-ack\-\_\-bw\-\_\-estimate}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf rcv\-\_\-ack\-\_\-bw\-\_\-estimate} (
+\begin{DoxyParamCaption}
+\item[{{\bf u\-\_\-int}}]{ack\-\_\-num, }
+\item[{u\-\_\-short}]{window, }
+\item[{u\-\_\-short}]{sport, }
+\item[{{\bf u\-\_\-int}}]{tcb\-\_\-index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{split__tcp__gateway_8cpp_abd47ef25f6d1149e3175ee35ee6beb28}
+\hypertarget{split__tcp__gateway_8cpp_ade00e9bc2cc17dc2ac6f0d63e153d0d5}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!rcv\-\_\-ack\-\_\-dft\-\_\-bw@{rcv\-\_\-ack\-\_\-dft\-\_\-bw}}
+\index{rcv\-\_\-ack\-\_\-dft\-\_\-bw@{rcv\-\_\-ack\-\_\-dft\-\_\-bw}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{rcv\-\_\-ack\-\_\-dft\-\_\-bw}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf rcv\-\_\-ack\-\_\-dft\-\_\-bw} (
+\begin{DoxyParamCaption}
+\item[{{\bf u\-\_\-int}}]{ack\-\_\-num, }
+\item[{u\-\_\-short}]{window, }
+\item[{u\-\_\-short}]{sport, }
+\item[{{\bf u\-\_\-int}}]{tcb\-\_\-index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{split__tcp__gateway_8cpp_ade00e9bc2cc17dc2ac6f0d63e153d0d5}
+\hypertarget{split__tcp__gateway_8cpp_a725e2c178f6e5803015a7b7f25294e45}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!rcv\-\_\-ack\-\_\-handler@{rcv\-\_\-ack\-\_\-handler}}
+\index{rcv\-\_\-ack\-\_\-handler@{rcv\-\_\-ack\-\_\-handler}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{rcv\-\_\-ack\-\_\-handler}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf rcv\-\_\-ack\-\_\-handler} (
+\begin{DoxyParamCaption}
+\item[{{\bf u\-\_\-char} $\ast$}]{th, }
+\item[{{\bf u\-\_\-int}}]{tcp\-\_\-len, }
+\item[{{\bf u\-\_\-int}}]{ack\-\_\-num, }
+\item[{u\-\_\-short}]{window, }
+\item[{u\-\_\-short}]{sport, }
+\item[{{\bf u\-\_\-int}}]{tcb\-\_\-index, }
+\item[{{\bf u\-\_\-long\-\_\-long}}]{current\-\_\-time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{split__tcp__gateway_8cpp_a725e2c178f6e5803015a7b7f25294e45}
+\hypertarget{split__tcp__gateway_8cpp_a46354de3c698e9919ee3db56cf6a29dd}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!rcv\-\_\-ack\-\_\-slide\-\_\-win\-\_\-avg\-\_\-bw@{rcv\-\_\-ack\-\_\-slide\-\_\-win\-\_\-avg\-\_\-bw}}
+\index{rcv\-\_\-ack\-\_\-slide\-\_\-win\-\_\-avg\-\_\-bw@{rcv\-\_\-ack\-\_\-slide\-\_\-win\-\_\-avg\-\_\-bw}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{rcv\-\_\-ack\-\_\-slide\-\_\-win\-\_\-avg\-\_\-bw}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf rcv\-\_\-ack\-\_\-slide\-\_\-win\-\_\-avg\-\_\-bw} (
+\begin{DoxyParamCaption}
+\item[{{\bf u\-\_\-int}}]{ack\-\_\-num, }
+\item[{u\-\_\-short}]{window, }
+\item[{u\-\_\-short}]{sport, }
+\item[{{\bf u\-\_\-int}}]{tcb\-\_\-index, }
+\item[{{\bf u\-\_\-long\-\_\-long}}]{current\-\_\-time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{split__tcp__gateway_8cpp_a46354de3c698e9919ee3db56cf6a29dd}
+\hypertarget{split__tcp__gateway_8cpp_aa17e0888872c0894bb8786c93d73c8ce}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!rcv\-\_\-ack\-\_\-stat\-\_\-count@{rcv\-\_\-ack\-\_\-stat\-\_\-count}}
+\index{rcv\-\_\-ack\-\_\-stat\-\_\-count@{rcv\-\_\-ack\-\_\-stat\-\_\-count}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{rcv\-\_\-ack\-\_\-stat\-\_\-count}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf rcv\-\_\-ack\-\_\-stat\-\_\-count} (
+\begin{DoxyParamCaption}
+\item[{{\bf u\-\_\-int}}]{ack\-\_\-num, }
+\item[{u\-\_\-short}]{window, }
+\item[{u\-\_\-short}]{sport, }
+\item[{{\bf u\-\_\-int}}]{tcb\-\_\-index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{split__tcp__gateway_8cpp_aa17e0888872c0894bb8786c93d73c8ce}
+\hypertarget{split__tcp__gateway_8cpp_a6272d282d1d0c9978f3b6e848c91d4b0}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!rcv\-\_\-data\-\_\-pkt@{rcv\-\_\-data\-\_\-pkt}}
+\index{rcv\-\_\-data\-\_\-pkt@{rcv\-\_\-data\-\_\-pkt}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{rcv\-\_\-data\-\_\-pkt}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf rcv\-\_\-data\-\_\-pkt} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-D\-A\-T\-A} $\ast$}]{data, }
+\item[{struct pcap\-\_\-pkthdr $\ast$}]{header, }
+\item[{const {\bf u\-\_\-char} $\ast$}]{pkt\-\_\-data, }
+\item[{u\-\_\-short}]{sport, }
+\item[{u\-\_\-short}]{dport, }
+\item[{{\bf u\-\_\-int}}]{seq\-\_\-num, }
+\item[{u\-\_\-short}]{data\-\_\-len, }
+\item[{u\-\_\-short}]{ctr\-\_\-flag, }
+\item[{{\bf u\-\_\-int}}]{tcb\-\_\-index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{split__tcp__gateway_8cpp_a6272d282d1d0c9978f3b6e848c91d4b0}
+\hypertarget{split__tcp__gateway_8cpp_afa9bb44a0618702e7a0a5df6d18b07d3}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!rcv\-\_\-dup\-\_\-ack\-\_\-bw\-\_\-estimate@{rcv\-\_\-dup\-\_\-ack\-\_\-bw\-\_\-estimate}}
+\index{rcv\-\_\-dup\-\_\-ack\-\_\-bw\-\_\-estimate@{rcv\-\_\-dup\-\_\-ack\-\_\-bw\-\_\-estimate}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{rcv\-\_\-dup\-\_\-ack\-\_\-bw\-\_\-estimate}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf rcv\-\_\-dup\-\_\-ack\-\_\-bw\-\_\-estimate} (
+\begin{DoxyParamCaption}
+\item[{{\bf u\-\_\-int}}]{ack\-\_\-num, }
+\item[{u\-\_\-short}]{window, }
+\item[{u\-\_\-short}]{sport, }
+\item[{{\bf u\-\_\-int}}]{tcb\-\_\-index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{split__tcp__gateway_8cpp_afa9bb44a0618702e7a0a5df6d18b07d3}
+\hypertarget{split__tcp__gateway_8cpp_a4fe7ba7e981259c7e7b1da5b2b05a6bb}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!rcv\-\_\-dup\-\_\-ack\-\_\-dft\-\_\-bw@{rcv\-\_\-dup\-\_\-ack\-\_\-dft\-\_\-bw}}
+\index{rcv\-\_\-dup\-\_\-ack\-\_\-dft\-\_\-bw@{rcv\-\_\-dup\-\_\-ack\-\_\-dft\-\_\-bw}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{rcv\-\_\-dup\-\_\-ack\-\_\-dft\-\_\-bw}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf rcv\-\_\-dup\-\_\-ack\-\_\-dft\-\_\-bw} (
+\begin{DoxyParamCaption}
+\item[{{\bf u\-\_\-int}}]{ack\-\_\-num, }
+\item[{u\-\_\-short}]{window, }
+\item[{u\-\_\-short}]{sport, }
+\item[{{\bf u\-\_\-int}}]{tcb\-\_\-index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{split__tcp__gateway_8cpp_a4fe7ba7e981259c7e7b1da5b2b05a6bb}
+\hypertarget{split__tcp__gateway_8cpp_a7c9e5b674fb4e7705d76017636f47312}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!rcv\-\_\-dup\-\_\-ack\-\_\-handler@{rcv\-\_\-dup\-\_\-ack\-\_\-handler}}
+\index{rcv\-\_\-dup\-\_\-ack\-\_\-handler@{rcv\-\_\-dup\-\_\-ack\-\_\-handler}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{rcv\-\_\-dup\-\_\-ack\-\_\-handler}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf rcv\-\_\-dup\-\_\-ack\-\_\-handler} (
+\begin{DoxyParamCaption}
+\item[{{\bf u\-\_\-char} $\ast$}]{th, }
+\item[{{\bf u\-\_\-int}}]{tcp\-\_\-len, }
+\item[{{\bf u\-\_\-int}}]{ack\-\_\-num, }
+\item[{u\-\_\-short}]{window, }
+\item[{u\-\_\-short}]{sport, }
+\item[{{\bf u\-\_\-int}}]{tcb\-\_\-index, }
+\item[{{\bf u\-\_\-long\-\_\-long}}]{current\-\_\-time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{split__tcp__gateway_8cpp_a7c9e5b674fb4e7705d76017636f47312}
+\hypertarget{split__tcp__gateway_8cpp_afc12ef79a410cacd762a048273946d48}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!rcv\-\_\-dup\-\_\-ack\-\_\-slide\-\_\-win\-\_\-avg\-\_\-bw@{rcv\-\_\-dup\-\_\-ack\-\_\-slide\-\_\-win\-\_\-avg\-\_\-bw}}
+\index{rcv\-\_\-dup\-\_\-ack\-\_\-slide\-\_\-win\-\_\-avg\-\_\-bw@{rcv\-\_\-dup\-\_\-ack\-\_\-slide\-\_\-win\-\_\-avg\-\_\-bw}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{rcv\-\_\-dup\-\_\-ack\-\_\-slide\-\_\-win\-\_\-avg\-\_\-bw}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf rcv\-\_\-dup\-\_\-ack\-\_\-slide\-\_\-win\-\_\-avg\-\_\-bw} (
+\begin{DoxyParamCaption}
+\item[{{\bf u\-\_\-int}}]{ack\-\_\-num, }
+\item[{u\-\_\-short}]{window, }
+\item[{u\-\_\-short}]{sport, }
+\item[{{\bf u\-\_\-int}}]{tcb\-\_\-index, }
+\item[{{\bf u\-\_\-long\-\_\-long}}]{current\-\_\-time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{split__tcp__gateway_8cpp_afc12ef79a410cacd762a048273946d48}
+\hypertarget{split__tcp__gateway_8cpp_aff9e8ceeb21fd2a2a40b9ac803d36b08}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!rcv\-\_\-dup\-\_\-ack\-\_\-stat\-\_\-count@{rcv\-\_\-dup\-\_\-ack\-\_\-stat\-\_\-count}}
+\index{rcv\-\_\-dup\-\_\-ack\-\_\-stat\-\_\-count@{rcv\-\_\-dup\-\_\-ack\-\_\-stat\-\_\-count}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{rcv\-\_\-dup\-\_\-ack\-\_\-stat\-\_\-count}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf rcv\-\_\-dup\-\_\-ack\-\_\-stat\-\_\-count} (
+\begin{DoxyParamCaption}
+\item[{{\bf u\-\_\-int}}]{ack\-\_\-num, }
+\item[{u\-\_\-short}]{window, }
+\item[{u\-\_\-short}]{sport, }
+\item[{{\bf u\-\_\-int}}]{tcb\-\_\-index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{split__tcp__gateway_8cpp_aff9e8ceeb21fd2a2a40b9ac803d36b08}
+\hypertarget{split__tcp__gateway_8cpp_aef4f841404b2dc82b2203de12900bdad}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!rcv\-\_\-header\-\_\-update@{rcv\-\_\-header\-\_\-update}}
+\index{rcv\-\_\-header\-\_\-update@{rcv\-\_\-header\-\_\-update}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{rcv\-\_\-header\-\_\-update}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf rcv\-\_\-header\-\_\-update} (
+\begin{DoxyParamCaption}
+\item[{{\bf ip\-\_\-header} $\ast$}]{ih, }
+\item[{{\bf tcp\-\_\-header} $\ast$}]{th, }
+\item[{u\-\_\-short}]{tcp\-\_\-len, }
+\item[{u\-\_\-short}]{data\-\_\-len}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{split__tcp__gateway_8cpp_aef4f841404b2dc82b2203de12900bdad}
+\hypertarget{split__tcp__gateway_8cpp_ae182c64403413fca9140dc970f15cd6e}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!rm\-\_\-tcb\-\_\-conn@{rm\-\_\-tcb\-\_\-conn}}
+\index{rm\-\_\-tcb\-\_\-conn@{rm\-\_\-tcb\-\_\-conn}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{rm\-\_\-tcb\-\_\-conn}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf rm\-\_\-tcb\-\_\-conn} (
+\begin{DoxyParamCaption}
+\item[{{\bf u\-\_\-int}}]{tcb\-\_\-index, }
+\item[{u\-\_\-short}]{sport, }
+\item[{int}]{tcb\-\_\-it, }
+\item[{int}]{conn\-\_\-it}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{split__tcp__gateway_8cpp_ae182c64403413fca9140dc970f15cd6e}
+\hypertarget{split__tcp__gateway_8cpp_a3671064b86d28e3440b6f67f8095c408}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!\-R\-T\-T\-\_\-estimator@{\-R\-T\-T\-\_\-estimator}}
+\index{\-R\-T\-T\-\_\-estimator@{\-R\-T\-T\-\_\-estimator}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{\-R\-T\-T\-\_\-estimator}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-R\-T\-T\-\_\-estimator} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Forward\-Pkt} $\ast$}]{un\-Ack\-Pkt, }
+\item[{{\bf u\-\_\-long\-\_\-long}}]{snd\-\_\-time, }
+\item[{{\bf u\-\_\-long\-\_\-long}}]{rcv\-\_\-time, }
+\item[{{\bf u\-\_\-int}}]{ack\-\_\-num, }
+\item[{u\-\_\-short}]{sport, }
+\item[{{\bf u\-\_\-int}}]{tcb\-\_\-index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{split__tcp__gateway_8cpp_a3671064b86d28e3440b6f67f8095c408}
+\hypertarget{split__tcp__gateway_8cpp_a6998b2f6279134f918723d047c471ae8}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!scheduler@{scheduler}}
+\index{scheduler@{scheduler}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{scheduler}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ {\bf scheduler} (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{\-\_\-arg}
+\end{DoxyParamCaption}
+)}}\label{split__tcp__gateway_8cpp_a6998b2f6279134f918723d047c471ae8}
+\hypertarget{split__tcp__gateway_8cpp_a21e6d1f6e692e82b900e2e1c2a99c11f}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!send\-\_\-ack\-\_\-back@{send\-\_\-ack\-\_\-back}}
+\index{send\-\_\-ack\-\_\-back@{send\-\_\-ack\-\_\-back}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{send\-\_\-ack\-\_\-back}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf send\-\_\-ack\-\_\-back} (
+\begin{DoxyParamCaption}
+\item[{u\-\_\-short}]{dport, }
+\item[{{\bf \-D\-A\-T\-A} $\ast$}]{data, }
+\item[{{\bf ip\-\_\-address}}]{src\-\_\-address, }
+\item[{{\bf ip\-\_\-address}}]{dst\-\_\-address, }
+\item[{{\bf u\-\_\-char}}]{src\-\_\-mac\mbox{[}$\,$\mbox{]}, }
+\item[{{\bf u\-\_\-char}}]{dst\-\_\-mac\mbox{[}$\,$\mbox{]}, }
+\item[{u\-\_\-short}]{src\-\_\-port, }
+\item[{u\-\_\-short}]{dst\-\_\-port, }
+\item[{{\bf u\-\_\-int}}]{seq, }
+\item[{{\bf u\-\_\-int}}]{ack, }
+\item[{u\-\_\-short}]{ctr\-\_\-bits, }
+\item[{u\-\_\-short}]{awin, }
+\item[{u\-\_\-short}]{data\-\_\-id, }
+\item[{{\bf sack\-\_\-header} $\ast$}]{sack}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{split__tcp__gateway_8cpp_a21e6d1f6e692e82b900e2e1c2a99c11f}
+\hypertarget{split__tcp__gateway_8cpp_ae23b45f0f02317d506ad028d498ac87b}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!send\-\_\-backward@{send\-\_\-backward}}
+\index{send\-\_\-backward@{send\-\_\-backward}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{send\-\_\-backward}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf send\-\_\-backward} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-D\-A\-T\-A} $\ast$}]{data, }
+\item[{struct pcap\-\_\-pkthdr $\ast$}]{header, }
+\item[{const {\bf u\-\_\-char} $\ast$}]{pkt\-\_\-data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{split__tcp__gateway_8cpp_ae23b45f0f02317d506ad028d498ac87b}
+\hypertarget{split__tcp__gateway_8cpp_aac768bffd0aab8f26f053f877eead41e}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!send\-\_\-data\-\_\-pkt@{send\-\_\-data\-\_\-pkt}}
+\index{send\-\_\-data\-\_\-pkt@{send\-\_\-data\-\_\-pkt}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{send\-\_\-data\-\_\-pkt}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf send\-\_\-data\-\_\-pkt} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Forward} $\ast$}]{forward, }
+\item[{{\bf \-Forward\-Pkt} $\ast$}]{tmp\-Pkt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{split__tcp__gateway_8cpp_aac768bffd0aab8f26f053f877eead41e}
+\hypertarget{split__tcp__gateway_8cpp_ad1b716c6aeb467b424824a6cf330ae9a}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!send\-\_\-forward@{send\-\_\-forward}}
+\index{send\-\_\-forward@{send\-\_\-forward}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{send\-\_\-forward}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf send\-\_\-forward} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-D\-A\-T\-A} $\ast$}]{data, }
+\item[{struct pcap\-\_\-pkthdr $\ast$}]{header, }
+\item[{const {\bf u\-\_\-char} $\ast$}]{pkt\-\_\-data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{split__tcp__gateway_8cpp_ad1b716c6aeb467b424824a6cf330ae9a}
+\hypertarget{split__tcp__gateway_8cpp_a53cc2651c1c5347d9dd39290dc54d140}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!send\-\_\-syn\-\_\-ack\-\_\-back@{send\-\_\-syn\-\_\-ack\-\_\-back}}
+\index{send\-\_\-syn\-\_\-ack\-\_\-back@{send\-\_\-syn\-\_\-ack\-\_\-back}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{send\-\_\-syn\-\_\-ack\-\_\-back}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf send\-\_\-syn\-\_\-ack\-\_\-back} (
+\begin{DoxyParamCaption}
+\item[{u\-\_\-short}]{dport, }
+\item[{{\bf \-D\-A\-T\-A} $\ast$}]{data, }
+\item[{{\bf ip\-\_\-address}}]{src\-\_\-address, }
+\item[{{\bf ip\-\_\-address}}]{dst\-\_\-address, }
+\item[{{\bf u\-\_\-char}}]{src\-\_\-mac\mbox{[}$\,$\mbox{]}, }
+\item[{{\bf u\-\_\-char}}]{dst\-\_\-mac\mbox{[}$\,$\mbox{]}, }
+\item[{u\-\_\-short}]{src\-\_\-port, }
+\item[{u\-\_\-short}]{dst\-\_\-port, }
+\item[{{\bf u\-\_\-int}}]{seq, }
+\item[{{\bf u\-\_\-int}}]{ack, }
+\item[{u\-\_\-short}]{ctr\-\_\-bits, }
+\item[{u\-\_\-short}]{awin, }
+\item[{u\-\_\-short}]{data\-\_\-id, }
+\item[{{\bf u\-\_\-char} $\ast$}]{tcp\-\_\-opt, }
+\item[{u\-\_\-short}]{tcp\-\_\-opt\-\_\-len, }
+\item[{{\bf u\-\_\-char}}]{\-Buffer\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{split__tcp__gateway_8cpp_a53cc2651c1c5347d9dd39290dc54d140}
+\hypertarget{split__tcp__gateway_8cpp_a0ebac84bfbbe5dc332bd087fdd2399be}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!send\-\_\-wait\-\_\-forward@{send\-\_\-wait\-\_\-forward}}
+\index{send\-\_\-wait\-\_\-forward@{send\-\_\-wait\-\_\-forward}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{send\-\_\-wait\-\_\-forward}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf send\-\_\-wait\-\_\-forward} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-D\-A\-T\-A} $\ast$}]{data, }
+\item[{struct pcap\-\_\-pkthdr $\ast$}]{header, }
+\item[{const {\bf u\-\_\-char} $\ast$}]{pkt\-\_\-data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{split__tcp__gateway_8cpp_a0ebac84bfbbe5dc332bd087fdd2399be}
+\hypertarget{split__tcp__gateway_8cpp_ae845f14a375808d6a7f99f5db3c2d9eb}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!send\-\_\-win\-\_\-update\-\_\-forward@{send\-\_\-win\-\_\-update\-\_\-forward}}
+\index{send\-\_\-win\-\_\-update\-\_\-forward@{send\-\_\-win\-\_\-update\-\_\-forward}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{send\-\_\-win\-\_\-update\-\_\-forward}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf send\-\_\-win\-\_\-update\-\_\-forward} (
+\begin{DoxyParamCaption}
+\item[{u\-\_\-short}]{dport, }
+\item[{{\bf \-D\-A\-T\-A} $\ast$}]{data, }
+\item[{{\bf ip\-\_\-address}}]{src\-\_\-address, }
+\item[{{\bf ip\-\_\-address}}]{dst\-\_\-address, }
+\item[{{\bf u\-\_\-char}}]{src\-\_\-mac\mbox{[}$\,$\mbox{]}, }
+\item[{{\bf u\-\_\-char}}]{dst\-\_\-mac\mbox{[}$\,$\mbox{]}, }
+\item[{u\-\_\-short}]{src\-\_\-port, }
+\item[{u\-\_\-short}]{dst\-\_\-port, }
+\item[{{\bf u\-\_\-int}}]{seq, }
+\item[{{\bf u\-\_\-int}}]{ack, }
+\item[{u\-\_\-short}]{ctr\-\_\-bits, }
+\item[{u\-\_\-short}]{awin, }
+\item[{u\-\_\-short}]{data\-\_\-id, }
+\item[{{\bf sack\-\_\-header} $\ast$}]{sack}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{split__tcp__gateway_8cpp_ae845f14a375808d6a7f99f5db3c2d9eb}
+\hypertarget{split__tcp__gateway_8cpp_aba97653cc996a6c9a5fa576b28915aee}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!syn\-\_\-sack\-\_\-option@{syn\-\_\-sack\-\_\-option}}
+\index{syn\-\_\-sack\-\_\-option@{syn\-\_\-sack\-\_\-option}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{syn\-\_\-sack\-\_\-option}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf syn\-\_\-sack\-\_\-option} (
+\begin{DoxyParamCaption}
+\item[{{\bf u\-\_\-char} $\ast$}]{tcp\-\_\-opt, }
+\item[{{\bf u\-\_\-int}}]{tcp\-\_\-opt\-\_\-len, }
+\item[{u\-\_\-short}]{dport, }
+\item[{{\bf \-B\-O\-O\-L}}]{host, }
+\item[{{\bf u\-\_\-int}}]{tcb\-\_\-index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{split__tcp__gateway_8cpp_aba97653cc996a6c9a5fa576b28915aee}
+\hypertarget{split__tcp__gateway_8cpp_a269b4fc095ed098041aef6891e47b888}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!tcb\-\_\-bw\-\_\-burst\-\_\-ctrl@{tcb\-\_\-bw\-\_\-burst\-\_\-ctrl}}
+\index{tcb\-\_\-bw\-\_\-burst\-\_\-ctrl@{tcb\-\_\-bw\-\_\-burst\-\_\-ctrl}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{tcb\-\_\-bw\-\_\-burst\-\_\-ctrl}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf tcb\-\_\-bw\-\_\-burst\-\_\-ctrl} (
+\begin{DoxyParamCaption}
+\item[{{\bf u\-\_\-int}}]{tcb\-\_\-index, }
+\item[{{\bf u\-\_\-long\-\_\-long}}]{current\-\_\-time, }
+\item[{{\bf u\-\_\-int}}]{sport}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{split__tcp__gateway_8cpp_a269b4fc095ed098041aef6891e47b888}
+
+
+\subsection{\-Variable \-Documentation}
+\hypertarget{split__tcp__gateway_8cpp_a74012205826231943311cfab80b54f19}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!conn\-\_\-hash@{conn\-\_\-hash}}
+\index{conn\-\_\-hash@{conn\-\_\-hash}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{conn\-\_\-hash}]{\setlength{\rightskip}{0pt plus 5cm}{\bf conn\-\_\-\-Htable} {\bf conn\-\_\-hash}}}\label{split__tcp__gateway_8cpp_a74012205826231943311cfab80b54f19}
+\hypertarget{split__tcp__gateway_8cpp_a6cde4dadc668becbfa07baed0d4aa2bb}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!conn\-\_\-table@{conn\-\_\-table}}
+\index{conn\-\_\-table@{conn\-\_\-table}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{conn\-\_\-table}]{\setlength{\rightskip}{0pt plus 5cm}{\bf conn\-\_\-state}$\ast$ {\bf conn\-\_\-table}\mbox{[}550\mbox{]}}}\label{split__tcp__gateway_8cpp_a6cde4dadc668becbfa07baed0d4aa2bb}
+\hypertarget{split__tcp__gateway_8cpp_a6037a6ef1929e15bd01b42cc6267472e}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!in\-Ad\-Handle@{in\-Ad\-Handle}}
+\index{in\-Ad\-Handle@{in\-Ad\-Handle}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{in\-Ad\-Handle}]{\setlength{\rightskip}{0pt plus 5cm}pcap\-\_\-t$\ast$ {\bf in\-Ad\-Handle}}}\label{split__tcp__gateway_8cpp_a6037a6ef1929e15bd01b42cc6267472e}
+\hypertarget{split__tcp__gateway_8cpp_af1b7aad7261cdc2616f715017d4045e3}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!out\-Ad\-Handle@{out\-Ad\-Handle}}
+\index{out\-Ad\-Handle@{out\-Ad\-Handle}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{out\-Ad\-Handle}]{\setlength{\rightskip}{0pt plus 5cm}pcap\-\_\-t $\ast$ {\bf out\-Ad\-Handle}}}\label{split__tcp__gateway_8cpp_af1b7aad7261cdc2616f715017d4045e3}
+\hypertarget{split__tcp__gateway_8cpp_a53b7fddcc17a2503d2d1dc23b67db6a3}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!pool@{pool}}
+\index{pool@{pool}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{pool}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf mem\-\_\-pool} {\bf pool}}}\label{split__tcp__gateway_8cpp_a53b7fddcc17a2503d2d1dc23b67db6a3}
+\hypertarget{split__tcp__gateway_8cpp_a2523b09291f445820848e5d61a0b34ff}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!tcb\-\_\-hash@{tcb\-\_\-hash}}
+\index{tcb\-\_\-hash@{tcb\-\_\-hash}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{tcb\-\_\-hash}]{\setlength{\rightskip}{0pt plus 5cm}{\bf tcb\-\_\-\-Htable} {\bf tcb\-\_\-hash}}}\label{split__tcp__gateway_8cpp_a2523b09291f445820848e5d61a0b34ff}
+\hypertarget{split__tcp__gateway_8cpp_a2d6d5369de4be1db6dab37bff1207a90}{\index{split\-\_\-tcp\-\_\-gateway.\-cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}!tcb\-\_\-table@{tcb\-\_\-table}}
+\index{tcb\-\_\-table@{tcb\-\_\-table}!split_tcp_gateway.cpp@{split\-\_\-tcp\-\_\-gateway.\-cpp}}
+\subsubsection[{tcb\-\_\-table}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-T\-C\-B}$\ast$ {\bf tcb\-\_\-table}\mbox{[}550\mbox{]}}}\label{split__tcp__gateway_8cpp_a2d6d5369de4be1db6dab37bff1207a90}

@@ -1,0 +1,212 @@
+\hypertarget{structSlideWindow}{\section{\-Slide\-Window \-Struct \-Reference}
+\label{structSlideWindow}\index{\-Slide\-Window@{\-Slide\-Window}}
+}
+
+
+{\ttfamily \#include $<$split\-\_\-tcp\-\_\-gateway.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structSlideWindow_af3f608e78c352ca987d7584cb9383cd5}{\-Slide\-Window} (\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structSlideWindow_a88c69cd1183ae70c3d09ab252df7c38f}{size}, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \-\_\-interval, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \-\_\-delta)
+\item 
+\hyperlink{structSlideWindow_acdf4f09254d2d9d9cc8b06a2efe5bf68}{$\sim$\-Slide\-Window} ()
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structSlideWindow_a88c69cd1183ae70c3d09ab252df7c38f}{size} ()
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structSlideWindow_a52ab3c3d01750d81b6358db65e4e6146}{bytes} ()
+\item 
+\hyperlink{split__tcp__gateway_8h_a050c65e107f0c828f856a231f4b4e788}{\-B\-O\-O\-L} \hyperlink{structSlideWindow_aab9759f652d68733e974dedcae3e23b5}{is\-Empty} ()
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structSlideWindow_abd00c475ba43503b4c15e08488669efb}{bytes\-Count} ()
+\item 
+\hyperlink{split__tcp__gateway_8h_ae16666ecf73bb70201bc64a6ccc329f1}{u\-\_\-long\-\_\-long} \hyperlink{structSlideWindow_ad247dbb8b5c4ddff2784c63469bb7efe}{front\-Time} ()
+\item 
+\hyperlink{split__tcp__gateway_8h_ae16666ecf73bb70201bc64a6ccc329f1}{u\-\_\-long\-\_\-long} \hyperlink{structSlideWindow_acea36a8d11e07653a253aa66580a0945}{tail\-Time} ()
+\item 
+\hyperlink{split__tcp__gateway_8h_ae16666ecf73bb70201bc64a6ccc329f1}{u\-\_\-long\-\_\-long} \hyperlink{structSlideWindow_aaacd6e9090b5f22e15ca5fdf2b4a2953}{estmate\-Interval} (\hyperlink{split__tcp__gateway_8h_ae16666ecf73bb70201bc64a6ccc329f1}{u\-\_\-long\-\_\-long} current\-\_\-time)
+\item 
+\hyperlink{split__tcp__gateway_8h_ae16666ecf73bb70201bc64a6ccc329f1}{u\-\_\-long\-\_\-long} \hyperlink{structSlideWindow_ad5e297c278c4e9a4eb3b94ed04ef50a8}{next\-Estmate\-Sample\-Time} (\hyperlink{split__tcp__gateway_8h_ae16666ecf73bb70201bc64a6ccc329f1}{u\-\_\-long\-\_\-long} current\-\_\-time)
+\item 
+void \hyperlink{structSlideWindow_ac2fb850f95b80f16f097d87a98e4c2d9}{another\-\_\-shift} ()
+\item 
+\hyperlink{split__tcp__gateway_8h_ae16666ecf73bb70201bc64a6ccc329f1}{u\-\_\-long\-\_\-long} \hyperlink{structSlideWindow_a70a3e8ddc79035834c9afbbc3b1564dc}{time\-Interval} (\hyperlink{split__tcp__gateway_8h_ae16666ecf73bb70201bc64a6ccc329f1}{u\-\_\-long\-\_\-long} current\-\_\-time)
+\item 
+void \hyperlink{structSlideWindow_afdf1309621516515ab3c0aa382d7d968}{shift} ()
+\item 
+void \hyperlink{structSlideWindow_ab6a270ae70611ba0c8f4d84a0ff05bc9}{put} (\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} len, \hyperlink{split__tcp__gateway_8h_ae16666ecf73bb70201bc64a6ccc329f1}{u\-\_\-long\-\_\-long} time, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} seq\-No)
+\item 
+void \hyperlink{structSlideWindow_adc22f3475c302f74a9cfe4e9a005bc3d}{another\-\_\-put} (\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} len, \hyperlink{split__tcp__gateway_8h_ae16666ecf73bb70201bc64a6ccc329f1}{u\-\_\-long\-\_\-long} time, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} seq\-No)
+\item 
+void \hyperlink{structSlideWindow_aa0097fa63e6d837a8ae73168f819fa91}{flush} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structPacket}{\-Packet} $\ast$ \hyperlink{structSlideWindow_ac2d24fae7063beaab8681575f9a455f3}{window}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structSlideWindow_a747cbf33471465805a9582d6f0daf989}{\-\_\-size}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structSlideWindow_a382db31c0b6736a0c590b9a191c648be}{\-\_\-bytes}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structSlideWindow_a06c92be97a32ca99a9f2d797f6be73f7}{capacity}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structSlideWindow_a656aa0cedc3cb4b060b1cc1b7059d3ef}{delta}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structSlideWindow_a69f61dc9df272d8c5f2723b142dab638}{interval}
+\item 
+\hyperlink{split__tcp__gateway_8h_ae16666ecf73bb70201bc64a6ccc329f1}{u\-\_\-long\-\_\-long} \hyperlink{structSlideWindow_ac6ddc4f86ffd3dc624ca0b710c9701d0}{sample\-\_\-time}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{structSlideWindow_af3f608e78c352ca987d7584cb9383cd5}{\index{\-Slide\-Window@{\-Slide\-Window}!\-Slide\-Window@{\-Slide\-Window}}
+\index{\-Slide\-Window@{\-Slide\-Window}!SlideWindow@{\-Slide\-Window}}
+\subsubsection[{\-Slide\-Window}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Slide\-Window\-::\-Slide\-Window} (
+\begin{DoxyParamCaption}
+\item[{{\bf u\-\_\-int}}]{size, }
+\item[{{\bf u\-\_\-int}}]{\-\_\-interval, }
+\item[{{\bf u\-\_\-int}}]{\-\_\-delta}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{structSlideWindow_af3f608e78c352ca987d7584cb9383cd5}
+\hypertarget{structSlideWindow_acdf4f09254d2d9d9cc8b06a2efe5bf68}{\index{\-Slide\-Window@{\-Slide\-Window}!$\sim$\-Slide\-Window@{$\sim$\-Slide\-Window}}
+\index{$\sim$\-Slide\-Window@{$\sim$\-Slide\-Window}!SlideWindow@{\-Slide\-Window}}
+\subsubsection[{$\sim$\-Slide\-Window}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Slide\-Window\-::$\sim$\-Slide\-Window} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{structSlideWindow_acdf4f09254d2d9d9cc8b06a2efe5bf68}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{structSlideWindow_adc22f3475c302f74a9cfe4e9a005bc3d}{\index{\-Slide\-Window@{\-Slide\-Window}!another\-\_\-put@{another\-\_\-put}}
+\index{another\-\_\-put@{another\-\_\-put}!SlideWindow@{\-Slide\-Window}}
+\subsubsection[{another\-\_\-put}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Slide\-Window\-::another\-\_\-put} (
+\begin{DoxyParamCaption}
+\item[{{\bf u\-\_\-int}}]{len, }
+\item[{{\bf u\-\_\-long\-\_\-long}}]{time, }
+\item[{{\bf u\-\_\-int}}]{seq\-No}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{structSlideWindow_adc22f3475c302f74a9cfe4e9a005bc3d}
+\hypertarget{structSlideWindow_ac2fb850f95b80f16f097d87a98e4c2d9}{\index{\-Slide\-Window@{\-Slide\-Window}!another\-\_\-shift@{another\-\_\-shift}}
+\index{another\-\_\-shift@{another\-\_\-shift}!SlideWindow@{\-Slide\-Window}}
+\subsubsection[{another\-\_\-shift}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Slide\-Window\-::another\-\_\-shift} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{structSlideWindow_ac2fb850f95b80f16f097d87a98e4c2d9}
+\hypertarget{structSlideWindow_a52ab3c3d01750d81b6358db65e4e6146}{\index{\-Slide\-Window@{\-Slide\-Window}!bytes@{bytes}}
+\index{bytes@{bytes}!SlideWindow@{\-Slide\-Window}}
+\subsubsection[{bytes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf \-Slide\-Window\-::bytes} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{structSlideWindow_a52ab3c3d01750d81b6358db65e4e6146}
+\hypertarget{structSlideWindow_abd00c475ba43503b4c15e08488669efb}{\index{\-Slide\-Window@{\-Slide\-Window}!bytes\-Count@{bytes\-Count}}
+\index{bytes\-Count@{bytes\-Count}!SlideWindow@{\-Slide\-Window}}
+\subsubsection[{bytes\-Count}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf \-Slide\-Window\-::bytes\-Count} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{structSlideWindow_abd00c475ba43503b4c15e08488669efb}
+\hypertarget{structSlideWindow_aaacd6e9090b5f22e15ca5fdf2b4a2953}{\index{\-Slide\-Window@{\-Slide\-Window}!estmate\-Interval@{estmate\-Interval}}
+\index{estmate\-Interval@{estmate\-Interval}!SlideWindow@{\-Slide\-Window}}
+\subsubsection[{estmate\-Interval}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-long\-\_\-long} {\bf \-Slide\-Window\-::estmate\-Interval} (
+\begin{DoxyParamCaption}
+\item[{{\bf u\-\_\-long\-\_\-long}}]{current\-\_\-time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{structSlideWindow_aaacd6e9090b5f22e15ca5fdf2b4a2953}
+\hypertarget{structSlideWindow_aa0097fa63e6d837a8ae73168f819fa91}{\index{\-Slide\-Window@{\-Slide\-Window}!flush@{flush}}
+\index{flush@{flush}!SlideWindow@{\-Slide\-Window}}
+\subsubsection[{flush}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Slide\-Window\-::flush} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{structSlideWindow_aa0097fa63e6d837a8ae73168f819fa91}
+\hypertarget{structSlideWindow_ad247dbb8b5c4ddff2784c63469bb7efe}{\index{\-Slide\-Window@{\-Slide\-Window}!front\-Time@{front\-Time}}
+\index{front\-Time@{front\-Time}!SlideWindow@{\-Slide\-Window}}
+\subsubsection[{front\-Time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-long\-\_\-long} {\bf \-Slide\-Window\-::front\-Time} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{structSlideWindow_ad247dbb8b5c4ddff2784c63469bb7efe}
+\hypertarget{structSlideWindow_aab9759f652d68733e974dedcae3e23b5}{\index{\-Slide\-Window@{\-Slide\-Window}!is\-Empty@{is\-Empty}}
+\index{is\-Empty@{is\-Empty}!SlideWindow@{\-Slide\-Window}}
+\subsubsection[{is\-Empty}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-Slide\-Window\-::is\-Empty} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{structSlideWindow_aab9759f652d68733e974dedcae3e23b5}
+\hypertarget{structSlideWindow_ad5e297c278c4e9a4eb3b94ed04ef50a8}{\index{\-Slide\-Window@{\-Slide\-Window}!next\-Estmate\-Sample\-Time@{next\-Estmate\-Sample\-Time}}
+\index{next\-Estmate\-Sample\-Time@{next\-Estmate\-Sample\-Time}!SlideWindow@{\-Slide\-Window}}
+\subsubsection[{next\-Estmate\-Sample\-Time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-long\-\_\-long} {\bf \-Slide\-Window\-::next\-Estmate\-Sample\-Time} (
+\begin{DoxyParamCaption}
+\item[{{\bf u\-\_\-long\-\_\-long}}]{current\-\_\-time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{structSlideWindow_ad5e297c278c4e9a4eb3b94ed04ef50a8}
+\hypertarget{structSlideWindow_ab6a270ae70611ba0c8f4d84a0ff05bc9}{\index{\-Slide\-Window@{\-Slide\-Window}!put@{put}}
+\index{put@{put}!SlideWindow@{\-Slide\-Window}}
+\subsubsection[{put}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Slide\-Window\-::put} (
+\begin{DoxyParamCaption}
+\item[{{\bf u\-\_\-int}}]{len, }
+\item[{{\bf u\-\_\-long\-\_\-long}}]{time, }
+\item[{{\bf u\-\_\-int}}]{seq\-No}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{structSlideWindow_ab6a270ae70611ba0c8f4d84a0ff05bc9}
+\hypertarget{structSlideWindow_afdf1309621516515ab3c0aa382d7d968}{\index{\-Slide\-Window@{\-Slide\-Window}!shift@{shift}}
+\index{shift@{shift}!SlideWindow@{\-Slide\-Window}}
+\subsubsection[{shift}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Slide\-Window\-::shift} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{structSlideWindow_afdf1309621516515ab3c0aa382d7d968}
+\hypertarget{structSlideWindow_a88c69cd1183ae70c3d09ab252df7c38f}{\index{\-Slide\-Window@{\-Slide\-Window}!size@{size}}
+\index{size@{size}!SlideWindow@{\-Slide\-Window}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf \-Slide\-Window\-::size} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{structSlideWindow_a88c69cd1183ae70c3d09ab252df7c38f}
+\hypertarget{structSlideWindow_acea36a8d11e07653a253aa66580a0945}{\index{\-Slide\-Window@{\-Slide\-Window}!tail\-Time@{tail\-Time}}
+\index{tail\-Time@{tail\-Time}!SlideWindow@{\-Slide\-Window}}
+\subsubsection[{tail\-Time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-long\-\_\-long} {\bf \-Slide\-Window\-::tail\-Time} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{structSlideWindow_acea36a8d11e07653a253aa66580a0945}
+\hypertarget{structSlideWindow_a70a3e8ddc79035834c9afbbc3b1564dc}{\index{\-Slide\-Window@{\-Slide\-Window}!time\-Interval@{time\-Interval}}
+\index{time\-Interval@{time\-Interval}!SlideWindow@{\-Slide\-Window}}
+\subsubsection[{time\-Interval}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-long\-\_\-long} {\bf \-Slide\-Window\-::time\-Interval} (
+\begin{DoxyParamCaption}
+\item[{{\bf u\-\_\-long\-\_\-long}}]{current\-\_\-time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{structSlideWindow_a70a3e8ddc79035834c9afbbc3b1564dc}
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{structSlideWindow_a382db31c0b6736a0c590b9a191c648be}{\index{\-Slide\-Window@{\-Slide\-Window}!\-\_\-bytes@{\-\_\-bytes}}
+\index{\-\_\-bytes@{\-\_\-bytes}!SlideWindow@{\-Slide\-Window}}
+\subsubsection[{\-\_\-bytes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf \-Slide\-Window\-::\-\_\-bytes}}}\label{structSlideWindow_a382db31c0b6736a0c590b9a191c648be}
+\hypertarget{structSlideWindow_a747cbf33471465805a9582d6f0daf989}{\index{\-Slide\-Window@{\-Slide\-Window}!\-\_\-size@{\-\_\-size}}
+\index{\-\_\-size@{\-\_\-size}!SlideWindow@{\-Slide\-Window}}
+\subsubsection[{\-\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf \-Slide\-Window\-::\-\_\-size}}}\label{structSlideWindow_a747cbf33471465805a9582d6f0daf989}
+\hypertarget{structSlideWindow_a06c92be97a32ca99a9f2d797f6be73f7}{\index{\-Slide\-Window@{\-Slide\-Window}!capacity@{capacity}}
+\index{capacity@{capacity}!SlideWindow@{\-Slide\-Window}}
+\subsubsection[{capacity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf \-Slide\-Window\-::capacity}}}\label{structSlideWindow_a06c92be97a32ca99a9f2d797f6be73f7}
+\hypertarget{structSlideWindow_a656aa0cedc3cb4b060b1cc1b7059d3ef}{\index{\-Slide\-Window@{\-Slide\-Window}!delta@{delta}}
+\index{delta@{delta}!SlideWindow@{\-Slide\-Window}}
+\subsubsection[{delta}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf \-Slide\-Window\-::delta}}}\label{structSlideWindow_a656aa0cedc3cb4b060b1cc1b7059d3ef}
+\hypertarget{structSlideWindow_a69f61dc9df272d8c5f2723b142dab638}{\index{\-Slide\-Window@{\-Slide\-Window}!interval@{interval}}
+\index{interval@{interval}!SlideWindow@{\-Slide\-Window}}
+\subsubsection[{interval}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf \-Slide\-Window\-::interval}}}\label{structSlideWindow_a69f61dc9df272d8c5f2723b142dab638}
+\hypertarget{structSlideWindow_ac6ddc4f86ffd3dc624ca0b710c9701d0}{\index{\-Slide\-Window@{\-Slide\-Window}!sample\-\_\-time@{sample\-\_\-time}}
+\index{sample\-\_\-time@{sample\-\_\-time}!SlideWindow@{\-Slide\-Window}}
+\subsubsection[{sample\-\_\-time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-long\-\_\-long} {\bf \-Slide\-Window\-::sample\-\_\-time}}}\label{structSlideWindow_ac6ddc4f86ffd3dc624ca0b710c9701d0}
+\hypertarget{structSlideWindow_ac2d24fae7063beaab8681575f9a455f3}{\index{\-Slide\-Window@{\-Slide\-Window}!window@{window}}
+\index{window@{window}!SlideWindow@{\-Slide\-Window}}
+\subsubsection[{window}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Packet}$\ast$ {\bf \-Slide\-Window\-::window}}}\label{structSlideWindow_ac2d24fae7063beaab8681575f9a455f3}
+
+
+\-The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{split__tcp__gateway_8h}{split\-\_\-tcp\-\_\-gateway.\-h}\end{DoxyCompactItemize}
