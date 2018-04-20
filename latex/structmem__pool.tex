@@ -1,0 +1,88 @@
+\hypertarget{structmem__pool}{\section{mem\-\_\-pool \-Struct \-Reference}
+\label{structmem__pool}\index{mem\-\_\-pool@{mem\-\_\-pool}}
+}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structmem__pool_ac78e24fe178e443e108f1a0bc991bfde}{mem\-\_\-pool} ()
+\item 
+void \hyperlink{structmem__pool_a60e6ee8be5f13248673b6de69552ed7f}{init\-\_\-mem\-\_\-pool} ()
+\item 
+void \hyperlink{structmem__pool_ae569ad6133c51ec7bdf1732af56c2e63}{add\-\_\-tcb} (\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} value)
+\item 
+void \hyperlink{structmem__pool_a4230e869e173004fd8aeb411f8314069}{flush} ()
+\item 
+\hyperlink{structmem__pool_a3e4bba3dfa1023a06ae0c5867728bca3}{$\sim$mem\-\_\-pool} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structstate__array}{state\-\_\-array} \hyperlink{structmem__pool_a85dd96771d2c5329aa4e2b64cee68b0f}{ex\-\_\-tcb}
+\item 
+pthread\-\_\-cond\-\_\-t \hyperlink{structmem__pool_aff39f70481fdcbb29a2b58e7ffb27acf}{m\-\_\-event\-Conn\-State\-Available}
+\item 
+pthread\-\_\-mutex\-\_\-t \hyperlink{structmem__pool_a06fca3bdc7d0942a3ea77ad02de743ad}{mutex}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structmem__pool_a8845fb60be546e04b56d71ebbbcfe0ce}{\-\_\-size}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{structmem__pool_ac78e24fe178e443e108f1a0bc991bfde}{\index{mem\-\_\-pool@{mem\-\_\-pool}!mem\-\_\-pool@{mem\-\_\-pool}}
+\index{mem\-\_\-pool@{mem\-\_\-pool}!mem_pool@{mem\-\_\-pool}}
+\subsubsection[{mem\-\_\-pool}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mem\-\_\-pool\-::mem\-\_\-pool} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{structmem__pool_ac78e24fe178e443e108f1a0bc991bfde}
+\hypertarget{structmem__pool_a3e4bba3dfa1023a06ae0c5867728bca3}{\index{mem\-\_\-pool@{mem\-\_\-pool}!$\sim$mem\-\_\-pool@{$\sim$mem\-\_\-pool}}
+\index{$\sim$mem\-\_\-pool@{$\sim$mem\-\_\-pool}!mem_pool@{mem\-\_\-pool}}
+\subsubsection[{$\sim$mem\-\_\-pool}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mem\-\_\-pool\-::$\sim$mem\-\_\-pool} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{structmem__pool_a3e4bba3dfa1023a06ae0c5867728bca3}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{structmem__pool_ae569ad6133c51ec7bdf1732af56c2e63}{\index{mem\-\_\-pool@{mem\-\_\-pool}!add\-\_\-tcb@{add\-\_\-tcb}}
+\index{add\-\_\-tcb@{add\-\_\-tcb}!mem_pool@{mem\-\_\-pool}}
+\subsubsection[{add\-\_\-tcb}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf mem\-\_\-pool\-::add\-\_\-tcb} (
+\begin{DoxyParamCaption}
+\item[{{\bf u\-\_\-int}}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{structmem__pool_ae569ad6133c51ec7bdf1732af56c2e63}
+\hypertarget{structmem__pool_a4230e869e173004fd8aeb411f8314069}{\index{mem\-\_\-pool@{mem\-\_\-pool}!flush@{flush}}
+\index{flush@{flush}!mem_pool@{mem\-\_\-pool}}
+\subsubsection[{flush}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf mem\-\_\-pool\-::flush} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{structmem__pool_a4230e869e173004fd8aeb411f8314069}
+\hypertarget{structmem__pool_a60e6ee8be5f13248673b6de69552ed7f}{\index{mem\-\_\-pool@{mem\-\_\-pool}!init\-\_\-mem\-\_\-pool@{init\-\_\-mem\-\_\-pool}}
+\index{init\-\_\-mem\-\_\-pool@{init\-\_\-mem\-\_\-pool}!mem_pool@{mem\-\_\-pool}}
+\subsubsection[{init\-\_\-mem\-\_\-pool}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf mem\-\_\-pool\-::init\-\_\-mem\-\_\-pool} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{structmem__pool_a60e6ee8be5f13248673b6de69552ed7f}
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{structmem__pool_a8845fb60be546e04b56d71ebbbcfe0ce}{\index{mem\-\_\-pool@{mem\-\_\-pool}!\-\_\-size@{\-\_\-size}}
+\index{\-\_\-size@{\-\_\-size}!mem_pool@{mem\-\_\-pool}}
+\subsubsection[{\-\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf mem\-\_\-pool\-::\-\_\-size}}}\label{structmem__pool_a8845fb60be546e04b56d71ebbbcfe0ce}
+\hypertarget{structmem__pool_a85dd96771d2c5329aa4e2b64cee68b0f}{\index{mem\-\_\-pool@{mem\-\_\-pool}!ex\-\_\-tcb@{ex\-\_\-tcb}}
+\index{ex\-\_\-tcb@{ex\-\_\-tcb}!mem_pool@{mem\-\_\-pool}}
+\subsubsection[{ex\-\_\-tcb}]{\setlength{\rightskip}{0pt plus 5cm}{\bf state\-\_\-array} {\bf mem\-\_\-pool\-::ex\-\_\-tcb}}}\label{structmem__pool_a85dd96771d2c5329aa4e2b64cee68b0f}
+\hypertarget{structmem__pool_aff39f70481fdcbb29a2b58e7ffb27acf}{\index{mem\-\_\-pool@{mem\-\_\-pool}!m\-\_\-event\-Conn\-State\-Available@{m\-\_\-event\-Conn\-State\-Available}}
+\index{m\-\_\-event\-Conn\-State\-Available@{m\-\_\-event\-Conn\-State\-Available}!mem_pool@{mem\-\_\-pool}}
+\subsubsection[{m\-\_\-event\-Conn\-State\-Available}]{\setlength{\rightskip}{0pt plus 5cm}pthread\-\_\-cond\-\_\-t {\bf mem\-\_\-pool\-::m\-\_\-event\-Conn\-State\-Available}}}\label{structmem__pool_aff39f70481fdcbb29a2b58e7ffb27acf}
+\hypertarget{structmem__pool_a06fca3bdc7d0942a3ea77ad02de743ad}{\index{mem\-\_\-pool@{mem\-\_\-pool}!mutex@{mutex}}
+\index{mutex@{mutex}!mem_pool@{mem\-\_\-pool}}
+\subsubsection[{mutex}]{\setlength{\rightskip}{0pt plus 5cm}pthread\-\_\-mutex\-\_\-t {\bf mem\-\_\-pool\-::mutex}}}\label{structmem__pool_a06fca3bdc7d0942a3ea77ad02de743ad}
+
+
+\-The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{split__tcp__gateway_8cpp}{split\-\_\-tcp\-\_\-gateway.\-cpp}\end{DoxyCompactItemize}

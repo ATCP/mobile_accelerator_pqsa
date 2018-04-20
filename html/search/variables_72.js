@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['rcv_5fadv',['rcv_adv',['../structclientState.html#a0cfca459ca80f60fb437270fd6ffffad',1,'clientState']]],
+  ['rcv_5fmax_5fseq_5fedge',['rcv_max_seq_edge',['../structconn__state.html#a200b8b3c502733b24b23063a503c1c8b',1,'conn_state']]],
+  ['rcv_5fnxt',['rcv_nxt',['../structclientState.html#a552b5e5350327c8b4cf62bc29cbdf365',1,'clientState']]],
+  ['rcv_5fthrughput',['rcv_thrughput',['../structconn__state.html#a26d81201c9be4e6398dd6bbb47b15d21',1,'conn_state::rcv_thrughput()'],['../structTCB.html#a0be41c7cd6d1d7763d59c8ee34c6d79e',1,'TCB::rcv_thrughput()']]],
+  ['rcv_5fthrughput_5fapprox',['rcv_thrughput_approx',['../structconn__state.html#abe8298981429756cf62ffd2323597c47',1,'conn_state::rcv_thrughput_approx()'],['../structTCB.html#a06fd83f70fd69cff970cb214a32da1b4',1,'TCB::rcv_thrughput_approx()']]],
+  ['rcv_5ftime',['rcv_time',['../structForwardPkt.html#aafcfa8214f837f5ed5b2a645dd31e753',1,'ForwardPkt']]],
+  ['rcv_5fwnd',['rcv_wnd',['../structclientState.html#a5ca796c5aec186e39e85c726370a8b36',1,'clientState']]],
+  ['ref_5fack_5fseq_5fno',['ref_ack_seq_no',['../structconn__state.html#a4e97449e3ecca96d05ede0f21d9c0a0f',1,'conn_state']]],
+  ['ref_5fack_5ftime',['ref_ack_time',['../structconn__state.html#ac8510c235c0ee8c78676e30a9ac6d6de',1,'conn_state']]],
+  ['right_5fedge_5fblock',['right_edge_block',['../structtcp__sack__block.html#a4417284e2f5d213938cadbe73aee3da0',1,'tcp_sack_block']]],
+  ['rto',['rto',['../structconn__state.html#a6315f00ab9c0eebb7f39468445aafc11',1,'conn_state']]],
+  ['rto_5fietf',['rto_ietf',['../structconn__state.html#a60e7f051044f3684f9c776a490154cde',1,'conn_state']]],
+  ['rtt',['RTT',['../structconn__state.html#a013d3c96cbf6ca7c0129c98068173aff',1,'conn_state::RTT()'],['../structTCB.html#aeea8e51f9a0ee23de2ea837d08a57cb1',1,'TCB::RTT()']]],
+  ['rtt_5fietf',['RTT_IETF',['../structconn__state.html#aeba65c2dd30d76c48d259d85268ad29a',1,'conn_state']]],
+  ['rtt_5flimit',['RTT_limit',['../structconn__state.html#a100780925c5437cd75743d775d5d9418',1,'conn_state::RTT_limit()'],['../structTCB.html#abf565a3255866a1e99bc301f1b57106d',1,'TCB::RTT_limit()'],['../split__tcp__gateway_8h.html#a138f413a4a95f88fbfe1f0724765a11e',1,'RTT_LIMIT():&#160;split_tcp_gateway.h']]],
+  ['rtt_5fstd_5fdev',['rtt_std_dev',['../structconn__state.html#a03f984f64038a3cbbf1e359dabb3ff0f',1,'conn_state']]],
+  ['rtt_5fstd_5fdev_5fietf',['rtt_std_dev_ietf',['../structconn__state.html#ac4bf2caa0f45d0f85d68030e9f4b49aa',1,'conn_state']]],
+  ['rttfd',['rttFd',['../structconn__state.html#a2963cbaa1df062006c1167104ee5ce32',1,'conn_state']]],
+  ['rtx_5ftime',['rtx_time',['../structForwardPkt.html#a814c519962506223c23fda2c5c575182',1,'ForwardPkt']]]
+];

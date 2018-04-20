@@ -1,0 +1,80 @@
+\hypertarget{structForward}{\section{\-Forward \-Struct \-Reference}
+\label{structForward}\index{\-Forward@{\-Forward}}
+}
+
+
+{\ttfamily \#include $<$split\-\_\-tcp\-\_\-gateway.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structForward_ae74a6419b39145e74e6b6a30641e3728}{\-Forward} (pcap\-\_\-t $\ast$\-\_\-dev, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} count, \hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \-\_\-delay, \hyperlink{split__tcp__gateway_8h_aa268a41a13430b18e933ed40207178d0}{\-D\-I\-R\-E\-C\-T\-I\-O\-N} \-\_\-mode)
+\item 
+\hyperlink{structForward_af018f03fdfd0e58c653bbb8411b77ef0}{$\sim$\-Forward} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+pcap\-\_\-t $\ast$ \hyperlink{structForward_a43e491c45dd179910e10c5f2bf9d4f01}{dev}
+\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structForward_a67d0465a472fe58ca483f0da0b76f709}{delay}
+\item 
+\hyperlink{split__tcp__gateway_8h_aa268a41a13430b18e933ed40207178d0}{\-D\-I\-R\-E\-C\-T\-I\-O\-N} \hyperlink{structForward_a59a8b69d061964b2e52646f7a0083214}{mode}
+\item 
+\hyperlink{structForwardPktBuffer}{\-Forward\-Pkt\-Buffer} \hyperlink{structForward_adbe26a18bde40343ed7c21e282debc08}{pkt\-Queue}
+\item 
+pthread\-\_\-mutex\-\_\-t \hyperlink{structForward_abb4b4581a071b8a44c708f853771d8ed}{mutex}
+\item 
+pthread\-\_\-cond\-\_\-t \hyperlink{structForward_ab6d55b3935b255bde55089bfe53fc101}{m\-\_\-event\-Element\-Available}
+\item 
+pthread\-\_\-cond\-\_\-t \hyperlink{structForward_a1cb73933205227fcc53684e1d9be708e}{m\-\_\-event\-Space\-Available}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{structForward_ae74a6419b39145e74e6b6a30641e3728}{\index{\-Forward@{\-Forward}!\-Forward@{\-Forward}}
+\index{\-Forward@{\-Forward}!Forward@{\-Forward}}
+\subsubsection[{\-Forward}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Forward\-::\-Forward} (
+\begin{DoxyParamCaption}
+\item[{pcap\-\_\-t $\ast$}]{\-\_\-dev, }
+\item[{{\bf u\-\_\-int}}]{count, }
+\item[{{\bf u\-\_\-int}}]{\-\_\-delay, }
+\item[{{\bf \-D\-I\-R\-E\-C\-T\-I\-O\-N}}]{\-\_\-mode}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{structForward_ae74a6419b39145e74e6b6a30641e3728}
+\hypertarget{structForward_af018f03fdfd0e58c653bbb8411b77ef0}{\index{\-Forward@{\-Forward}!$\sim$\-Forward@{$\sim$\-Forward}}
+\index{$\sim$\-Forward@{$\sim$\-Forward}!Forward@{\-Forward}}
+\subsubsection[{$\sim$\-Forward}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Forward\-::$\sim$\-Forward} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{structForward_af018f03fdfd0e58c653bbb8411b77ef0}
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{structForward_a67d0465a472fe58ca483f0da0b76f709}{\index{\-Forward@{\-Forward}!delay@{delay}}
+\index{delay@{delay}!Forward@{\-Forward}}
+\subsubsection[{delay}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf \-Forward\-::delay}}}\label{structForward_a67d0465a472fe58ca483f0da0b76f709}
+\hypertarget{structForward_a43e491c45dd179910e10c5f2bf9d4f01}{\index{\-Forward@{\-Forward}!dev@{dev}}
+\index{dev@{dev}!Forward@{\-Forward}}
+\subsubsection[{dev}]{\setlength{\rightskip}{0pt plus 5cm}pcap\-\_\-t$\ast$ {\bf \-Forward\-::dev}}}\label{structForward_a43e491c45dd179910e10c5f2bf9d4f01}
+\hypertarget{structForward_ab6d55b3935b255bde55089bfe53fc101}{\index{\-Forward@{\-Forward}!m\-\_\-event\-Element\-Available@{m\-\_\-event\-Element\-Available}}
+\index{m\-\_\-event\-Element\-Available@{m\-\_\-event\-Element\-Available}!Forward@{\-Forward}}
+\subsubsection[{m\-\_\-event\-Element\-Available}]{\setlength{\rightskip}{0pt plus 5cm}pthread\-\_\-cond\-\_\-t {\bf \-Forward\-::m\-\_\-event\-Element\-Available}}}\label{structForward_ab6d55b3935b255bde55089bfe53fc101}
+\hypertarget{structForward_a1cb73933205227fcc53684e1d9be708e}{\index{\-Forward@{\-Forward}!m\-\_\-event\-Space\-Available@{m\-\_\-event\-Space\-Available}}
+\index{m\-\_\-event\-Space\-Available@{m\-\_\-event\-Space\-Available}!Forward@{\-Forward}}
+\subsubsection[{m\-\_\-event\-Space\-Available}]{\setlength{\rightskip}{0pt plus 5cm}pthread\-\_\-cond\-\_\-t {\bf \-Forward\-::m\-\_\-event\-Space\-Available}}}\label{structForward_a1cb73933205227fcc53684e1d9be708e}
+\hypertarget{structForward_a59a8b69d061964b2e52646f7a0083214}{\index{\-Forward@{\-Forward}!mode@{mode}}
+\index{mode@{mode}!Forward@{\-Forward}}
+\subsubsection[{mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-D\-I\-R\-E\-C\-T\-I\-O\-N} {\bf \-Forward\-::mode}}}\label{structForward_a59a8b69d061964b2e52646f7a0083214}
+\hypertarget{structForward_abb4b4581a071b8a44c708f853771d8ed}{\index{\-Forward@{\-Forward}!mutex@{mutex}}
+\index{mutex@{mutex}!Forward@{\-Forward}}
+\subsubsection[{mutex}]{\setlength{\rightskip}{0pt plus 5cm}pthread\-\_\-mutex\-\_\-t {\bf \-Forward\-::mutex}}}\label{structForward_abb4b4581a071b8a44c708f853771d8ed}
+\hypertarget{structForward_adbe26a18bde40343ed7c21e282debc08}{\index{\-Forward@{\-Forward}!pkt\-Queue@{pkt\-Queue}}
+\index{pkt\-Queue@{pkt\-Queue}!Forward@{\-Forward}}
+\subsubsection[{pkt\-Queue}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Forward\-Pkt\-Buffer} {\bf \-Forward\-::pkt\-Queue}}}\label{structForward_adbe26a18bde40343ed7c21e282debc08}
+
+
+\-The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{split__tcp__gateway_8h}{split\-\_\-tcp\-\_\-gateway.\-h}\end{DoxyCompactItemize}

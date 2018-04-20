@@ -1,0 +1,157 @@
+\hypertarget{structserverState}{\section{server\-State \-Struct \-Reference}
+\label{structserverState}\index{server\-State@{server\-State}}
+}
+
+
+\-Mobile accelerator sender class.  
+
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structserverState_a22224a01dd0315452cbdfd75104fcc95}{server\-State} ()
+\item 
+void \hyperlink{structserverState_ade1b73163870d9cae8510c29b5915d36}{flush} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+u\-\_\-short \hyperlink{structserverState_a0d366ea25cf9e9c2adb3dea2ff2b8a6c}{send\-\_\-data\-\_\-id}
+\begin{DoxyCompactList}\small\item\em the sent data packet identity. \end{DoxyCompactList}\item 
+\hyperlink{split__tcp__gateway_8cpp_a275a67132f10277ada3a0ee3d616b647}{\-S\-T\-A\-T\-E} \hyperlink{structserverState_afe5c7957656e822dbffe80ca3da17f42}{state}
+\begin{DoxyCompactList}\small\item\em the state the sender is in. \end{DoxyCompactList}\item 
+\hyperlink{split__tcp__gateway_8cpp_ae279bfacbd0dac7aedff2c9121036de9}{\-P\-H\-A\-S\-E} \hyperlink{structserverState_ad2d20da3d49d1d327e5b96a3b4933645}{phase}
+\begin{DoxyCompactList}\small\item\em the phase the sender is in. \end{DoxyCompactList}\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structserverState_a26d3e92a264e66f0309028bc1b4a0fdf}{snd\-\_\-wnd}
+\begin{DoxyCompactList}\small\item\em advertised window of the mobile receiver. \end{DoxyCompactList}\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structserverState_ac22718f65dc3faefe5f0f14a34225890}{snd\-\_\-nxt}
+\begin{DoxyCompactList}\small\item\em the next sent sequence number. \end{DoxyCompactList}\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structserverState_a8ffed075ab5c35026735e9b84ec52a9f}{snd\-\_\-una}
+\begin{DoxyCompactList}\small\item\em the sent but unacknowledged sequence number. \end{DoxyCompactList}\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structserverState_a40a01ae835807ebee67bcee468cec70a}{snd\-\_\-max}
+\begin{DoxyCompactList}\small\item\em the highest sequence number sent. \end{DoxyCompactList}\item 
+\hyperlink{split__tcp__gateway_8h_ac319c165d52643e43249fe003e18bdf3}{u\-\_\-int} \hyperlink{structserverState_ac444397fe03359cdc31e8c26e4000a0a}{seq\-\_\-nxt}
+\begin{DoxyCompactList}\small\item\em obsolete variable. \end{DoxyCompactList}\item 
+u\-\_\-short \hyperlink{structserverState_a48a2d3d9f312ba2ea9c9f71e91dcb9e7}{win\-\_\-limit}
+\begin{DoxyCompactList}\small\item\em the window threshold the mobile accelerator disable the opportunistic transmission, initially set to 0. \end{DoxyCompactList}\item 
+\hyperlink{split__tcp__gateway_8h_a050c65e107f0c828f856a231f4b4e788}{\-B\-O\-O\-L} \hyperlink{structserverState_a9bd2d2f35d66ead45f5d6b55de2b93ae}{ignore\-\_\-adv\-\_\-win}
+\begin{DoxyCompactList}\small\item\em whether to ignore the advertised window from mobile receiver, that is, whether to enable the opportunistic transmission. \end{DoxyCompactList}\item 
+u\-\_\-short \hyperlink{structserverState_ae9f552f7d1731ec394b5d003650b046c}{win\-\_\-scale}
+\begin{DoxyCompactList}\small\item\em large window scale option from mobile receiver. \end{DoxyCompactList}\item 
+\hyperlink{split__tcp__gateway_8h_a050c65e107f0c828f856a231f4b4e788}{\-B\-O\-O\-L} \hyperlink{structserverState_ad0e4f529996482b0658b0a65f593d687}{\-S\-A\-C\-K\-\_\-permitted}
+\begin{DoxyCompactList}\small\item\em the \-S\-A\-C\-K option from mobile receiver. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Mobile accelerator sender class. 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{structserverState_a22224a01dd0315452cbdfd75104fcc95}{\index{server\-State@{server\-State}!server\-State@{server\-State}}
+\index{server\-State@{server\-State}!serverState@{server\-State}}
+\subsubsection[{server\-State}]{\setlength{\rightskip}{0pt plus 5cm}{\bf server\-State\-::server\-State} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{structserverState_a22224a01dd0315452cbdfd75104fcc95}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{structserverState_ade1b73163870d9cae8510c29b5915d36}{\index{server\-State@{server\-State}!flush@{flush}}
+\index{flush@{flush}!serverState@{server\-State}}
+\subsubsection[{flush}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf server\-State\-::flush} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{structserverState_ade1b73163870d9cae8510c29b5915d36}
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{structserverState_a9bd2d2f35d66ead45f5d6b55de2b93ae}{\index{server\-State@{server\-State}!ignore\-\_\-adv\-\_\-win@{ignore\-\_\-adv\-\_\-win}}
+\index{ignore\-\_\-adv\-\_\-win@{ignore\-\_\-adv\-\_\-win}!serverState@{server\-State}}
+\subsubsection[{ignore\-\_\-adv\-\_\-win}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf server\-State\-::ignore\-\_\-adv\-\_\-win}}}\label{structserverState_a9bd2d2f35d66ead45f5d6b55de2b93ae}
+
+
+whether to ignore the advertised window from mobile receiver, that is, whether to enable the opportunistic transmission. 
+
+\hypertarget{structserverState_ad2d20da3d49d1d327e5b96a3b4933645}{\index{server\-State@{server\-State}!phase@{phase}}
+\index{phase@{phase}!serverState@{server\-State}}
+\subsubsection[{phase}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-P\-H\-A\-S\-E} {\bf server\-State\-::phase}}}\label{structserverState_ad2d20da3d49d1d327e5b96a3b4933645}
+
+
+the phase the sender is in. 
+
+\hypertarget{structserverState_ad0e4f529996482b0658b0a65f593d687}{\index{server\-State@{server\-State}!\-S\-A\-C\-K\-\_\-permitted@{\-S\-A\-C\-K\-\_\-permitted}}
+\index{\-S\-A\-C\-K\-\_\-permitted@{\-S\-A\-C\-K\-\_\-permitted}!serverState@{server\-State}}
+\subsubsection[{\-S\-A\-C\-K\-\_\-permitted}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf server\-State\-::\-S\-A\-C\-K\-\_\-permitted}}}\label{structserverState_ad0e4f529996482b0658b0a65f593d687}
+
+
+the \-S\-A\-C\-K option from mobile receiver. 
+
+\hypertarget{structserverState_a0d366ea25cf9e9c2adb3dea2ff2b8a6c}{\index{server\-State@{server\-State}!send\-\_\-data\-\_\-id@{send\-\_\-data\-\_\-id}}
+\index{send\-\_\-data\-\_\-id@{send\-\_\-data\-\_\-id}!serverState@{server\-State}}
+\subsubsection[{send\-\_\-data\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}u\-\_\-short {\bf server\-State\-::send\-\_\-data\-\_\-id}}}\label{structserverState_a0d366ea25cf9e9c2adb3dea2ff2b8a6c}
+
+
+the sent data packet identity. 
+
+\hypertarget{structserverState_ac444397fe03359cdc31e8c26e4000a0a}{\index{server\-State@{server\-State}!seq\-\_\-nxt@{seq\-\_\-nxt}}
+\index{seq\-\_\-nxt@{seq\-\_\-nxt}!serverState@{server\-State}}
+\subsubsection[{seq\-\_\-nxt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf server\-State\-::seq\-\_\-nxt}}}\label{structserverState_ac444397fe03359cdc31e8c26e4000a0a}
+
+
+obsolete variable. 
+
+\hypertarget{structserverState_a40a01ae835807ebee67bcee468cec70a}{\index{server\-State@{server\-State}!snd\-\_\-max@{snd\-\_\-max}}
+\index{snd\-\_\-max@{snd\-\_\-max}!serverState@{server\-State}}
+\subsubsection[{snd\-\_\-max}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf server\-State\-::snd\-\_\-max}}}\label{structserverState_a40a01ae835807ebee67bcee468cec70a}
+
+
+the highest sequence number sent. 
+
+\hypertarget{structserverState_ac22718f65dc3faefe5f0f14a34225890}{\index{server\-State@{server\-State}!snd\-\_\-nxt@{snd\-\_\-nxt}}
+\index{snd\-\_\-nxt@{snd\-\_\-nxt}!serverState@{server\-State}}
+\subsubsection[{snd\-\_\-nxt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf server\-State\-::snd\-\_\-nxt}}}\label{structserverState_ac22718f65dc3faefe5f0f14a34225890}
+
+
+the next sent sequence number. 
+
+\hypertarget{structserverState_a8ffed075ab5c35026735e9b84ec52a9f}{\index{server\-State@{server\-State}!snd\-\_\-una@{snd\-\_\-una}}
+\index{snd\-\_\-una@{snd\-\_\-una}!serverState@{server\-State}}
+\subsubsection[{snd\-\_\-una}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf server\-State\-::snd\-\_\-una}}}\label{structserverState_a8ffed075ab5c35026735e9b84ec52a9f}
+
+
+the sent but unacknowledged sequence number. 
+
+\hypertarget{structserverState_a26d3e92a264e66f0309028bc1b4a0fdf}{\index{server\-State@{server\-State}!snd\-\_\-wnd@{snd\-\_\-wnd}}
+\index{snd\-\_\-wnd@{snd\-\_\-wnd}!serverState@{server\-State}}
+\subsubsection[{snd\-\_\-wnd}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u\-\_\-int} {\bf server\-State\-::snd\-\_\-wnd}}}\label{structserverState_a26d3e92a264e66f0309028bc1b4a0fdf}
+
+
+advertised window of the mobile receiver. 
+
+\hypertarget{structserverState_afe5c7957656e822dbffe80ca3da17f42}{\index{server\-State@{server\-State}!state@{state}}
+\index{state@{state}!serverState@{server\-State}}
+\subsubsection[{state}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-S\-T\-A\-T\-E} {\bf server\-State\-::state}}}\label{structserverState_afe5c7957656e822dbffe80ca3da17f42}
+
+
+the state the sender is in. 
+
+\hypertarget{structserverState_a48a2d3d9f312ba2ea9c9f71e91dcb9e7}{\index{server\-State@{server\-State}!win\-\_\-limit@{win\-\_\-limit}}
+\index{win\-\_\-limit@{win\-\_\-limit}!serverState@{server\-State}}
+\subsubsection[{win\-\_\-limit}]{\setlength{\rightskip}{0pt plus 5cm}u\-\_\-short {\bf server\-State\-::win\-\_\-limit}}}\label{structserverState_a48a2d3d9f312ba2ea9c9f71e91dcb9e7}
+
+
+the window threshold the mobile accelerator disable the opportunistic transmission, initially set to 0. 
+
+\hypertarget{structserverState_ae9f552f7d1731ec394b5d003650b046c}{\index{server\-State@{server\-State}!win\-\_\-scale@{win\-\_\-scale}}
+\index{win\-\_\-scale@{win\-\_\-scale}!serverState@{server\-State}}
+\subsubsection[{win\-\_\-scale}]{\setlength{\rightskip}{0pt plus 5cm}u\-\_\-short {\bf server\-State\-::win\-\_\-scale}}}\label{structserverState_ae9f552f7d1731ec394b5d003650b046c}
+
+
+large window scale option from mobile receiver. 
+
+
+
+\-The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{split__tcp__gateway_8cpp}{split\-\_\-tcp\-\_\-gateway.\-cpp}\end{DoxyCompactItemize}
